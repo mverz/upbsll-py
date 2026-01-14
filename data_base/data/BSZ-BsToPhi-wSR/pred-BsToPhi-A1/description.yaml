@@ -1,0 +1,198 @@
+observables:
+- kinematics:
+    q2: -15.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: -14.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: -13.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: -12.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: -11.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: -10.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: -9.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: -8.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: -7.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: -6.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: -5.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: -4.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: -3.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: -2.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: -1.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 0.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 1.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 2.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 3.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 4.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 5.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 6.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 7.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 8.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 9.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 10.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 11.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 12.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 13.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 14.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 15.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 16.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 17.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 18.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 19.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 20.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 21.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 22.0
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+- kinematics:
+    q2: 22.8
+  name: B_s->phi::A_1(q2)
+  options:
+    form-factors: BSZ2015
+type: Prediction
+version: 1.0.19

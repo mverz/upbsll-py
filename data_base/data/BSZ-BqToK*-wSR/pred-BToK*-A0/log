@@ -1,0 +1,33 @@
+2025-12-28 12:55:35,871 INFO       Creating analysis with 19 priors, 3 EOS-wide constraints, 1 global options, 0 manually-entered constraints and 4 fixed parameters.
+2025-12-28 12:55:35,871 DEBUG      priors:
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^A0_0@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^A0_1@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^A0_2@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^A12_1@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^A12_2@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^A1_0@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^A1_1@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^A1_2@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^T1_0@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^T1_1@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^T1_2@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^T23_0@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^T23_1@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^T23_2@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^T2_1@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^T2_2@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^V_0@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^V_1@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::alpha^V_2@BSZ2015 (uniform)
+2025-12-28 12:55:35,871 DEBUG      constraints:
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::FormFactors[A_0,A_1,A_2,V,T_1,T_2,T_23]@GRvDV:2021A
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::V+A_0+A_1+A_12@HLMW:2015A
+2025-12-28 12:55:35,871 DEBUG       - B->K^*::T_1+T_2+T_23@HLMW:2015A
+2025-12-28 12:55:35,871 DEBUG      manual_constraints:
+2025-12-28 12:55:35,871 DEBUG      fixed_parameters:
+2025-12-28 12:55:35,871 DEBUG       - mass::B_d
+2025-12-28 12:55:35,871 DEBUG       - mass::B_s
+2025-12-28 12:55:35,871 DEBUG       - mass::K_d
+2025-12-28 12:55:35,871 DEBUG       - mass::K_u
+2025-12-28 12:55:35,962 INPROGRESS Predicting observables from set 'BToK*-A0' for 24548 samples
+2025-12-28 12:55:46,818 COMPLETED  ... done

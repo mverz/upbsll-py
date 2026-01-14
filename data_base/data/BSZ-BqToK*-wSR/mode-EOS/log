@@ -1,0 +1,164 @@
+2025-12-28 13:35:22,661 INFO       Creating analysis with 19 priors, 3 EOS-wide constraints, 1 global options, 0 manually-entered constraints and 4 fixed parameters.
+2025-12-28 13:35:22,662 DEBUG      priors:
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^A0_0@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^A0_1@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^A0_2@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^A12_1@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^A12_2@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^A1_0@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^A1_1@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^A1_2@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^T1_0@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^T1_1@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^T1_2@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^T23_0@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^T23_1@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^T23_2@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^T2_1@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^T2_2@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^V_0@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^V_1@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::alpha^V_2@BSZ2015 (uniform)
+2025-12-28 13:35:22,662 DEBUG      constraints:
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::FormFactors[A_0,A_1,A_2,V,T_1,T_2,T_23]@GRvDV:2021A
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::V+A_0+A_1+A_12@HLMW:2015A
+2025-12-28 13:35:22,662 DEBUG       - B->K^*::T_1+T_2+T_23@HLMW:2015A
+2025-12-28 13:35:22,662 DEBUG      manual_constraints:
+2025-12-28 13:35:22,662 DEBUG      fixed_parameters:
+2025-12-28 13:35:22,662 DEBUG       - mass::B_d
+2025-12-28 13:35:22,662 DEBUG       - mass::B_s
+2025-12-28 13:35:22,662 DEBUG       - mass::K_d
+2025-12-28 13:35:22,663 DEBUG       - mass::K_u
+2025-12-28 13:35:22,728 INPROGRESS Beginning minimization in 100 points
+2025-12-28 13:35:22,728 INFO       Using a starting point based on the existing importance samples
+2025-12-28 13:35:22,739 INFO       Using starting point [ 0.3458, -0.9233, 3.476, 0.6296, 0.7669, 0.3129, 0.675, 1.744, 0.3361, -0.8359, 2.846, 0.6395, 1.097, 2.838, 0.6194, 1.088, 0.4055, -1.323, 1.968 ]
+2025-12-28 13:35:23,357 SUCCESS    Optimization goal achieved after 548 function evaluations
+2025-12-28 13:35:23,359 INFO       First optimization finished
+2025-12-28 13:35:23,423 SUCCESS    Optimization goal achieved after 55 function evaluations
+2025-12-28 13:35:23,461 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:23,493 SUCCESS    Optimization goal achieved after 26 function evaluations
+2025-12-28 13:35:23,531 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:23,564 SUCCESS    Optimization goal achieved after 27 function evaluations
+2025-12-28 13:35:23,599 SUCCESS    Optimization goal achieved after 28 function evaluations
+2025-12-28 13:35:23,637 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:23,670 SUCCESS    Optimization goal achieved after 27 function evaluations
+2025-12-28 13:35:23,707 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:23,741 SUCCESS    Optimization goal achieved after 28 function evaluations
+2025-12-28 13:35:23,779 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:23,811 SUCCESS    Optimization goal achieved after 26 function evaluations
+2025-12-28 13:35:23,848 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:23,886 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:23,922 SUCCESS    Optimization goal achieved after 30 function evaluations
+2025-12-28 13:35:23,959 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:23,995 SUCCESS    Optimization goal achieved after 30 function evaluations
+2025-12-28 13:35:24,033 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,069 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,106 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,143 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,176 SUCCESS    Optimization goal achieved after 27 function evaluations
+2025-12-28 13:35:24,213 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,250 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,286 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,324 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,361 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,397 SUCCESS    Optimization goal achieved after 30 function evaluations
+2025-12-28 13:35:24,431 SUCCESS    Optimization goal achieved after 28 function evaluations
+2025-12-28 13:35:24,469 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,502 SUCCESS    Optimization goal achieved after 27 function evaluations
+2025-12-28 13:35:24,540 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,577 SUCCESS    Optimization goal achieved after 30 function evaluations
+2025-12-28 13:35:24,615 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,648 SUCCESS    Optimization goal achieved after 27 function evaluations
+2025-12-28 13:35:24,686 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,722 SUCCESS    Optimization goal achieved after 29 function evaluations
+2025-12-28 13:35:24,759 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,797 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,835 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,870 SUCCESS    Optimization goal achieved after 29 function evaluations
+2025-12-28 13:35:24,908 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,947 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:24,984 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:25,022 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:25,060 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:25,095 SUCCESS    Optimization goal achieved after 29 function evaluations
+2025-12-28 13:35:25,133 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:25,163 SUCCESS    Optimization goal achieved after 24 function evaluations
+2025-12-28 13:35:25,193 SUCCESS    Optimization goal achieved after 24 function evaluations
+2025-12-28 13:35:25,225 SUCCESS    Optimization goal achieved after 26 function evaluations
+2025-12-28 13:35:25,257 SUCCESS    Optimization goal achieved after 26 function evaluations
+2025-12-28 13:35:25,291 SUCCESS    Optimization goal achieved after 28 function evaluations
+2025-12-28 13:35:25,329 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:25,367 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:25,405 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:25,443 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:25,476 SUCCESS    Optimization goal achieved after 27 function evaluations
+2025-12-28 13:35:25,514 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:25,546 SUCCESS    Optimization goal achieved after 26 function evaluations
+2025-12-28 13:35:25,583 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:25,621 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:25,651 SUCCESS    Optimization goal achieved after 25 function evaluations
+2025-12-28 13:35:25,684 SUCCESS    Optimization goal achieved after 27 function evaluations
+2025-12-28 13:35:25,722 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:25,759 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:25,797 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:25,834 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:25,871 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:25,904 SUCCESS    Optimization goal achieved after 27 function evaluations
+2025-12-28 13:35:25,939 SUCCESS    Optimization goal achieved after 29 function evaluations
+2025-12-28 13:35:25,976 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:26,008 SUCCESS    Optimization goal achieved after 26 function evaluations
+2025-12-28 13:35:26,045 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:26,082 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:26,119 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:26,156 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:26,194 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:26,228 SUCCESS    Optimization goal achieved after 28 function evaluations
+2025-12-28 13:35:26,265 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:26,303 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:26,341 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:26,377 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:26,411 SUCCESS    Optimization goal achieved after 28 function evaluations
+2025-12-28 13:35:26,447 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:26,481 SUCCESS    Optimization goal achieved after 29 function evaluations
+2025-12-28 13:35:26,513 SUCCESS    Optimization goal achieved after 27 function evaluations
+2025-12-28 13:35:26,549 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:26,585 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:26,615 SUCCESS    Optimization goal achieved after 25 function evaluations
+2025-12-28 13:35:26,651 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:26,681 SUCCESS    Optimization goal achieved after 25 function evaluations
+2025-12-28 13:35:26,718 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:26,754 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:26,857 SUCCESS    Optimization goal achieved after 91 function evaluations
+2025-12-28 13:35:26,974 SUCCESS    Optimization goal achieved after 103 function evaluations
+2025-12-28 13:35:27,002 SUCCESS    Optimization goal achieved after 26 function evaluations
+2025-12-28 13:35:27,035 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:27,069 SUCCESS    Optimization goal achieved after 31 function evaluations
+2025-12-28 13:35:27,070 COMPLETED  ... optimization finished
+2025-12-28 13:35:27,071 INFO       The best-fit point is:
+2025-12-28 13:35:27,071 INFO         - B->K^*::alpha^A0_0@BSZ2015 -> 0.34149005175893754
+2025-12-28 13:35:27,071 INFO         - B->K^*::alpha^A0_1@BSZ2015 -> -1.1442266958301022
+2025-12-28 13:35:27,071 INFO         - B->K^*::alpha^A0_2@BSZ2015 -> 2.437494044208595
+2025-12-28 13:35:27,072 INFO         - B->K^*::alpha^A12_1@BSZ2015 -> 0.5421835147096643
+2025-12-28 13:35:27,072 INFO         - B->K^*::alpha^A12_2@BSZ2015 -> 0.5464842026114276
+2025-12-28 13:35:27,072 INFO         - B->K^*::alpha^A1_0@BSZ2015 -> 0.2893524401256304
+2025-12-28 13:35:27,072 INFO         - B->K^*::alpha^A1_1@BSZ2015 -> 0.459736752418786
+2025-12-28 13:35:27,073 INFO         - B->K^*::alpha^A1_2@BSZ2015 -> 1.219859166297519
+2025-12-28 13:35:27,073 INFO         - B->K^*::alpha^T1_0@BSZ2015 -> 0.31934220917645595
+2025-12-28 13:35:27,073 INFO         - B->K^*::alpha^T1_1@BSZ2015 -> -0.9574415739516254
+2025-12-28 13:35:27,074 INFO         - B->K^*::alpha^T1_2@BSZ2015 -> 2.121468459507471
+2025-12-28 13:35:27,074 INFO         - B->K^*::alpha^T23_0@BSZ2015 -> 0.6215619426487797
+2025-12-28 13:35:27,074 INFO         - B->K^*::alpha^T23_1@BSZ2015 -> 0.9704783083685722
+2025-12-28 13:35:27,074 INFO         - B->K^*::alpha^T23_2@BSZ2015 -> 1.8025208385384293
+2025-12-28 13:35:27,075 INFO         - B->K^*::alpha^T2_1@BSZ2015 -> 0.5971177014534241
+2025-12-28 13:35:27,075 INFO         - B->K^*::alpha^T2_2@BSZ2015 -> 1.7001160634723158
+2025-12-28 13:35:27,075 INFO         - B->K^*::alpha^V_0@BSZ2015 -> 0.3630537999732138
+2025-12-28 13:35:27,075 INFO         - B->K^*::alpha^V_1@BSZ2015 -> -1.090322874367872
+2025-12-28 13:35:27,076 INFO         - B->K^*::alpha^V_2@BSZ2015 -> 2.7817391372666407
+2025-12-28 13:35:27,076 INFO       total chi^2 = 46.57
+2025-12-28 13:35:27,076 INFO       total dof   = 98
+2025-12-28 13:35:27,078 INFO       p value     = 100.00%
+2025-12-28 13:35:27,078 INFO       individual test statistics:
+2025-12-28 13:35:27,079 INFO         - B->K^*::FormFactors[A_0,A_1,A_2,V,T_1,T_2,T_23]@GRvDV:2021A: chi^2 / dof = 2.22 / 33, local_pvalue = 100.00%
+2025-12-28 13:35:27,079 INFO         - B->K^*::T_1+T_2+T_23@HLMW:2015A: chi^2 / dof = 18.11 / 36, local_pvalue = 99.43%
+2025-12-28 13:35:27,080 INFO         - B->K^*::V+A_0+A_1+A_12@HLMW:2015A: chi^2 / dof = 26.24 / 48, local_pvalue = 99.56%
+2025-12-28 13:35:27,086 SUCCESS    Final p value is 100.00%, indicating a successful fit
