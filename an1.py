@@ -1,11 +1,11 @@
 import eos
 import sys
 
-ANALYSIS_FILE='./an1.yaml'
+ANALYSIS_FILE='./an2.yaml'
 af=eos.AnalysisFile(ANALYSIS_FILE)
 
-# PROMPR USER FOR WHICH DECAY TO SAMPLE
-if 1:
+# PROMPT USER FOR WHICH DECAY TO SAMPLE
+if 0:
     print("- 0 to continue without sampling\n- 1 for B to K ll\n- 2 for B to K* ll\n- 3 for Bs to Phi ll\n- 99 for all decays")
     decay_select = input()
 
@@ -36,7 +36,7 @@ if 1:
         case "0":
             print("Continuing without predictions.")
         case "1":
-            predicts=['BToK-f+', 'BToK-f0', 'BToK-fT']
+            predicts=['BToK-f+', 'BToK-f0', 'BToK-fT', 'BToK-fTf+Ratio']
             for i in predicts:
                 eos.tasks.predict_observables(af, 'BSZ-BqToK-wSR', i,  base_directory='./data_base/')    
         case "2":
@@ -54,7 +54,6 @@ if 1:
             predicts=['BToK*-A0', 'BToK*-A1', 'BToK*-A12', 'BToK*-V', 'BToK*-T1', 'BToK*-T2', 'BToK*-T23']
             for i in predicts:
                 eos.tasks.predict_observables(af, 'BSZ-BqToK*-wSR', i,  base_directory='./data_base/')    
-
             predicts=['BsToPhi-A0', 'BsToPhi-A1', 'BsToPhi-A12', 'BsToPhi-V', 'BsToPhi-T1', 'BsToPhi-T2', 'BsToPhi-T23']
             for i in predicts:
                 eos.tasks.predict_observables(af, 'BSZ-BsToPhi-wSR', i,  base_directory='./data_base/')

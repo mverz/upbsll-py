@@ -1,23 +1,23 @@
-2025-12-29 14:31:02,923 INFO       Creating analysis with 8 priors, 4 EOS-wide constraints, 1 global options, 0 manually-entered constraints and 4 fixed parameters.
-2025-12-29 14:31:02,924 DEBUG      priors:
-2025-12-29 14:31:02,924 DEBUG       - B->K::alpha^f+_0@BSZ2015 (uniform)
-2025-12-29 14:31:02,924 DEBUG       - B->K::alpha^f+_1@BSZ2015 (uniform)
-2025-12-29 14:31:02,924 DEBUG       - B->K::alpha^f+_2@BSZ2015 (uniform)
-2025-12-29 14:31:02,924 DEBUG       - B->K::alpha^f0_1@BSZ2015 (uniform)
-2025-12-29 14:31:02,924 DEBUG       - B->K::alpha^f0_2@BSZ2015 (uniform)
-2025-12-29 14:31:02,924 DEBUG       - B->K::alpha^fT_0@BSZ2015 (uniform)
-2025-12-29 14:31:02,924 DEBUG       - B->K::alpha^fT_1@BSZ2015 (uniform)
-2025-12-29 14:31:02,924 DEBUG       - B->K::alpha^fT_2@BSZ2015 (uniform)
-2025-12-29 14:31:02,924 DEBUG      constraints:
-2025-12-29 14:31:02,924 DEBUG       - B->K::f_0+f_++f_T@HPQCD:2013A
-2025-12-29 14:31:02,924 DEBUG       - B->K::f_0+f_++f_T@FNAL+MILC:2015D
-2025-12-29 14:31:02,924 DEBUG       - B->K::f_0+f_++f_T@HPQCD:2022A
-2025-12-29 14:31:02,924 DEBUG       - B->K::FormFactors[f_+,f_0,f_T]@GKvD:2018A
-2025-12-29 14:31:02,924 DEBUG      manual_constraints:
-2025-12-29 14:31:02,924 DEBUG      fixed_parameters:
-2025-12-29 14:31:02,924 DEBUG       - mass::B_d
-2025-12-29 14:31:02,924 DEBUG       - mass::B_s
-2025-12-29 14:31:02,924 DEBUG       - mass::K_d
-2025-12-29 14:31:02,924 DEBUG       - mass::K_u
-2025-12-29 14:31:02,977 INPROGRESS Predicting observables from set 'BToK-f+' for 17615 samples
-2025-12-29 14:31:10,015 COMPLETED  ... done
+2026-01-23 10:49:16,082 INFO       Creating analysis with 8 priors, 4 EOS-wide constraints, 1 global options, 0 manually-entered constraints and 4 fixed parameters.
+2026-01-23 10:49:16,082 DEBUG      priors:
+2026-01-23 10:49:16,082 DEBUG       - B->K::alpha^f+_0@BSZ2015 (uniform)
+2026-01-23 10:49:16,083 DEBUG       - B->K::alpha^f+_1@BSZ2015 (uniform)
+2026-01-23 10:49:16,083 DEBUG       - B->K::alpha^f+_2@BSZ2015 (uniform)
+2026-01-23 10:49:16,083 DEBUG       - B->K::alpha^f0_1@BSZ2015 (uniform)
+2026-01-23 10:49:16,083 DEBUG       - B->K::alpha^f0_2@BSZ2015 (uniform)
+2026-01-23 10:49:16,083 DEBUG       - B->K::alpha^fT_0@BSZ2015 (uniform)
+2026-01-23 10:49:16,083 DEBUG       - B->K::alpha^fT_1@BSZ2015 (uniform)
+2026-01-23 10:49:16,084 DEBUG       - B->K::alpha^fT_2@BSZ2015 (uniform)
+2026-01-23 10:49:16,084 DEBUG      constraints:
+2026-01-23 10:49:16,084 DEBUG       - B->K::f_0+f_++f_T@HPQCD:2013A
+2026-01-23 10:49:16,084 DEBUG       - B->K::f_0+f_++f_T@FNAL+MILC:2015D
+2026-01-23 10:49:16,084 DEBUG       - B->K::f_0+f_++f_T@HPQCD:2022A
+2026-01-23 10:49:16,084 DEBUG       - B->K::FormFactors[f_+,f_0,f_T]@GKvD:2018A
+2026-01-23 10:49:16,084 DEBUG      manual_constraints:
+2026-01-23 10:49:16,084 DEBUG      fixed_parameters:
+2026-01-23 10:49:16,084 DEBUG       - mass::B_d
+2026-01-23 10:49:16,084 DEBUG       - mass::B_s
+2026-01-23 10:49:16,085 DEBUG       - mass::K_d
+2026-01-23 10:49:16,085 DEBUG       - mass::K_u
+2026-01-23 10:49:16,781 INPROGRESS Predicting observables from set 'BToK-f+' for 17615 samples
+2026-01-23 10:49:23,668 COMPLETED  ... done
