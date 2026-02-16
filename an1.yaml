@@ -79,7 +79,7 @@ likelihoods:
 #B to K*
   - name: BToK*-GRvDV2021
     constraints:
-      - 'B->K^*::FormFactors[A_0,A_1,A_2,V,T_1,T_2,T_23]@GRvDV:2021A'
+      - 'B->K^*::FormFactors[A_0,A_1,A_2,V,T_1,T_2,T_23]@GRvDV:2022A'
   - name: BToK*-HLMW2015
     constraints:
       - 'B->K^*::V+A_0+A_1+A_12@HLMW:2015A'

@@ -1,0 +1,584 @@
+priors:
+  - name: bsz-BqToK-wSR
+    descriptions:
+    - { parameter: 'B->K::alpha^f+_0@BSZ2015',        min:  +0.30, max:  +0.37, type: 'uniform' }
+    - { parameter: 'B->K::alpha^f+_1@BSZ2015',        min:  -1.2,  max:  -0.7,  type: 'uniform' }
+    - { parameter: 'B->K::alpha^f+_2@BSZ2015',        min:  -0.6,  max:  +0.1,  type: 'uniform' }
+    - { parameter: 'B->K::alpha^f0_1@BSZ2015',        min:  +0.1,  max:  +0.6,  type: 'uniform' }
+    - { parameter: 'B->K::alpha^f0_2@BSZ2015',        min:  -0.5,  max:  +0.5,  type: 'uniform' }
+    - { parameter: 'B->K::alpha^fT_0@BSZ2015',        min:  +0.27, max:  +0.37, type: 'uniform' }
+    - { parameter: 'B->K::alpha^fT_1@BSZ2015',        min:  -1.4,  max:  -0.7,  type: 'uniform' }
+    - { parameter: 'B->K::alpha^fT_2@BSZ2015',        min:  -1.2,  max:  +0.3,  type: 'uniform' }
+  - name: bsz-BqToK*-wSR
+    descriptions:
+    - { parameter: 'B->K^*::alpha^A0_0@BSZ2015',   min:  0.2,  max:  0.5,  type: 'uniform' }
+    - { parameter: 'B->K^*::alpha^A0_1@BSZ2015',   min: -2.0,  max:  -0.4,  type: 'uniform' }
+    - { parameter: 'B->K^*::alpha^A0_2@BSZ2015',   min: -7.0,  max:  10.0,  type: 'uniform' }
+
+    - { parameter: 'B->K^*::alpha^A12_1@BSZ2015',  min: -1.0,  max:  2.0,  type: 'uniform' }
+    - { parameter: 'B->K^*::alpha^A12_2@BSZ2015',  min: -7.0,  max:  8.0,  type: 'uniform' }
+
+    - { parameter: 'B->K^*::alpha^A1_0@BSZ2015',   min: 0.1,  max:  0.5,  type: 'uniform' }
+    - { parameter: 'B->K^*::alpha^A1_1@BSZ2015',   min: -0.1,  max:  1.1,  type: 'uniform' }
+    - { parameter: 'B->K^*::alpha^A1_2@BSZ2015',   min: -2.0,  max:  6,  type: 'uniform' }
+
+    - { parameter: 'B->K^*::alpha^T1_0@BSZ2015',   min:  0.2,  max:  0.4,  type: 'uniform' }
+    - { parameter: 'B->K^*::alpha^T1_1@BSZ2015',   min: -1.6,  max:  -0.3,  type: 'uniform' }
+    - { parameter: 'B->K^*::alpha^T1_2@BSZ2015',   min: -2.6,  max:  7.0,  type: 'uniform' }
+
+    - { parameter: 'B->K^*::alpha^T23_0@BSZ2015',  min:  0.4,  max:  0.8,  type: 'uniform' }
+    - { parameter: 'B->K^*::alpha^T23_1@BSZ2015',  min: -0.2,  max:  2.2,  type: 'uniform' }
+    - { parameter: 'B->K^*::alpha^T23_2@BSZ2015',  min: -7.0,  max:  10.0,  type: 'uniform' }
+
+    - { parameter: 'B->K^*::alpha^T2_1@BSZ2015',   min: -0.3,  max:  1.6,  type: 'uniform' }
+    - { parameter: 'B->K^*::alpha^T2_2@BSZ2015',   min: -2.5,  max:  6.5,  type: 'uniform' }
+
+    - { parameter: 'B->K^*::alpha^V_0@BSZ2015',    min:  0.25,  max:  0.6,  type: 'uniform' }
+    - { parameter: 'B->K^*::alpha^V_1@BSZ2015',    min: -1.9,  max:  -0.3,  type: 'uniform' }
+    - { parameter: 'B->K^*::alpha^V_2@BSZ2015',    min: -6.0,  max:  10.5,  type: 'uniform' }
+    
+  - name: bsz-BsToPhi-wSR
+    descriptions:
+    - { parameter: 'B_s->phi::alpha^A0_0@BSZ2015',   min:  0.2,   max:  0.6,   type: 'uniform' }
+    - { parameter: 'B_s->phi::alpha^A0_1@BSZ2015',   min: -2.5,   max:  0.0,   type: 'uniform' }
+    - { parameter: 'B_s->phi::alpha^A0_2@BSZ2015',   min: -7.0,   max: 11.0,   type: 'uniform' }
+
+    - { parameter: 'B_s->phi::alpha^A12_1@BSZ2015',  min: -1.0,   max:  2.0,   type: 'uniform' }
+    - { parameter: 'B_s->phi::alpha^A12_2@BSZ2015',  min: -10.0,  max: 10.0,   type: 'uniform' }
+
+    - { parameter: 'B_s->phi::alpha^A1_0@BSZ2015',   min:  0.1,   max:  0.5,   type: 'uniform' }
+    - { parameter: 'B_s->phi::alpha^A1_1@BSZ2015',   min: -0.6,   max:  1.9,   type: 'uniform' }
+    - { parameter: 'B_s->phi::alpha^A1_2@BSZ2015',   min: -5.0,   max: 10.0,   type: 'uniform' }
+
+    - { parameter: 'B_s->phi::alpha^T1_0@BSZ2015',   min:  0.1,   max:  0.6,   type: 'uniform' }
+    - { parameter: 'B_s->phi::alpha^T1_1@BSZ2015',   min: -2.2,   max:  0.5,   type: 'uniform' }
+    - { parameter: 'B_s->phi::alpha^T1_2@BSZ2015',   min: -10.0,  max: 10.0,   type: 'uniform' }
+
+    - { parameter: 'B_s->phi::alpha^T23_0@BSZ2015',  min:  0.3,   max:  1.0,   type: 'uniform' }
+    - { parameter: 'B_s->phi::alpha^T23_1@BSZ2015',  min: -1.0,   max:  3.0,   type: 'uniform' }
+    - { parameter: 'B_s->phi::alpha^T23_2@BSZ2015',  min: -20.0,  max: 20.0,   type: 'uniform' }
+
+    - { parameter: 'B_s->phi::alpha^T2_1@BSZ2015',   min: -1.0,   max:  2.0,   type: 'uniform' }
+    - { parameter: 'B_s->phi::alpha^T2_2@BSZ2015',   min: -8.0,   max: 15.0,   type: 'uniform' }
+
+    - { parameter: 'B_s->phi::alpha^V_0@BSZ2015',    min: 0.1,   max:  0.7,   type: 'uniform' }
+    - { parameter: 'B_s->phi::alpha^V_1@BSZ2015',    min: -2.5,   max:  0.5,   type: 'uniform' }
+    - { parameter: 'B_s->phi::alpha^V_2@BSZ2015',    min: -10.0,  max: 20.0,   type: 'uniform' }
+
+
+observables:
+# BUILD NON-LOCAL FF OBSERVABLES HERE -------------------------------------------------------
+# B to K
+  "B->K::Re{H_0(q2)/F_0(q2)}":
+    latex: R'\Re\left(\frac{\mathcal{H}_0(q^2)}{\mathcal{F}_0(q^2)}\right)^{B\to K}'
+    unit: '1'
+    options: {'model':'WET'}
+    expression: '-1/(16 * 3.141592653589793^2) * <<B->K::F_plus(q2)>> *  ( {q2}^2/(2*[[mass::B_d]]^2) * <<b->s::Re{Delta_C9_Qc}(q2)>> + [[mass::b(MSbar)]]/[[mass::B_d]] * <<b->s::Re{Delta_C7_Qc}(q2)>> * <<B->K::F_plus_T(q2)/F_plus(q2)>> )'
+
+  "B->K::Im{H_0(q2)/F_0(q2)}":
+    latex: R'\Im\left(\frac{\mathcal{H}_0(q^2)}{\mathcal{F}_0(q^2)}\right)^{B\to K}'
+    unit: '1'
+    options: {'model':'WET'}
+    expression: '-1/(16 * 3.141592653589793^2) * <<B->K::F_plus(q2)>> *  ( {q2}^2/(2*[[mass::B_d]]^2) * <<b->s::Im{Delta_C9_Qc}(q2)>> + [[mass::b(MSbar)]]/[[mass::B_d]] * <<b->s::Im{Delta_C7_Qc}(q2)>> * <<B->K::F_plus_T(q2)/F_plus(q2)>> )'
+
+
+# B to K^*
+  "B->K^*::Re{H_0(q2)/F_0(q2)}":
+    latex: R'\Re\left(\frac{\mathcal{H}_0(q^2)}{\mathcal{F}_0(q^2)}\right)^{B\to K^*}'
+    unit: '1'
+    options: {'model':'WET'}
+    expression: '-1/(16 * 3.141592653589793^2) * <<B->K^*::F_long(q2)>> *  ( {q2}^2/(2*[[mass::B_d]]^2) * <<b->s::Re{Delta_C9_Qc}(q2)>> + [[mass::b(MSbar)]]/[[mass::B_d]] * <<b->s::Re{Delta_C7_Qc}(q2)>> * <<B->K^*::F_long_T(q2)/F_long(q2)>> )'
+  
+  "B->K^*::Im{H_0(q2)/F_0(q2)}":
+    latex: R'\Im\left(\frac{\mathcal{H}_0(q^2)}{\mathcal{F}_0(q^2)}\right)^{B\to K^*}'
+    unit: '1'
+    options: {'model':'WET'}
+    expression: '-1/(16 * 3.141592653589793^2) * <<B->K^*::F_long(q2)>> *  ( {q2}^2/(2*[[mass::B_d]]^2) * <<b->s::Im{Delta_C9_Qc}(q2)>> + [[mass::b(MSbar)]]/[[mass::B_d]] * <<b->s::Im{Delta_C7_Qc}(q2)>> * <<B->K^*::F_long_T(q2)/F_long(q2)>> )'
+
+
+  "B->K^*::Re{H_perp(q2)/F_perp(q2)}":
+    latex: R'\Re\left(\frac{\mathcal{H}_perp(q^2)}{\mathcal{F}_perp(q^2)}\right)^{B\to K^*}'
+    unit: '1'
+    options: {'model':'WET'}
+    expression: '-1/(16 * 3.141592653589793^2) * <<B->K^*::F_perp(q2)>> *  ( {q2}^2/(2*[[mass::B_d]]^2) * <<b->s::Re{Delta_C9_Qc}(q2)>> + [[mass::b(MSbar)]]/[[mass::B_d]] * <<b->s::Re{Delta_C7_Qc}(q2)>> * <<B->K^*::F_perp_T(q2)/F_perp(q2)>> )'
+
+  "B->K^*::Im{H_perp(q2)/F_perp(q2)}":
+    latex: R'\Im\left(\frac{\mathcal{H}_perp(q^2)}{\mathcal{F}_perp(q^2)}\right)^{B\to K^*}'
+    unit: '1'
+    options: {'model':'WET'}
+    expression: '-1/(16 * 3.141592653589793^2) * <<B->K^*::F_perp(q2)>> *  ( {q2}^2/(2*[[mass::B_d]]^2) * <<b->s::Im{Delta_C9_Qc}(q2)>> + [[mass::b(MSbar)]]/[[mass::B_d]] * <<b->s::Im{Delta_C7_Qc}(q2)>> * <<B->K^*::F_perp_T(q2)/F_perp(q2)>> )'
+
+
+  "B->K^*::Re{H_para(q2)/F_para(q2)}":
+    latex: R'\Re\left(\frac{\mathcal{H}_para(q^2)}{\mathcal{F}_para(q^2)}\right)^{B\to K^*}'
+    unit: '1'
+    options: {'model':'WET'}
+    expression: '-1/(16 * 3.141592653589793^2) * <<B->K^*::F_para(q2)>> *  ( {q2}^2/(2*[[mass::B_d]]^2) * <<b->s::Re{Delta_C9_Qc}(q2)>> + [[mass::b(MSbar)]]/[[mass::B_d]] * <<b->s::Re{Delta_C7_Qc}(q2)>> * <<B->K^*::F_para_T(q2)/F_para(q2)>> )'
+
+  "B->K^*::Im{H_para(q2)/F_para(q2)}":
+    latex: R'\Im\left(\frac{\mathcal{H}_para(q^2)}{\mathcal{F}_para(q^2)}\right)^{B\to K^*}'
+    unit: '1'
+    options: {'model':'WET'}
+    expression: '-1/(16 * 3.141592653589793^2) * <<B->K^*::F_para(q2)>> *  ( {q2}^2/(2*[[mass::B_d]]^2) * <<b->s::Im{Delta_C9_Qc}(q2)>> + [[mass::b(MSbar)]]/[[mass::B_d]] * <<b->s::Im{Delta_C7_Qc}(q2)>> * <<B->K^*::F_para_T(q2)/F_para(q2)>> )'
+# END --------------------------------------------------------------------------------
+
+
+likelihoods:
+#B to K
+  - name: TH-BToK-LQCD
+    constraints:
+      - 'B->K::f_0+f_++f_T@HPQCD:2013A'
+      - 'B->K::f_0+f_++f_T@FNAL+MILC:2015D'
+      - 'B->K::f_0+f_++f_T@HPQCD:2022A'
+  - name: TH-BToK-LCSR
+    constraints:
+      - 'B->K::FormFactors[f_+,f_0,f_T]@GKvD:2018A'
+#B to K*
+  - name: BToK*-GRvDV2021
+    constraints:
+      - 'B->K^*::FormFactors[A_0,A_1,A_2,V,T_1,T_2,T_23]@GRvDV:2022A'
+  - name: BToK*-HLMW2015
+    constraints:
+      - 'B->K^*::V+A_0+A_1+A_12@HLMW:2015A'
+      - 'B->K^*::T_1+T_2+T_23@HLMW:2015A'
+#Bs to phi
+  - name: BsToPhi-GRvDV2021
+    constraints:
+      - 'B_s->phi::FormFactors[A_0,A_1,A_2,V,T_1,T_2,T_23]@GvDV:2020A'
+  - name: BsToPhi-HLMW2015
+    constraints:
+      - 'B_s->phi::V+A_0+A_1+A_12@HLMW:2015A'
+      - 'B_s->phi::T_1+T_2+T_23@HLMW:2015A'
+
+
+posteriors:
+  - name: BSZ-BqToK-wSR
+    fixed_parameters:
+      'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
+      'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
+      'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::b(MSbar)':  4.18
+      'mass::c':  1.44423
+      'sb::mu':  4.18
+      'b->s::c1': -0.287213
+      'b->s::c2':  1.009
+      # t_0 is t_opt
+    global_options:
+      form-factors: BSZ2015
+    prior:
+      - bsz-BqToK-wSR
+    likelihood:
+      - TH-BToK-LQCD
+      - TH-BToK-LCSR
+
+  - name: BSZ-BqToK*-wSR
+    fixed_parameters:
+      'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
+      'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
+      'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::b(MSbar)':  4.18
+      'mass::c':  1.44423
+      'sb::mu':  4.18
+      'b->s::c1': -0.287213
+      'b->s::c2':  1.009
+      # t_0 is t_opt
+    global_options:
+      form-factors: BSZ2015
+    prior:
+      - bsz-BqToK*-wSR
+    likelihood:
+      - BToK*-GRvDV2021
+      - BToK*-HLMW2015
+
+  - name: BSZ-BsToPhi-wSR
+    fixed_parameters:
+      'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
+      'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
+      'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::b(MSbar)':  4.18
+      'mass::c':  1.44423
+      'sb::mu':  4.18
+      'b->s::c1': -0.287213
+      'b->s::c2':  1.009
+      # t_0 is t_opt
+    global_options:
+      form-factors: BSZ2015
+    prior:
+      - bsz-BsToPhi-wSR
+    likelihood:
+      - BsToPhi-GRvDV2021
+      - BsToPhi-HLMW2015
+
+
+predictions:
+  # GROUP FOR NON-LOCAL FF -------------------------------------------------------------------
+  - name: BToK-FT0/F0
+    observables:
+      - name: B->K::F_plus_T(q2)/F_plus(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+              
+  - name: BToK-F0
+    observables:
+      - name: B->K::F_plus(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+  - name: BToK-Re(H0/F0)
+    observables:
+      - name: B->K::Re{H_0(q2)/F_0(q2)}
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  - name: BToK-Im(H0/F0)
+    observables:
+      - name: B->K::Im{H_0(q2)/F_0(q2)}
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  # END: GROUP FOR NON-LOCAL FF -------------------------------------------------------------------
+    
+  - name: BToK-f+
+    observables:
+      - name: B->K::f_+(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+  - name: BToK-f0
+    observables:
+      - name: B->K::f_0(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+  - name: BToK-fT
+    observables:
+      - name: B->K::f_T(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+
+  - name: BToK*-A0
+    observables:
+      - name: B->K^*::A_0(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+  - name: BToK*-A12
+    observables:
+      - name: B->K^*::A_12(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+  - name: BToK*-A1
+    observables:
+      - name: B->K^*::A_1(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+  - name: BToK*-T1
+    observables:
+      - name: B->K^*::T_1(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+  - name: BToK*-T23
+    observables:
+      - name: B->K^*::T_23(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+  - name: BToK*-T2
+    observables:
+      - name: B->K^*::T_2(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+  - name: BToK*-V
+    observables:
+      - name: B->K^*::V(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+  # GROUP FOR NON-LOCAL FF -------------------------------------------------------------------
+  - name: BToK*-Fpara
+    observables:
+      - name: B->K^*::F_para(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+              
+  - name: BToK*-FTpara/Fpara
+    observables:
+      - name: B->K^*::F_para_T(q2)/F_para(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+  
+  - name: BToK*-Fperp
+    observables:
+      - name: B->K^*::F_perp(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  - name: BToK*-FTperp/Fperp
+    observables:
+      - name: B->K^*::F_perp_T(q2)/F_perp(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  - name: BToK*-F0
+    observables:
+      - name: B->K^*::F_long(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  - name: BToK*-FT0/F0
+    observables:
+      - name: B->K^*::F_long_T(q2)/F_long(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+
+  - name: BToK*-Re(H0/F0)
+    observables:
+      - name: B->K^*::Re{H_0(q2)/F_0(q2)}
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  - name: BToK*-Im(H0/F0)
+    observables:
+      - name: B->K^*::Im{H_0(q2)/F_0(q2)}
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  # END: GROUP FOR NON-LOCAL FF -------------------------------------------------------------------
+
+
+  - name: BsToPhi-A0
+    observables:
+      - name: B_s->phi::A_0(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+  - name: BsToPhi-A12
+    observables:
+      - name: B_s->phi::A_12(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+  - name: BsToPhi-A1
+    observables:
+      - name: B_s->phi::A_1(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+  - name: BsToPhi-T1
+    observables:
+      - name: B_s->phi::T_1(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+  - name: BsToPhi-T23
+    observables:
+      - name: B_s->phi::T_23(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+  - name: BsToPhi-T2
+    observables:
+      - name: B_s->phi::T_2(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+  - name: BsToPhi-V
+    observables:
+      - name: B_s->phi::V(q2)
+        kinematics: [ { q2: -15.0 }, { q2: -14.0 }, { q2: -13.0 }, { q2: -12.0 }, { q2: -11.0 },
+                      { q2: -10.0 }, { q2:  -9.0 }, { q2:  -8.0 }, { q2:  -7.0 }, { q2:  -6.0 },
+                      { q2:  -5.0 }, { q2:  -4.0 }, { q2:  -3.0 }, { q2:  -2.0 }, { q2:  -1.0 },
+                      { q2:   0.0 }, { q2:   1.0 }, { q2:   2.0 }, { q2:   3.0 }, { q2:   4.0 },
+                      { q2:   5.0 }, { q2:   6.0 }, { q2:   7.0 }, { q2:   8.0 }, { q2:   9.0 },
+                      { q2:  10.0 }, { q2:  11.0 }, { q2:  12.0 }, { q2:  13.0 }, { q2:  14.0 },
+                      { q2:  15.0 }, { q2:  16.0 }, { q2:  17.0 }, { q2:  18.0 }, { q2:  19.0 },
+                      { q2:  20.0 }, { q2:  21.0 }, { q2:  22.0 }, { q2:  22.8 }]
+
+
+# GROUP FOR NON-LOCAL FF -------------------------------------------------------------------
+  - name: BsToPhi-Fpara
+    observables:
+      - name: B_s->phi::F_para(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+              
+  - name: BsToPhi-FTpara/Fpara
+    observables:
+      - name: B_s->phi::F_para_T(q2)/F_para(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+  
+  - name: BsToPhi-Fperp
+    observables:
+      - name: B_s->phi::F_perp(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  - name: BsToPhi-FTperp/Fperp
+    observables:
+      - name: B_s->phi::F_perp_T(q2)/F_perp(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  - name: BsToPhi-F0
+    observables:
+      - name: B_s->phi::F_long(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  - name: BsToPhi-FT0/F0
+    observables:
+      - name: B_s->phi::F_long_T(q2)/F_long(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+                      
+  # END: GROUP FOR NON-LOCAL FF -------------------------------------------------------------------

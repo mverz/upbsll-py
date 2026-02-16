@@ -1,0 +1,213 @@
+priors:
+  - name: bsz-BqToK-wSR
+    descriptions:
+    - { parameter: 'B->K::alpha^f+_0@BSZ2015',        min:  +0.30, max:  +0.37, type: 'uniform' }
+    - { parameter: 'B->K::alpha^f+_1@BSZ2015',        min:  -1.2,  max:  -0.7,  type: 'uniform' }
+    - { parameter: 'B->K::alpha^f+_2@BSZ2015',        min:  -0.6,  max:  +0.1,  type: 'uniform' }
+    - { parameter: 'B->K::alpha^f0_1@BSZ2015',        min:  +0.1,  max:  +0.6,  type: 'uniform' }
+    - { parameter: 'B->K::alpha^f0_2@BSZ2015',        min:  -0.5,  max:  +0.5,  type: 'uniform' }
+    - { parameter: 'B->K::alpha^fT_0@BSZ2015',        min:  +0.27, max:  +0.37, type: 'uniform' }
+    - { parameter: 'B->K::alpha^fT_1@BSZ2015',        min:  -1.4,  max:  -0.7,  type: 'uniform' }
+    - { parameter: 'B->K::alpha^fT_2@BSZ2015',        min:  -1.2,  max:  +0.3,  type: 'uniform' }
+  - name: GRvDV2022-BToKccbar
+    descriptions:
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m7_plus@GRvDV2022',  min: -0.004, max: 0.0006, type: 'uniform' }
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m7_plus@GRvDV2022',  min: -4e-05, max: 3.5e-06, type: 'uniform' }
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m5_plus@GRvDV2022',  min: -0.0045, max: 0.0006, type: 'uniform' }
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m5_plus@GRvDV2022',  min: -5e-05, max: 4.55e-06, type: 'uniform' }
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m3_plus@GRvDV2022',  min: -0.003, max: 0.0004, type: 'uniform' }
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m3_plus@GRvDV2022',  min: -4e-05, max: 5.10e-06, type: 'uniform' }
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022',  min: -0.0015, max: 0.00025, type: 'uniform' }
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022',  min: -2.75e-05, max: 4.55e-06, type: 'uniform' }
+    - { parameter: 'B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022', min: 0.00110, max: 0.00130, type: 'uniform' }
+
+#   priors =  [
+#     { 'parameter': 'B->Kccbar::Re_Hhat_at_m7_plus@GRvDV2022', 'min': -0.000139, 'max':0.000212, 'type': 'uniform'},
+#     { 'parameter': 'B->Kccbar::Im_Hhat_at_m7_plus@GRvDV2022', 'min': -1.21e-05, 'max':3.51e-06, 'type': 'uniform'},
+#     { 'parameter': 'B->Kccbar::Re_Hhat_at_m5_plus@GRvDV2022', 'min': -7.27e-05, 'max':0.000269, 'type': 'uniform'},
+#     { 'parameter': 'B->Kccbar::Im_Hhat_at_m5_plus@GRvDV2022', 'min': -1.49e-05, 'max':4.55e-06, 'type': 'uniform'},
+#     { 'parameter': 'B->Kccbar::Re_Hhat_at_m3_plus@GRvDV2022', 'min': -4.04e-05, 'max':0.000363, 'type': 'uniform'},
+#     { 'parameter': 'B->Kccbar::Im_Hhat_at_m3_plus@GRvDV2022', 'min': -1.83e-05, 'max':5.10e-06, 'type': 'uniform'},
+#     { 'parameter': 'B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022', 'min': -6.69e-05, 'max':0.000515, 'type': 'uniform'},
+#     { 'parameter': 'B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022', 'min': -2.26e-05, 'max':4.55e-06, 'type': 'uniform'},
+#     { 'parameter': 'B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022', 'min': 0.00112, 'max':0.00132, 'type': 'uniform'},
+# ]
+
+
+
+
+observables:
+# PRELIMINAR: H_0(F_lambda)
+  "B->K::Re{H_0(q2,F)}":
+    latex: R'\mathrm{Re}\left(\mathcal{H}_0(q^2)\right)^{B\to K}'
+    unit: '1'
+    options: {}
+    expression: '-1/(16 * 3.141592653589793^2) * ( {q2}^2/(2*[[mass::B_d]]^2) * <<b->s::Re{Delta_C9_Qc}(q2)>> * <<B->K::F_plus(q2)>> + [[mass::b(MSbar)]]/[[mass::B_d]] * <<b->s::Re{Delta_C7_Qc}(q2)>> * <<B->K::F_plus_T(q2)>> )'
+
+  "B->K::Im{H_0(q2,F)}":
+    latex: R'\mathrm{Im}\left(\mathcal{H}_0(q^2)\right)^{B\to K}'
+    unit: '1'
+    options: {}
+    expression: '-1/(16 * 3.141592653589793^2) * ( {q2}^2/(2*[[mass::B_d]]^2) * <<b->s::Im{Delta_C9_Qc}(q2)>> * <<B->K::F_plus(q2)>> + [[mass::b(MSbar)]]/[[mass::B_d]] * <<b->s::Im{Delta_C7_Qc}(q2)>> * <<B->K::F_plus_T(q2)>> )'
+# BUILD Delta_H_0(q2) 
+  "B->K::Re{Delta_H_0(q2)}/Re{H_0(q2,F)}":
+    latex: R'\mathrm{Re}\left(\Delta\mathcal{H}_0(q^2)\right)^{B\to K} / \mathrm{Re}\left(\mathcal{H}_0(q^2)\right)^{B\to K}'
+    unit: '1'
+    options: {}
+    expression: '(<<B->K::Re{H_plus}(q2)>> - <<B->K::Re{H_0(q2,F)}>>) / <<B->K::Re{H_0(q2,F)}>>'
+
+  "B->K::Im{Delta_H_0(q2)}/Im{H_0(q2,F)}":
+    latex: R'\mathrm{Im}\left(\Delta\mathcal{H}_0(q^2)\right)^{B\to K} / \mathrm{Im}\left(\mathcal{H}_0(q^2)\right)^{B\to K}'
+    unit: '1'
+    options: {}
+    expression: '(<<B->K::Im{H_plus}(q2)>> - <<B->K::Im{H_0(q2,F)}>>) / <<B->K::Im{H_0(q2,F)}>>'
+
+
+
+
+likelihoods:
+  - name: TH-BToK-LQCD
+    constraints:
+      - 'B->K::f_0+f_++f_T@HPQCD:2013A'
+      - 'B->K::f_0+f_++f_T@FNAL+MILC:2015D'
+      - 'B->K::f_0+f_++f_T@HPQCD:2022A'
+  - name: TH-BToK-LCSR
+    constraints:
+      - 'B->K::FormFactors[f_+,f_0,f_T]@GKvD:2018A'
+  - name: vanishing-Re{Delta-H0}/Re{H0(F)}
+    manual_constraints:
+      "B->K::vanishing-Re{Delta_H_0(q2)}/Re{H_0(q2,F)}":
+        type: MultivariateGaussian(Covariance)
+        observables:
+          - B->K::Re{Delta_H_0(q2)}/Re{H_0(q2,F)}
+          - B->K::Re{Delta_H_0(q2)}/Re{H_0(q2,F)}
+          - B->K::Re{Delta_H_0(q2)}/Re{H_0(q2,F)}
+          - B->K::Re{Delta_H_0(q2)}/Re{H_0(q2,F)}
+        kinematics: [{q2: -7.0}, {q2: -5.0}, {q2: -3.0}, {q2: -1.0}]
+        options: [{}, {}, {}, {}]
+        means: [0., 0., 0., 0.]
+        covariance: [[0.1, 0., 0., 0.],
+                     [0., 0.1, 0., 0.],
+                     [0., 0., 0.1, 0.],
+                     [0., 0., 0., 0.1]]
+  - name: vanishing-Im{Delta-H0}/Im{H0(F)}
+    manual_constraints:
+      "B->K::vanishing-Im{Delta_H_0(q2)}/Im{H_0(q2,F)}":
+        type: MultivariateGaussian(Covariance)
+        observables:
+          - B->K::Im{Delta_H_0(q2)}/Im{H_0(q2,F)}
+          - B->K::Im{Delta_H_0(q2)}/Im{H_0(q2,F)} 
+          - B->K::Im{Delta_H_0(q2)}/Im{H_0(q2,F)} 
+          - B->K::Im{Delta_H_0(q2)}/Im{H_0(q2,F)}  
+        kinematics: [{q2: -7.0}, {q2: -5.0}, {q2: -3.0}, {q2: -1.0}]
+        options: [{}, {}, {}, {}]
+        means: [0., 0., 0., 0.]
+        covariance: [[0.1, 0., 0., 0.],
+                     [0., 0.1, 0., 0.],
+                     [0., 0., 0.1, 0.],
+                     [0., 0., 0., 0.1]]
+  - name: charmonium-resonances
+    constraints:
+      - 'B^0->K^0Jpsi::BR@PDG:2020A'
+      - 'B->KJpsi::BR@PDG:2020A'
+
+
+
+
+posteriors:
+  - name: BSZ-BqToK-wSR
+    fixed_parameters:
+      'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
+      'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
+      'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::b(MSbar)':  4.18
+      'mass::c':  1.44423
+      'sb::mu':  4.18
+      'b->s::c1': -0.287213
+      'b->s::c2':  1.009
+      # t_0 is t_opt
+    global_options:
+      form-factors: BSZ2015
+    prior:
+      - bsz-BqToK-wSR
+    likelihood:
+      - TH-BToK-LQCD
+      - TH-BToK-LCSR
+  - name: BSZ-BqToK-wSR-wNFF
+    fixed_parameters:
+      'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
+      'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
+      'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::b(MSbar)':  4.18
+      'mass::c':  1.44423
+      'sb::mu':  4.18
+      'b->s::c1': -0.287213
+      'b->s::c2':  1.009
+      # t_0 is t_opt
+    global_options:
+      form-factors: BSZ2015
+      nonlocal-formfactor: GRvDV2022order5
+      model: SM
+    prior:
+      - bsz-BqToK-wSR
+      - GRvDV2022-BToKccbar
+    likelihood:
+      - TH-BToK-LQCD
+      - TH-BToK-LCSR
+      - vanishing-Re{Delta-H0}/Re{H0(F)}
+      - vanishing-Im{Delta-H0}/Im{H0(F)}
+      - charmonium-resonances
+
+
+
+
+predictions:
+  - name: BToK-F0
+    observables:
+      - name: B->K::F_plus(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  - name: BToK-FT0
+    observables:
+      - name: B->K::F_plus_T(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  - name: BToK-Re(H0(F))
+    observables:
+      - name: B->K::Re{H_0(q2,F)}
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  - name: BToK-Im(H0(F))
+    observables:
+      - name: B->K::Im{H_0(q2,F)}
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  - name: BToK-Re(Delta-H0)/Re(H0(F))
+    observables:
+      - name: B->K::Re{Delta_H_0(q2)}/Re{H_0(q2,F)}
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  - name: BToK-Im(Delta-H0)/Im(H0(F))
+    observables:
+      - name: B->K::Im{Delta_H_0(q2)}/Im{H_0(q2,F)}
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
