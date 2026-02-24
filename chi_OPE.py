@@ -10,10 +10,8 @@ import yaml
 #from tabulate import tabulate
 from wquantiles import quantile
 from collections import OrderedDict
-print(eos.__version__)
-
 from scipy import integrate
-#import mpmath as mp
+import mpmath as mp
 import sympy as sp
 
 pp = eos.Parameters.Defaults()
@@ -197,21 +195,21 @@ def Im_Pi_T_plus(s): # [9309298]
 def Disc11_NLO(s):
     return 1j * s * alpha_s / (4 * pow(np.pi, 3)) * Im_Pi_T_plus(s)
 
-def to_integrate(s,Q2):
-    return 1/(2j * np.pi) * (C31_LO_ms(s)*(Disc11_LO(s) + Disc11_NLO(s)) + 2 * mix_C31_C31(s)*Disc11_LO(s) + 2 * mix_C31_C32(s)*Disc12_LO(s)) / ((s - Q2)**3)
+def to_integrate(s, Q2, n_subtractions_plus_1 = 3): # modify n_subtractions_plus_1 to change the number of subtractions in the dispersion relation. Must be >= 3 for convergence of the integral, but can be higher if desired (e.g. to suppress more the high-s region). 
+    return (1/(2j * np.pi) * (C31_LO_ms(s)*(Disc11_LO(s) + Disc11_NLO(s)) + 2 * mix_C31_C31(s)*Disc11_LO(s) + 2 * mix_C31_C32(s)*Disc12_LO(s)) / ((s - Q2)**(n_subtractions_plus_1))).real
 
 flag_check_real = 0
-if (flag_check_real):
+if (flag_check_real): # Note that the integrand is real for s > (mb + ms)^2, so we take the real part of the expression.
     s_vals = np.linspace((mb + ms)**2, 10000, 1000)
     for s in s_vals:
         print("s = {}, to_integrate = {}".format(s, to_integrate(s, -mb**2)))
 
 def chi_OPE(Q2, s0, epsr = 1e-10, subd_lim = 200):
-    val, err = integrate.quad(to_integrate.real, s0, np.inf, args = (Q2,), epsrel = epsr, limit = subd_lim)
+    val, err = integrate.quad(to_integrate, s0, np.inf, args = (Q2,), epsrel = epsr, limit = subd_lim)
     return val, err
 
 Q2_vals = [- mb**2, 0]
-flag_compute = 1
+flag_compute = 0
 if (flag_compute):
     for Q2 in Q2_vals:
         val, err = chi_OPE(Q2, (mb + ms)**2)

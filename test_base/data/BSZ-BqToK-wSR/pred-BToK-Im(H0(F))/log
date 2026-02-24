@@ -1,0 +1,28 @@
+2026-02-17 10:20:42,822 INFO       Creating analysis with 8 priors, 4 EOS-wide constraints, 1 global options, 0 manually-entered constraints and 9 fixed parameters.
+2026-02-17 10:20:42,823 DEBUG      priors:
+2026-02-17 10:20:42,823 DEBUG       - B->K::alpha^f+_0@BSZ2015 (uniform)
+2026-02-17 10:20:42,823 DEBUG       - B->K::alpha^f+_1@BSZ2015 (uniform)
+2026-02-17 10:20:42,823 DEBUG       - B->K::alpha^f+_2@BSZ2015 (uniform)
+2026-02-17 10:20:42,823 DEBUG       - B->K::alpha^f0_1@BSZ2015 (uniform)
+2026-02-17 10:20:42,823 DEBUG       - B->K::alpha^f0_2@BSZ2015 (uniform)
+2026-02-17 10:20:42,823 DEBUG       - B->K::alpha^fT_0@BSZ2015 (uniform)
+2026-02-17 10:20:42,823 DEBUG       - B->K::alpha^fT_1@BSZ2015 (uniform)
+2026-02-17 10:20:42,823 DEBUG       - B->K::alpha^fT_2@BSZ2015 (uniform)
+2026-02-17 10:20:42,823 DEBUG      constraints:
+2026-02-17 10:20:42,824 DEBUG       - B->K::f_0+f_++f_T@HPQCD:2013A
+2026-02-17 10:20:42,824 DEBUG       - B->K::f_0+f_++f_T@FNAL+MILC:2015D
+2026-02-17 10:20:42,824 DEBUG       - B->K::f_0+f_++f_T@HPQCD:2022A
+2026-02-17 10:20:42,824 DEBUG       - B->K::FormFactors[f_+,f_0,f_T]@GKvD:2018A
+2026-02-17 10:20:42,824 DEBUG      manual_constraints:
+2026-02-17 10:20:42,824 DEBUG      fixed_parameters:
+2026-02-17 10:20:42,824 DEBUG       - mass::B_d
+2026-02-17 10:20:42,824 DEBUG       - mass::B_s
+2026-02-17 10:20:42,824 DEBUG       - mass::K_d
+2026-02-17 10:20:42,824 DEBUG       - mass::K_u
+2026-02-17 10:20:42,825 DEBUG       - mass::b(MSbar)
+2026-02-17 10:20:42,825 DEBUG       - mass::c
+2026-02-17 10:20:42,825 DEBUG       - sb::mu
+2026-02-17 10:20:42,825 DEBUG       - b->s::c1
+2026-02-17 10:20:42,825 DEBUG       - b->s::c2
+2026-02-17 10:20:42,861 INPROGRESS Predicting observables from set 'BToK-Im(H0(F))' for 14005 samples
+2026-02-17 10:48:14,116 COMPLETED  ... done
