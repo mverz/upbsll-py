@@ -29,7 +29,6 @@ observables:
     unit: '1'
     options: {}
     expression: '-1/(16 * 3.141592653589793^2) * ( {q2}/(2*[[mass::B_d]]^2) * <<b->s::Re{Delta_C9_Qc}(q2)>> * <<B->K::F_plus(q2)>> + [[mass::b(MSbar)]]/[[mass::B_d]] * <<b->s::Re{Delta_C7_Qc}(q2)>> * <<B->K::F_plus_T(q2)>> )'
-
   "B->K::Im{H_0(q2,F)}":
     latex: R'\mathrm{Im}\left(\mathcal{H}_0(q^2)\right)^{B\to K}'
     unit: '1'
@@ -47,6 +46,33 @@ observables:
     unit: '1'
     options: {}
     expression: '(<<B->K::Im{H_plus}(q2)>> - <<B->K::Im{H_0(q2,F)}>>) / <<B->K::Im{H_0(q2,F)}>>'
+
+
+  "B->K::Re{Delta_H_0(q2)}/F_0(q2)":
+    latex: R'\mathrm{Re}\left(\Delta\mathcal{H}_0(q^2)\right)^{B\to K} / \mathrm{Re}\left(\mathcal{H}_0(q^2)\right)^{B\to K}'
+    unit: '1'
+    options: {}
+    expression: '(<<B->K::Re{H_plus}(q2)>> - <<B->K::Re{H_0(q2,F)}>>) / <<B->K::F_plus(q2)>>'
+
+  "B->K::Im{Delta_H_0(q2)}/F_0(q2)":
+    latex: R'\mathrm{Im}\left(\Delta\mathcal{H}_0(q^2)\right)^{B\to K} / \mathrm{Im}\left(\mathcal{H}_0(q^2)\right)^{B\to K}'
+    unit: '1'
+    options: {}
+    expression: '(<<B->K::Im{H_plus}(q2)>> - <<B->K::Im{H_0(q2,F)}>>) / <<B->K::F_plus(q2)>>'
+
+
+
+  "B->K::Re{Delta_H_0(q2)}":
+    latex: R'\mathrm{Re}\left(\Delta\mathcal{H}_0(q^2)\right)^{B\to K}'
+    unit: '1'
+    options: {}
+    expression: '(<<B->K::Re{H_plus}(q2)>> - <<B->K::Re{H_0(q2,F)}>>)'
+
+  "B->K::Im{Delta_H_0(q2)}":
+    latex: R'\mathrm{Im}\left(\Delta\mathcal{H}_0(q^2)\right)^{B\to K}'
+    unit: '1'
+    options: {}
+    expression: '(<<B->K::Im{H_plus}(q2)>> - <<B->K::Im{H_0(q2,F)}>>)'
 
 
 
@@ -105,6 +131,23 @@ likelihoods:
                      [0., 0.01, 0., 0.],
                      [0., 0., 0.01, 0.],
                      [0., 0., 0., 0.01]]
+  - name: vanishing-{Delta-H0}/F0
+    manual_constraints:
+      "B->K::vanishing-{Delta_H_0(q2)}/F_0(q2)":
+        type: MultivariateGaussian(Covariance)
+        observables:
+          - B->K::Re{Delta_H_0(q2)}/F_0(q2)
+          - B->K::Re{Delta_H_0(q2)}/F_0(q2)
+          - B->K::Re{Delta_H_0(q2)}/F_0(q2) 
+          - B->K::Re{Delta_H_0(q2)}/F_0(q2) 
+          - B->K::Im{Delta_H_0(q2)}/F_0(q2)
+          - B->K::Im{Delta_H_0(q2)}/F_0(q2)
+          - B->K::Im{Delta_H_0(q2)}/F_0(q2) 
+          - B->K::Im{Delta_H_0(q2)}/F_0(q2)    
+        kinematics: [{q2: -7.0}, {q2: -5.0}, {q2: -3.0}, {q2: -1.0}, {q2: -7.0}, {q2: -5.0}, {q2: -3.0}, {q2: -1.0}]
+        options: [{}, {}, {}, {}, {}, {}, {}, {}]
+        means: [0., 0., 0., 0., 0., 0., 0., 0.]
+        covariance:  [[3.858639863609721e-12, 2.569888050761915e-12, 1.4267789406026215e-12, 4.3596004276118844e-13, 1.4877130936027766e-13, 1.120813301551927e-13, 7.137454364244332e-14, 2.5428228274208908e-14], [2.569888050761915e-12, 1.719432716986448e-12, 9.59699393778093e-13, 2.950781203391793e-13, 9.908300169060612e-14, 7.499015171767069e-14, 4.8008913164859076e-14, 1.7211012631309713e-14], [1.4267789406026215e-12, 9.596993937780927e-13, 5.389336635978414e-13, 1.6688510509682544e-13, 5.500999942076768e-14, 4.185566938290957e-14, 2.696012399730605e-14, 9.73390249503207e-15], [4.3596004276118844e-13, 2.950781203391793e-13, 1.6688510509682542e-13, 5.209993819300462e-14, 1.6808603643702218e-14, 1.2869334217692433e-14, 8.348418860160752e-15, 3.038825691983833e-15], [1.4877130936027766e-13, 9.908300169060611e-14, 5.500999942076768e-14, 1.6808603643702218e-14, 5.736033863923675e-15, 4.3213378971740996e-15, 2.7518724118327872e-15, 9.803949181115424e-16], [1.1208133015519271e-13, 7.49901517176707e-14, 4.185566938290957e-14, 1.2869334217692433e-14, 4.3213378971740996e-15, 3.270668906907965e-15, 2.093827723440025e-15, 7.50629269031038e-16], [7.137454364244332e-14, 4.8008913164859076e-14, 2.6960123997306052e-14, 8.34841886016075e-15, 2.7518724118327872e-15, 2.093827723440025e-15, 1.3487788261948e-15, 4.869379752335814e-16], [2.5428228274208908e-14, 1.7211012631309713e-14, 9.73390249503207e-15, 3.038825691983833e-15, 9.803949181115422e-16, 7.50629269031038e-16, 4.869379752335814e-16, 1.7734549454552654e-16]]
   - name: charmonium-resonances
     constraints:
       - 'B^0->K^0Jpsi::BR@PDG:2020A'
@@ -158,6 +201,31 @@ posteriors:
       - TH-BToK-LCSR
       - vanishing-Re{Delta-H0}/Re{H0(F)}
       - vanishing-Im{Delta-H0}/Im{H0(F)}
+      - charmonium-resonances
+
+  - name: BSZ-BqToK-wSR-wNFF-wCov
+    fixed_parameters:
+      'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
+      'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
+      'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::b(MSbar)':  4.18
+      'mass::c':  1.44423
+      'sb::mu':  4.18
+      'b->s::c1': -0.287213
+      'b->s::c2':  1.009
+      # t_0 is t_opt
+    global_options:
+      form-factors: BSZ2015
+      nonlocal-formfactor: GRvDV2022order5
+      model: WET
+    prior:
+      - bsz-BqToK-wSR
+      - GRvDV2022-BToKccbar
+    likelihood:
+      - TH-BToK-LQCD
+      - TH-BToK-LCSR
+      - vanishing-{Delta-H0}/F0
       - charmonium-resonances
 
 
@@ -249,6 +317,24 @@ predictions:
                       { q2: -5.0 }, { q2: -4.0 },
                       { q2: -3.0 }, { q2: -2.0 },
                       { q2: -1.0 } ]
+
+
+
+  - name: BToK-Re(Delta-H0)
+    observables:
+      - name: B->K::Re{Delta_H_0(q2)}
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+  - name: BToK-Im(Delta-H0)
+    observables:
+      - name: B->K::Im{Delta_H_0(q2)}
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
 
 
   - name: BToK-Re(H0)
