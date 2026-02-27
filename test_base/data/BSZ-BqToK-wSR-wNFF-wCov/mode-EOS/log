@@ -1,0 +1,625 @@
+2026-02-27 14:42:02,863 INFO       Creating analysis with 17 priors, 6 EOS-wide constraints, 3 global options, 1 manually-entered constraints and 9 fixed parameters.
+2026-02-27 14:42:02,863 DEBUG      priors:
+2026-02-27 14:42:02,863 DEBUG       - B->K::alpha^f+_0@BSZ2015 (uniform)
+2026-02-27 14:42:02,864 DEBUG       - B->K::alpha^f+_1@BSZ2015 (uniform)
+2026-02-27 14:42:02,864 DEBUG       - B->K::alpha^f+_2@BSZ2015 (uniform)
+2026-02-27 14:42:02,864 DEBUG       - B->K::alpha^f0_1@BSZ2015 (uniform)
+2026-02-27 14:42:02,864 DEBUG       - B->K::alpha^f0_2@BSZ2015 (uniform)
+2026-02-27 14:42:02,864 DEBUG       - B->K::alpha^fT_0@BSZ2015 (uniform)
+2026-02-27 14:42:02,864 DEBUG       - B->K::alpha^fT_1@BSZ2015 (uniform)
+2026-02-27 14:42:02,864 DEBUG       - B->K::alpha^fT_2@BSZ2015 (uniform)
+2026-02-27 14:42:02,864 DEBUG       - B->Kccbar::Re_Hhat_at_m7_plus@GRvDV2022 (uniform)
+2026-02-27 14:42:02,865 DEBUG       - B->Kccbar::Im_Hhat_at_m7_plus@GRvDV2022 (uniform)
+2026-02-27 14:42:02,865 DEBUG       - B->Kccbar::Re_Hhat_at_m5_plus@GRvDV2022 (uniform)
+2026-02-27 14:42:02,865 DEBUG       - B->Kccbar::Im_Hhat_at_m5_plus@GRvDV2022 (uniform)
+2026-02-27 14:42:02,865 DEBUG       - B->Kccbar::Re_Hhat_at_m3_plus@GRvDV2022 (uniform)
+2026-02-27 14:42:02,865 DEBUG       - B->Kccbar::Im_Hhat_at_m3_plus@GRvDV2022 (uniform)
+2026-02-27 14:42:02,865 DEBUG       - B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022 (uniform)
+2026-02-27 14:42:02,865 DEBUG       - B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022 (uniform)
+2026-02-27 14:42:02,865 DEBUG       - B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022 (uniform)
+2026-02-27 14:42:02,865 DEBUG      constraints:
+2026-02-27 14:42:02,865 DEBUG       - B->K::f_0+f_++f_T@HPQCD:2013A
+2026-02-27 14:42:02,865 DEBUG       - B->K::f_0+f_++f_T@FNAL+MILC:2015D
+2026-02-27 14:42:02,865 DEBUG       - B->K::f_0+f_++f_T@HPQCD:2022A
+2026-02-27 14:42:02,866 DEBUG       - B->K::FormFactors[f_+,f_0,f_T]@GKvD:2018A
+2026-02-27 14:42:02,866 DEBUG       - B^0->K^0Jpsi::BR@PDG:2020A
+2026-02-27 14:42:02,866 DEBUG       - B->KJpsi::BR@PDG:2020A
+2026-02-27 14:42:02,866 DEBUG      manual_constraints:
+2026-02-27 14:42:02,866 DEBUG       - B->K::vanishing-{Delta_H_0(q2)}/F_0(q2)
+2026-02-27 14:42:02,866 DEBUG      fixed_parameters:
+2026-02-27 14:42:02,866 DEBUG       - mass::B_d
+2026-02-27 14:42:02,866 DEBUG       - mass::B_s
+2026-02-27 14:42:02,867 DEBUG       - mass::K_d
+2026-02-27 14:42:02,867 DEBUG       - mass::K_u
+2026-02-27 14:42:02,867 DEBUG       - mass::b(MSbar)
+2026-02-27 14:42:02,867 DEBUG       - mass::c
+2026-02-27 14:42:02,867 DEBUG       - sb::mu
+2026-02-27 14:42:02,867 DEBUG       - b->s::c1
+2026-02-27 14:42:02,867 DEBUG       - b->s::c2
+2026-02-27 14:42:02,934 INFO       likelihood probably depends on 351 parameter(s) that do not appear in the prior; check prior?
+2026-02-27 14:42:02,935 DEBUG      used, but not included in any prior: 'cbtaunutau::Re{cT}'
+2026-02-27 14:42:02,935 DEBUG      used, but not included in any prior: 'mass::t(pole)'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'sbcu::Im{c2'}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'usenue::Im{cSL}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'dbcu::Im{c2}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'sbnunu::Re{cSL}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'dbcu::Re{c2'}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'dbcu::Re{c5}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'QCD::mu_t'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'dbcu::Im{c5}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'sbnunu::Im{cSR}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'sbcu::Im{c7}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'CKM::arg(V_cs)'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'scnuee::Im{cSL}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'cbenue::Im{cSR}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'WET::G_Fermi'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'cbenue::Im{cSL}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'b->see::Re{c9}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'dbcu::Im{c5'}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'b->s::Im{c7'}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'b->see::Im{cS'}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'scnuee::Re{cSR}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'dbcu::Im{c1}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'b->s::c6'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'sbcu::Re{c8'}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'scnumumu::Re{cSL}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'b->smumu::Re{c10}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'cbtaunutau::Im{cT}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'mass::psi(2S)'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'sbcu::Re{c6'}'
+2026-02-27 14:42:02,936 DEBUG      used, but not included in any prior: 'ubtaunutau::Re{cSR}'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'scnutautau::Re{cSR}'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'cbenue::Re{cSR}'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'cbtaunutau::Re{cVL}'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'sbcu::Re{c3}'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'dcnuee::Im{cVR}'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'ubtaunutau::Re{cT}'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'scnutautau::Im{cSR}'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'CKM::arg(V_cb)'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'CKM::abs(V_td)'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'ustaunutau::Re{cSR}'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'sbcu::Re{c7}'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'scnutautau::Im{cVR}'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'ustaunutau::Re{cVL}'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'b->see::Re{cT}'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'sbsb::Re{c1'}'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'b->smumu::Im{c9'}'
+2026-02-27 14:42:02,937 DEBUG      used, but not included in any prior: 'sbsb::Im{c1}'
+2026-02-27 14:42:02,938 DEBUG      used, but not included in any prior: 'usenue::Re{cVL}'
+2026-02-27 14:42:02,938 DEBUG      used, but not included in any prior: 'ubtaunutau::Im{cSR}'
+2026-02-27 14:42:02,938 DEBUG      used, but not included in any prior: 'scnutautau::Im{cT}'
+2026-02-27 14:42:02,938 DEBUG      used, but not included in any prior: 'life_time::B_d'
+2026-02-27 14:42:02,938 DEBUG      used, but not included in any prior: 'usmunumu::Im{cVL}'
+2026-02-27 14:42:02,938 DEBUG      used, but not included in any prior: 'cbtaunutau::Im{cVL}'
+2026-02-27 14:42:02,938 DEBUG      used, but not included in any prior: 'scnumumu::Im{cVR}'
+2026-02-27 14:42:02,938 DEBUG      used, but not included in any prior: 'dcnumumu::Re{cVR}'
+2026-02-27 14:42:02,938 DEBUG      used, but not included in any prior: 'sbnunu::Re{cVL}'
+2026-02-27 14:42:02,938 DEBUG      used, but not included in any prior: 'b->smumu::Re{cP}'
+2026-02-27 14:42:02,938 DEBUG      used, but not included in any prior: 'ubmunumu::Im{cVL}'
+2026-02-27 14:42:02,938 DEBUG      used, but not included in any prior: 'cbmunumu::Im{cVR}'
+2026-02-27 14:42:02,938 DEBUG      used, but not included in any prior: 'ubmunumu::Re{cVR}'
+2026-02-27 14:42:02,939 DEBUG      used, but not included in any prior: 'B->Kccbar::Abs_Hhat_at_psi2S_plus@GRvDV2022'
+2026-02-27 14:42:02,939 DEBUG      used, but not included in any prior: 'b->smumu::Im{c10}'
+2026-02-27 14:42:02,939 DEBUG      used, but not included in any prior: 'dbcu::Im{c7'}'
+2026-02-27 14:42:02,939 DEBUG      used, but not included in any prior: 'sbsb::Im{c1'}'
+2026-02-27 14:42:02,939 DEBUG      used, but not included in any prior: 'cbtaunutau::Re{cVR}'
+2026-02-27 14:42:02,939 DEBUG      used, but not included in any prior: 'dbcu::Re{c5'}'
+2026-02-27 14:42:02,939 DEBUG      used, but not included in any prior: 'ubenue::Im{cSL}'
+2026-02-27 14:42:02,939 DEBUG      used, but not included in any prior: 'b->smumu::Re{cS}'
+2026-02-27 14:42:02,939 DEBUG      used, but not included in any prior: 'b->smumu::Re{cT}'
+2026-02-27 14:42:02,939 DEBUG      used, but not included in any prior: 'b->see::Re{cP}'
+2026-02-27 14:42:02,939 DEBUG      used, but not included in any prior: 'b->see::Im{cT}'
+2026-02-27 14:42:02,939 DEBUG      used, but not included in any prior: 'b->s::Re{c7}'
+2026-02-27 14:42:02,939 DEBUG      used, but not included in any prior: 'usmunumu::Im{cSL}'
+2026-02-27 14:42:02,939 DEBUG      used, but not included in any prior: 'ubenue::Re{cVR}'
+2026-02-27 14:42:02,940 DEBUG      used, but not included in any prior: 'dbcu::Re{c10'}'
+2026-02-27 14:42:02,940 DEBUG      used, but not included in any prior: 'cbmunumu::Im{cSL}'
+2026-02-27 14:42:02,940 DEBUG      used, but not included in any prior: 'sbcu::Im{c8'}'
+2026-02-27 14:42:02,940 DEBUG      used, but not included in any prior: 'b->see::Re{cS'}'
+2026-02-27 14:42:02,940 DEBUG      used, but not included in any prior: 'b->smumu::Re{cT5}'
+2026-02-27 14:42:02,940 DEBUG      used, but not included in any prior: 'mass::d(2GeV)'
+2026-02-27 14:42:02,940 DEBUG      used, but not included in any prior: 'usenue::Im{cSR}'
+2026-02-27 14:42:02,940 DEBUG      used, but not included in any prior: 'cbmunumu::Im{cT}'
+2026-02-27 14:42:02,940 DEBUG      used, but not included in any prior: 'b->see::Im{cP}'
+2026-02-27 14:42:02,940 DEBUG      used, but not included in any prior: 'b->see::Re{cT5}'
+2026-02-27 14:42:02,940 DEBUG      used, but not included in any prior: 'scnumumu::Im{cVL}'
+2026-02-27 14:42:02,940 DEBUG      used, but not included in any prior: 'cbmunumu::Im{cVL}'
+2026-02-27 14:42:02,940 DEBUG      used, but not included in any prior: 'usmunumu::Im{cVR}'
+2026-02-27 14:42:02,940 DEBUG      used, but not included in any prior: 'dcnuee::Re{cSL}'
+2026-02-27 14:42:02,941 DEBUG      used, but not included in any prior: 'dcnuee::Im{cVL}'
+2026-02-27 14:42:02,941 DEBUG      used, but not included in any prior: 'dcnuee::Im{cSL}'
+2026-02-27 14:42:02,941 DEBUG      used, but not included in any prior: 'dbcu::Re{c8}'
+2026-02-27 14:42:02,941 DEBUG      used, but not included in any prior: 'sbcu::Re{c1}'
+2026-02-27 14:42:02,941 DEBUG      used, but not included in any prior: 'sbcu::Re{c10}'
+2026-02-27 14:42:02,941 DEBUG      used, but not included in any prior: 'usenue::Im{cVR}'
+2026-02-27 14:42:02,941 DEBUG      used, but not included in any prior: 'dbcu::Im{c8}'
+2026-02-27 14:42:02,941 DEBUG      used, but not included in any prior: 'cbenue::Re{cVR}'
+2026-02-27 14:42:02,942 DEBUG      used, but not included in any prior: 'scnutautau::Re{cVR}'
+2026-02-27 14:42:02,942 DEBUG      used, but not included in any prior: 'ustaunutau::Im{cVL}'
+2026-02-27 14:42:02,942 DEBUG      used, but not included in any prior: 'dcnumumu::Im{cVR}'
+2026-02-27 14:42:02,942 DEBUG      used, but not included in any prior: 'b->see::Im{cS}'
+2026-02-27 14:42:02,942 DEBUG      used, but not included in any prior: 'b->sccbar::t_0'
+2026-02-27 14:42:02,942 DEBUG      used, but not included in any prior: 'CKM::arg(V_ts)'
+2026-02-27 14:42:02,942 DEBUG      used, but not included in any prior: 'dcnumumu::Re{cSR}'
+2026-02-27 14:42:02,942 DEBUG      used, but not included in any prior: 'b->s::c4'
+2026-02-27 14:42:02,942 DEBUG      used, but not included in any prior: 'ubenue::Re{cSR}'
+2026-02-27 14:42:02,942 DEBUG      used, but not included in any prior: 'b->see::Im{c9'}'
+2026-02-27 14:42:02,942 DEBUG      used, but not included in any prior: 'scnutautau::Im{cVL}'
+2026-02-27 14:42:02,942 DEBUG      used, but not included in any prior: 'sbnunu::Re{cVR}'
+2026-02-27 14:42:02,942 DEBUG      used, but not included in any prior: 'dbcu::Im{c9}'
+2026-02-27 14:42:02,942 DEBUG      used, but not included in any prior: 'scnumumu::Re{cSR}'
+2026-02-27 14:42:02,943 DEBUG      used, but not included in any prior: 'dcnutautau::Im{cVL}'
+2026-02-27 14:42:02,943 DEBUG      used, but not included in any prior: 'ubmunumu::Im{cVR}'
+2026-02-27 14:42:02,943 DEBUG      used, but not included in any prior: 'dbcu::Re{c4}'
+2026-02-27 14:42:02,943 DEBUG      used, but not included in any prior: 'ustaunutau::Im{cSR}'
+2026-02-27 14:42:02,943 DEBUG      used, but not included in any prior: 'sbnunu::Re{cSR}'
+2026-02-27 14:42:02,943 DEBUG      used, but not included in any prior: 'sbcu::Im{c5'}'
+2026-02-27 14:42:02,943 DEBUG      used, but not included in any prior: 'CKM::arg(V_cd)'
+2026-02-27 14:42:02,943 DEBUG      used, but not included in any prior: 'dbcu::Im{c3'}'
+2026-02-27 14:42:02,943 DEBUG      used, but not included in any prior: 'scnutautau::Im{cSL}'
+2026-02-27 14:42:02,943 DEBUG      used, but not included in any prior: 'usmunumu::Im{cSR}'
+2026-02-27 14:42:02,943 DEBUG      used, but not included in any prior: 'sbcu::Re{c4'}'
+2026-02-27 14:42:02,943 DEBUG      used, but not included in any prior: 'sbcu::Re{c9}'
+2026-02-27 14:42:02,943 DEBUG      used, but not included in any prior: 'sbcu::Im{c1'}'
+2026-02-27 14:42:02,943 DEBUG      used, but not included in any prior: 'B->Kccbar::Arg_Hhat_at_psi2S_plus@GRvDV2022'
+2026-02-27 14:42:02,944 DEBUG      used, but not included in any prior: 'usenue::Re{cSL}'
+2026-02-27 14:42:02,944 DEBUG      used, but not included in any prior: 'ubenue::Im{cVL}'
+2026-02-27 14:42:02,944 DEBUG      used, but not included in any prior: 'sbsb::Re{c3}'
+2026-02-27 14:42:02,944 DEBUG      used, but not included in any prior: 'CKM::abs(V_cs)'
+2026-02-27 14:42:02,944 DEBUG      used, but not included in any prior: 'b->smumu::Re{c9'}'
+2026-02-27 14:42:02,944 DEBUG      used, but not included in any prior: 'dbcu::Re{c1'}'
+2026-02-27 14:42:02,944 DEBUG      used, but not included in any prior: 'ustaunutau::Re{cSL}'
+2026-02-27 14:42:02,944 DEBUG      used, but not included in any prior: 'dbcu::Re{c7}'
+2026-02-27 14:42:02,944 DEBUG      used, but not included in any prior: 'b->smumu::Im{cT5}'
+2026-02-27 14:42:02,944 DEBUG      used, but not included in any prior: 'cbenue::Re{cT}'
+2026-02-27 14:42:02,944 DEBUG      used, but not included in any prior: 'sbsb::Re{c5}'
+2026-02-27 14:42:02,944 DEBUG      used, but not included in any prior: 'dcnuee::Re{cVR}'
+2026-02-27 14:42:02,944 DEBUG      used, but not included in any prior: 'dcnuee::Re{cSR}'
+2026-02-27 14:42:02,944 DEBUG      used, but not included in any prior: 'QCD::mu_c'
+2026-02-27 14:42:02,945 DEBUG      used, but not included in any prior: 'dbcu::Re{c6'}'
+2026-02-27 14:42:02,945 DEBUG      used, but not included in any prior: 'usenue::Im{cT}'
+2026-02-27 14:42:02,945 DEBUG      used, but not included in any prior: 'sbnunu::Im{cVL}'
+2026-02-27 14:42:02,945 DEBUG      used, but not included in any prior: 'b->smumu::Im{cS}'
+2026-02-27 14:42:02,945 DEBUG      used, but not included in any prior: 'scnuee::Re{cVR}'
+2026-02-27 14:42:02,945 DEBUG      used, but not included in any prior: 'dcnutautau::Im{cSL}'
+2026-02-27 14:42:02,945 DEBUG      used, but not included in any prior: 'ubenue::Im{cT}'
+2026-02-27 14:42:02,945 DEBUG      used, but not included in any prior: 'b->sccbar::chiOPE@GvDV2020'
+2026-02-27 14:42:02,945 DEBUG      used, but not included in any prior: 'dbcu::Im{c10}'
+2026-02-27 14:42:02,945 DEBUG      used, but not included in any prior: 'b->see::Re{cP'}'
+2026-02-27 14:42:02,945 DEBUG      used, but not included in any prior: 'b->sccbar::bound_uncertainty@GvDV2020'
+2026-02-27 14:42:02,945 DEBUG      used, but not included in any prior: 'cbenue::Im{cVL}'
+2026-02-27 14:42:02,946 DEBUG      used, but not included in any prior: 'CKM::arg(V_td)'
+2026-02-27 14:42:02,946 DEBUG      used, but not included in any prior: 'dcnuee::Im{cSR}'
+2026-02-27 14:42:02,946 DEBUG      used, but not included in any prior: 'sbsb::Im{c5}'
+2026-02-27 14:42:02,946 DEBUG      used, but not included in any prior: 'sbcu::Im{c10}'
+2026-02-27 14:42:02,946 DEBUG      used, but not included in any prior: 'ustaunutau::Im{cT}'
+2026-02-27 14:42:02,946 DEBUG      used, but not included in any prior: 'dbcu::Im{c2'}'
+2026-02-27 14:42:02,946 DEBUG      used, but not included in any prior: 'scnutautau::Re{cSL}'
+2026-02-27 14:42:02,946 DEBUG      used, but not included in any prior: 'b->smumu::Im{cP}'
+2026-02-27 14:42:02,946 DEBUG      used, but not included in any prior: 'sbsb::Re{c2'}'
+2026-02-27 14:42:02,946 DEBUG      used, but not included in any prior: 'sbcu::Re{c2}'
+2026-02-27 14:42:02,946 DEBUG      used, but not included in any prior: 'dbcu::Re{c4'}'
+2026-02-27 14:42:02,946 DEBUG      used, but not included in any prior: 'dcnumumu::Im{cVL}'
+2026-02-27 14:42:02,946 DEBUG      used, but not included in any prior: 'dcnutautau::Re{cVR}'
+2026-02-27 14:42:02,946 DEBUG      used, but not included in any prior: 'dbcu::Im{c6'}'
+2026-02-27 14:42:02,947 DEBUG      used, but not included in any prior: 'ustaunutau::Im{cSL}'
+2026-02-27 14:42:02,947 DEBUG      used, but not included in any prior: 'usmunumu::Re{cSL}'
+2026-02-27 14:42:02,947 DEBUG      used, but not included in any prior: 'mass::u(2GeV)'
+2026-02-27 14:42:02,947 DEBUG      used, but not included in any prior: 'ubmunumu::Im{cSL}'
+2026-02-27 14:42:02,947 DEBUG      used, but not included in any prior: 'sbcu::Re{c1'}'
+2026-02-27 14:42:02,947 DEBUG      used, but not included in any prior: 'cbtaunutau::Im{cSL}'
+2026-02-27 14:42:02,947 DEBUG      used, but not included in any prior: 'CKM::abs(V_cb)'
+2026-02-27 14:42:02,947 DEBUG      used, but not included in any prior: 'b->see::Im{cP'}'
+2026-02-27 14:42:02,947 DEBUG      used, but not included in any prior: 'cbmunumu::Re{cVR}'
+2026-02-27 14:42:02,947 DEBUG      used, but not included in any prior: 'ubenue::Im{cSR}'
+2026-02-27 14:42:02,947 DEBUG      used, but not included in any prior: 'sbcu::Im{c10'}'
+2026-02-27 14:42:02,947 DEBUG      used, but not included in any prior: 'usenue::Re{cVR}'
+2026-02-27 14:42:02,947 DEBUG      used, but not included in any prior: 'CKM::abs(V_ud)'
+2026-02-27 14:42:02,947 DEBUG      used, but not included in any prior: 'dbcu::Re{c2}'
+2026-02-27 14:42:02,948 DEBUG      used, but not included in any prior: 'mass::B_u'
+2026-02-27 14:42:02,948 DEBUG      used, but not included in any prior: 'b->see::Im{c9}'
+2026-02-27 14:42:02,948 DEBUG      used, but not included in any prior: 'b->smumu::Im{cS'}'
+2026-02-27 14:42:02,948 DEBUG      used, but not included in any prior: 'ubtaunutau::Re{cVR}'
+2026-02-27 14:42:02,948 DEBUG      used, but not included in any prior: 'sbcu::Im{c1}'
+2026-02-27 14:42:02,948 DEBUG      used, but not included in any prior: 'b->smumu::Im{cT}'
+2026-02-27 14:42:02,948 DEBUG      used, but not included in any prior: 'dcnuee::Im{cT}'
+2026-02-27 14:42:02,948 DEBUG      used, but not included in any prior: 'sbcu::Re{c5}'
+2026-02-27 14:42:02,948 DEBUG      used, but not included in any prior: 'cbenue::Re{cVL}'
+2026-02-27 14:42:02,948 DEBUG      used, but not included in any prior: 'cbenue::Im{cT}'
+2026-02-27 14:42:02,948 DEBUG      used, but not included in any prior: 'decay-constant::J/psi'
+2026-02-27 14:42:02,948 DEBUG      used, but not included in any prior: 'ubmunumu::Re{cSL}'
+2026-02-27 14:42:02,948 DEBUG      used, but not included in any prior: 'dbcu::Im{c6}'
+2026-02-27 14:42:02,949 DEBUG      used, but not included in any prior: 'QCD::Lambda'
+2026-02-27 14:42:02,949 DEBUG      used, but not included in any prior: 'scnuee::Im{cVL}'
+2026-02-27 14:42:02,949 DEBUG      used, but not included in any prior: 'QCD::alpha_s(MZ)'
+2026-02-27 14:42:02,949 DEBUG      used, but not included in any prior: 'b->s::c8'
+2026-02-27 14:42:02,949 DEBUG      used, but not included in any prior: 'b->smumu::Im{c10'}'
+2026-02-27 14:42:02,949 DEBUG      used, but not included in any prior: 'dbcu::Re{c3'}'
+2026-02-27 14:42:02,949 DEBUG      used, but not included in any prior: 'ubtaunutau::Im{cT}'
+2026-02-27 14:42:02,949 DEBUG      used, but not included in any prior: 'CKM::abs(V_tb)'
+2026-02-27 14:42:02,949 DEBUG      used, but not included in any prior: 'dbcu::Im{c8'}'
+2026-02-27 14:42:02,949 DEBUG      used, but not included in any prior: 'sbsb::Re{c3'}'
+2026-02-27 14:42:02,949 DEBUG      used, but not included in any prior: 'CKM::arg(V_us)'
+2026-02-27 14:42:02,949 DEBUG      used, but not included in any prior: 'dbcu::Re{c1}'
+2026-02-27 14:42:02,950 DEBUG      used, but not included in any prior: 'dbcu::Im{c4}'
+2026-02-27 14:42:02,950 DEBUG      used, but not included in any prior: 'sbcu::Im{c9'}'
+2026-02-27 14:42:02,950 DEBUG      used, but not included in any prior: 'sbcu::Im{c6}'
+2026-02-27 14:42:02,950 DEBUG      used, but not included in any prior: 'QM::hbar'
+2026-02-27 14:42:02,950 DEBUG      used, but not included in any prior: 'dcnumumu::Im{cT}'
+2026-02-27 14:42:02,950 DEBUG      used, but not included in any prior: 'dcnutautau::Im{cT}'
+2026-02-27 14:42:02,950 DEBUG      used, but not included in any prior: 'B->Kccbar::Arg_Hhat_at_Jpsi_plus@GRvDV2022'
+2026-02-27 14:42:02,950 DEBUG      used, but not included in any prior: 'CKM::abs(V_us)'
+2026-02-27 14:42:02,950 DEBUG      used, but not included in any prior: 'dbcu::Im{c4'}'
+2026-02-27 14:42:02,950 DEBUG      used, but not included in any prior: 'sbcu::Im{c9}'
+2026-02-27 14:42:02,950 DEBUG      used, but not included in any prior: 'b->s::c5'
+2026-02-27 14:42:02,950 DEBUG      used, but not included in any prior: 'ubenue::Im{cVR}'
+2026-02-27 14:42:02,950 DEBUG      used, but not included in any prior: 'ubenue::Re{cSL}'
+2026-02-27 14:42:02,950 DEBUG      used, but not included in any prior: 'sbcu::Im{c4}'
+2026-02-27 14:42:02,951 DEBUG      used, but not included in any prior: 'ubmunumu::Re{cT}'
+2026-02-27 14:42:02,951 DEBUG      used, but not included in any prior: 'dbcu::Im{c3}'
+2026-02-27 14:42:02,951 DEBUG      used, but not included in any prior: 'mass::D^0'
+2026-02-27 14:42:02,951 DEBUG      used, but not included in any prior: 'b->see::Re{cS}'
+2026-02-27 14:42:02,951 DEBUG      used, but not included in any prior: 'b->see::Im{cT5}'
+2026-02-27 14:42:02,951 DEBUG      used, but not included in any prior: 'sbcu::Im{c3}'
+2026-02-27 14:42:02,951 DEBUG      used, but not included in any prior: 'ubtaunutau::Re{cSL}'
+2026-02-27 14:42:02,951 DEBUG      used, but not included in any prior: 'scnumumu::Im{cT}'
+2026-02-27 14:42:02,951 DEBUG      used, but not included in any prior: 'dbcu::Re{c9}'
+2026-02-27 14:42:02,951 DEBUG      used, but not included in any prior: 'cbmunumu::Re{cSL}'
+2026-02-27 14:42:02,951 DEBUG      used, but not included in any prior: 'cbenue::Im{cVR}'
+2026-02-27 14:42:02,951 DEBUG      used, but not included in any prior: 'ubmunumu::Im{cSR}'
+2026-02-27 14:42:02,951 DEBUG      used, but not included in any prior: 'cbtaunutau::Im{cVR}'
+2026-02-27 14:42:02,951 DEBUG      used, but not included in any prior: 'sbcu::Im{c7'}'
+2026-02-27 14:42:02,952 DEBUG      used, but not included in any prior: 'scnuee::Im{cVR}'
+2026-02-27 14:42:02,952 DEBUG      used, but not included in any prior: 'b->see::Re{c10}'
+2026-02-27 14:42:02,952 DEBUG      used, but not included in any prior: 'sbsb::Im{c2}'
+2026-02-27 14:42:02,952 DEBUG      used, but not included in any prior: 'ubtaunutau::Im{cSL}'
+2026-02-27 14:42:02,952 DEBUG      used, but not included in any prior: 'sbcu::Im{c8}'
+2026-02-27 14:42:02,952 DEBUG      used, but not included in any prior: 'sbsb::Im{c4}'
+2026-02-27 14:42:02,952 DEBUG      used, but not included in any prior: 'b->s::Re{c7'}'
+2026-02-27 14:42:02,952 DEBUG      used, but not included in any prior: 'sbsb::Re{c4}'
+2026-02-27 14:42:02,952 DEBUG      used, but not included in any prior: 'b->smumu::Re{cS'}'
+2026-02-27 14:42:02,952 DEBUG      used, but not included in any prior: 'usenue::Re{cT}'
+2026-02-27 14:42:02,952 DEBUG      used, but not included in any prior: 'sbcu::Im{c4'}'
+2026-02-27 14:42:02,952 DEBUG      used, but not included in any prior: 'usenue::Re{cSR}'
+2026-02-27 14:42:02,953 DEBUG      used, but not included in any prior: 'b->smumu::Re{c9}'
+2026-02-27 14:42:02,953 DEBUG      used, but not included in any prior: 'b->smumu::Im{cP'}'
+2026-02-27 14:42:02,953 DEBUG      used, but not included in any prior: 'ubtaunutau::Im{cVR}'
+2026-02-27 14:42:02,953 DEBUG      used, but not included in any prior: 'ubenue::Re{cVL}'
+2026-02-27 14:42:02,953 DEBUG      used, but not included in any prior: 'cbenue::Re{cSL}'
+2026-02-27 14:42:02,953 DEBUG      used, but not included in any prior: 'sbnunu::Im{cTL}'
+2026-02-27 14:42:02,953 DEBUG      used, but not included in any prior: 'b->sccbar::t_s'
+2026-02-27 14:42:02,953 DEBUG      used, but not included in any prior: 'sbsb::Re{c2}'
+2026-02-27 14:42:02,953 DEBUG      used, but not included in any prior: 'sbsb::Im{c2'}'
+2026-02-27 14:42:02,953 DEBUG      used, but not included in any prior: 'life_time::B_u'
+2026-02-27 14:42:02,953 DEBUG      used, but not included in any prior: 'CKM::abs(V_ts)'
+2026-02-27 14:42:02,953 DEBUG      used, but not included in any prior: 'sbcu::Re{c2'}'
+2026-02-27 14:42:02,953 DEBUG      used, but not included in any prior: 'scnuee::Re{cT}'
+2026-02-27 14:42:02,953 DEBUG      used, but not included in any prior: 'scnutautau::Re{cT}'
+2026-02-27 14:42:02,954 DEBUG      used, but not included in any prior: 'dcnutautau::Re{cVL}'
+2026-02-27 14:42:02,954 DEBUG      used, but not included in any prior: 'dbcu::Re{c7'}'
+2026-02-27 14:42:02,954 DEBUG      used, but not included in any prior: 'cbmunumu::Re{cVL}'
+2026-02-27 14:42:02,954 DEBUG      used, but not included in any prior: 'dbcu::Im{c7}'
+2026-02-27 14:42:02,954 DEBUG      used, but not included in any prior: 'cbtaunutau::Re{cSR}'
+2026-02-27 14:42:02,954 DEBUG      used, but not included in any prior: 'ubmunumu::Re{cSR}'
+2026-02-27 14:42:02,954 DEBUG      used, but not included in any prior: 'dcnutautau::Re{cT}'
+2026-02-27 14:42:02,954 DEBUG      used, but not included in any prior: 'dcnuee::Re{cVL}'
+2026-02-27 14:42:02,954 DEBUG      used, but not included in any prior: 'dbcu::Re{c10}'
+2026-02-27 14:42:02,954 DEBUG      used, but not included in any prior: 'scnumumu::Im{cSR}'
+2026-02-27 14:42:02,954 DEBUG      used, but not included in any prior: 'b->see::Im{c10'}'
+2026-02-27 14:42:02,954 DEBUG      used, but not included in any prior: 'ubtaunutau::Im{cVL}'
+2026-02-27 14:42:02,954 DEBUG      used, but not included in any prior: 'cbmunumu::Re{cSR}'
+2026-02-27 14:42:02,954 DEBUG      used, but not included in any prior: 'sbnunu::Im{cVR}'
+2026-02-27 14:42:02,955 DEBUG      used, but not included in any prior: 'sbcu::Im{c3'}'
+2026-02-27 14:42:02,955 DEBUG      used, but not included in any prior: 'mass::J/psi'
+2026-02-27 14:42:02,955 DEBUG      used, but not included in any prior: 'scnutautau::Re{cVL}'
+2026-02-27 14:42:02,955 DEBUG      used, but not included in any prior: 'sbcu::Re{c3'}'
+2026-02-27 14:42:02,955 DEBUG      used, but not included in any prior: 'cbtaunutau::Re{cSL}'
+2026-02-27 14:42:02,955 DEBUG      used, but not included in any prior: 'dcnutautau::Re{cSL}'
+2026-02-27 14:42:02,955 DEBUG      used, but not included in any prior: 'CKM::abs(V_cd)'
+2026-02-27 14:42:02,955 DEBUG      used, but not included in any prior: 'sbcu::Re{c10'}'
+2026-02-27 14:42:02,955 DEBUG      used, but not included in any prior: 'dbcu::Re{c3}'
+2026-02-27 14:42:02,955 DEBUG      used, but not included in any prior: 'sbcu::Re{c8}'
+2026-02-27 14:42:02,955 DEBUG      used, but not included in any prior: 'sbsb::Im{c3}'
+2026-02-27 14:42:02,955 DEBUG      used, but not included in any prior: 'dcnumumu::Im{cSL}'
+2026-02-27 14:42:02,956 DEBUG      used, but not included in any prior: 'dcnuee::Re{cT}'
+2026-02-27 14:42:02,956 DEBUG      used, but not included in any prior: 'ustaunutau::Im{cVR}'
+2026-02-27 14:42:02,956 DEBUG      used, but not included in any prior: 'sbcu::Im{c5}'
+2026-02-27 14:42:02,956 DEBUG      used, but not included in any prior: 'sbcu::Re{c5'}'
+2026-02-27 14:42:02,956 DEBUG      used, but not included in any prior: 'sbnunu::Re{cTL}'
+2026-02-27 14:42:02,956 DEBUG      used, but not included in any prior: 'usmunumu::Re{cT}'
+2026-02-27 14:42:02,956 DEBUG      used, but not included in any prior: 'b->see::Re{c10'}'
+2026-02-27 14:42:02,956 DEBUG      used, but not included in any prior: 'ubenue::Re{cT}'
+2026-02-27 14:42:02,956 DEBUG      used, but not included in any prior: 'b->see::Im{c10}'
+2026-02-27 14:42:02,956 DEBUG      used, but not included in any prior: 'dcnumumu::Re{cVL}'
+2026-02-27 14:42:02,956 DEBUG      used, but not included in any prior: 'b->smumu::Re{cP'}'
+2026-02-27 14:42:02,956 DEBUG      used, but not included in any prior: 'ubmunumu::Im{cT}'
+2026-02-27 14:42:02,956 DEBUG      used, but not included in any prior: 'dbcu::Re{c6}'
+2026-02-27 14:42:02,956 DEBUG      used, but not included in any prior: 'scnumumu::Im{cSL}'
+2026-02-27 14:42:02,957 DEBUG      used, but not included in any prior: 'CKM::arg(V_ub)'
+2026-02-27 14:42:02,957 DEBUG      used, but not included in any prior: 'b->s::c8''
+2026-02-27 14:42:02,957 DEBUG      used, but not included in any prior: 'dbcu::Im{c9'}'
+2026-02-27 14:42:02,957 DEBUG      used, but not included in any prior: 'usenue::Im{cVL}'
+2026-02-27 14:42:02,957 DEBUG      used, but not included in any prior: 'scnumumu::Re{cVR}'
+2026-02-27 14:42:02,957 DEBUG      used, but not included in any prior: 'sbcu::Im{c6'}'
+2026-02-27 14:42:02,957 DEBUG      used, but not included in any prior: 'b->see::Re{c9'}'
+2026-02-27 14:42:02,957 DEBUG      used, but not included in any prior: 'usmunumu::Re{cVL}'
+2026-02-27 14:42:02,957 DEBUG      used, but not included in any prior: 'sbcu::Re{c6}'
+2026-02-27 14:42:02,957 DEBUG      used, but not included in any prior: 'ustaunutau::Re{cT}'
+2026-02-27 14:42:02,957 DEBUG      used, but not included in any prior: 'dcnutautau::Im{cSR}'
+2026-02-27 14:42:02,957 DEBUG      used, but not included in any prior: 'mass::s(2GeV)'
+2026-02-27 14:42:02,957 DEBUG      used, but not included in any prior: 'cbmunumu::Im{cSR}'
+2026-02-27 14:42:02,957 DEBUG      used, but not included in any prior: 'CKM::arg(V_tb)'
+2026-02-27 14:42:02,958 DEBUG      used, but not included in any prior: 'sbsb::Re{c1}'
+2026-02-27 14:42:02,958 DEBUG      used, but not included in any prior: 'scnumumu::Re{cVL}'
+2026-02-27 14:42:02,958 DEBUG      used, but not included in any prior: 'sbcu::Re{c7'}'
+2026-02-27 14:42:02,958 DEBUG      used, but not included in any prior: 'CKM::arg(V_ud)'
+2026-02-27 14:42:02,958 DEBUG      used, but not included in any prior: 'CKM::abs(V_ub)'
+2026-02-27 14:42:02,958 DEBUG      used, but not included in any prior: 'sbcu::Re{c9'}'
+2026-02-27 14:42:02,958 DEBUG      used, but not included in any prior: 'sbcu::Re{c4}'
+2026-02-27 14:42:02,958 DEBUG      used, but not included in any prior: 'dcnutautau::Im{cVR}'
+2026-02-27 14:42:02,958 DEBUG      used, but not included in any prior: 'cbtaunutau::Im{cSR}'
+2026-02-27 14:42:02,958 DEBUG      used, but not included in any prior: 'b->sccbar::bound@GvDV2020'
+2026-02-27 14:42:02,958 DEBUG      used, but not included in any prior: 'b->smumu::Im{c9}'
+2026-02-27 14:42:02,958 DEBUG      used, but not included in any prior: 'dbcu::Im{c10'}'
+2026-02-27 14:42:02,958 DEBUG      used, but not included in any prior: 'sbnunu::Im{cSL}'
+2026-02-27 14:42:02,958 DEBUG      used, but not included in any prior: 'sbcu::Im{c2}'
+2026-02-27 14:42:02,959 DEBUG      used, but not included in any prior: 'scnuee::Im{cT}'
+2026-02-27 14:42:02,959 DEBUG      used, but not included in any prior: 'mass::Z'
+2026-02-27 14:42:02,959 DEBUG      used, but not included in any prior: 'dcnumumu::Re{cT}'
+2026-02-27 14:42:02,959 DEBUG      used, but not included in any prior: 'ubmunumu::Re{cVL}'
+2026-02-27 14:42:02,959 DEBUG      used, but not included in any prior: 'b->s::c3'
+2026-02-27 14:42:02,959 DEBUG      used, but not included in any prior: 'usmunumu::Re{cVR}'
+2026-02-27 14:42:02,959 DEBUG      used, but not included in any prior: 'dcnumumu::Im{cSR}'
+2026-02-27 14:42:02,959 DEBUG      used, but not included in any prior: 'scnuee::Re{cVL}'
+2026-02-27 14:42:02,959 DEBUG      used, but not included in any prior: 'scnuee::Re{cSL}'
+2026-02-27 14:42:02,959 DEBUG      used, but not included in any prior: 'dcnutautau::Re{cSR}'
+2026-02-27 14:42:02,959 DEBUG      used, but not included in any prior: 'scnuee::Im{cSR}'
+2026-02-27 14:42:02,959 DEBUG      used, but not included in any prior: 'b->s::Im{c7}'
+2026-02-27 14:42:02,959 DEBUG      used, but not included in any prior: 'usmunumu::Im{cT}'
+2026-02-27 14:42:02,959 DEBUG      used, but not included in any prior: 'ustaunutau::Re{cVR}'
+2026-02-27 14:42:02,960 DEBUG      used, but not included in any prior: 'dcnumumu::Re{cSL}'
+2026-02-27 14:42:02,960 DEBUG      used, but not included in any prior: 'cbmunumu::Re{cT}'
+2026-02-27 14:42:02,960 DEBUG      used, but not included in any prior: 'dbcu::Im{c1'}'
+2026-02-27 14:42:02,960 DEBUG      used, but not included in any prior: 'dbcu::Re{c9'}'
+2026-02-27 14:42:02,960 DEBUG      used, but not included in any prior: 'scnumumu::Re{cT}'
+2026-02-27 14:42:02,960 DEBUG      used, but not included in any prior: 'QCD::mu_b'
+2026-02-27 14:42:02,960 DEBUG      used, but not included in any prior: 'ubtaunutau::Re{cVL}'
+2026-02-27 14:42:02,960 DEBUG      used, but not included in any prior: 'sbsb::Im{c3'}'
+2026-02-27 14:42:02,960 DEBUG      used, but not included in any prior: 'b->smumu::Re{c10'}'
+2026-02-27 14:42:02,960 DEBUG      used, but not included in any prior: 'usmunumu::Re{cSR}'
+2026-02-27 14:42:02,960 DEBUG      used, but not included in any prior: 'dbcu::Re{c8'}'
+2026-02-27 14:42:02,960 INPROGRESS Beginning minimization in 100 points
+2026-02-27 14:42:02,961 INFO       Using a starting point based on the existing importance samples
+2026-02-27 14:42:02,971 INFO       Using starting point [ 0.3487, -0.8442, -0.2155, 0.473, 0.2785, 0.3437, -0.9224, -0.4068, 2.418e-05, -3.953e-06, 7.733e-05, -4.912e-06, 0.0001356, -6.202e-06, 0.000198, -7.985e-06, 0.001215 ]
+2026-02-27 14:42:04,740 ERROR      Optimization did not succeed
+2026-02-27 14:42:04,740 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:04,742 INFO       First optimization finished
+2026-02-27 14:42:06,575 ERROR      Optimization did not succeed
+2026-02-27 14:42:06,576 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:08,378 ERROR      Optimization did not succeed
+2026-02-27 14:42:08,378 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:10,199 ERROR      Optimization did not succeed
+2026-02-27 14:42:10,199 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:12,072 ERROR      Optimization did not succeed
+2026-02-27 14:42:12,073 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:13,915 ERROR      Optimization did not succeed
+2026-02-27 14:42:13,916 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:15,778 ERROR      Optimization did not succeed
+2026-02-27 14:42:15,778 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:17,694 ERROR      Optimization did not succeed
+2026-02-27 14:42:17,694 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:19,597 ERROR      Optimization did not succeed
+2026-02-27 14:42:19,598 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:21,433 ERROR      Optimization did not succeed
+2026-02-27 14:42:21,434 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:23,302 ERROR      Optimization did not succeed
+2026-02-27 14:42:23,303 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:25,149 ERROR      Optimization did not succeed
+2026-02-27 14:42:25,150 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:27,027 ERROR      Optimization did not succeed
+2026-02-27 14:42:27,027 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:28,877 ERROR      Optimization did not succeed
+2026-02-27 14:42:28,878 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:30,756 ERROR      Optimization did not succeed
+2026-02-27 14:42:30,756 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:32,620 ERROR      Optimization did not succeed
+2026-02-27 14:42:32,620 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:34,473 ERROR      Optimization did not succeed
+2026-02-27 14:42:34,474 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:36,378 ERROR      Optimization did not succeed
+2026-02-27 14:42:36,378 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:38,302 ERROR      Optimization did not succeed
+2026-02-27 14:42:38,303 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:40,170 ERROR      Optimization did not succeed
+2026-02-27 14:42:40,171 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:41,967 ERROR      Optimization did not succeed
+2026-02-27 14:42:41,967 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:43,812 ERROR      Optimization did not succeed
+2026-02-27 14:42:43,813 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:45,649 ERROR      Optimization did not succeed
+2026-02-27 14:42:45,650 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:47,527 ERROR      Optimization did not succeed
+2026-02-27 14:42:47,528 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:49,427 ERROR      Optimization did not succeed
+2026-02-27 14:42:49,427 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:51,286 ERROR      Optimization did not succeed
+2026-02-27 14:42:51,287 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:53,145 ERROR      Optimization did not succeed
+2026-02-27 14:42:53,145 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:54,991 ERROR      Optimization did not succeed
+2026-02-27 14:42:54,992 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:56,772 ERROR      Optimization did not succeed
+2026-02-27 14:42:56,773 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:42:58,521 ERROR      Optimization did not succeed
+2026-02-27 14:42:58,522 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:00,231 ERROR      Optimization did not succeed
+2026-02-27 14:43:00,232 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:01,863 ERROR      Optimization did not succeed
+2026-02-27 14:43:01,863 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:03,469 ERROR      Optimization did not succeed
+2026-02-27 14:43:03,470 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:05,039 ERROR      Optimization did not succeed
+2026-02-27 14:43:05,039 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:06,498 ERROR      Optimization did not succeed
+2026-02-27 14:43:06,499 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:07,932 ERROR      Optimization did not succeed
+2026-02-27 14:43:07,933 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:09,408 ERROR      Optimization did not succeed
+2026-02-27 14:43:09,409 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:10,846 ERROR      Optimization did not succeed
+2026-02-27 14:43:10,847 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:12,296 ERROR      Optimization did not succeed
+2026-02-27 14:43:12,297 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:13,751 ERROR      Optimization did not succeed
+2026-02-27 14:43:13,752 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:15,216 ERROR      Optimization did not succeed
+2026-02-27 14:43:15,216 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:16,675 ERROR      Optimization did not succeed
+2026-02-27 14:43:16,676 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:18,143 ERROR      Optimization did not succeed
+2026-02-27 14:43:18,144 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:19,575 ERROR      Optimization did not succeed
+2026-02-27 14:43:19,576 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:21,042 ERROR      Optimization did not succeed
+2026-02-27 14:43:21,043 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:22,537 ERROR      Optimization did not succeed
+2026-02-27 14:43:22,538 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:24,073 ERROR      Optimization did not succeed
+2026-02-27 14:43:24,074 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:25,599 ERROR      Optimization did not succeed
+2026-02-27 14:43:25,600 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:27,100 ERROR      Optimization did not succeed
+2026-02-27 14:43:27,101 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:28,622 ERROR      Optimization did not succeed
+2026-02-27 14:43:28,623 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:30,188 ERROR      Optimization did not succeed
+2026-02-27 14:43:30,189 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:31,763 ERROR      Optimization did not succeed
+2026-02-27 14:43:31,764 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:33,335 ERROR      Optimization did not succeed
+2026-02-27 14:43:33,335 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:34,939 ERROR      Optimization did not succeed
+2026-02-27 14:43:34,940 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:36,530 ERROR      Optimization did not succeed
+2026-02-27 14:43:36,531 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:38,144 ERROR      Optimization did not succeed
+2026-02-27 14:43:38,145 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:39,756 ERROR      Optimization did not succeed
+2026-02-27 14:43:39,757 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:41,366 ERROR      Optimization did not succeed
+2026-02-27 14:43:41,367 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:42,981 ERROR      Optimization did not succeed
+2026-02-27 14:43:42,982 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:44,594 ERROR      Optimization did not succeed
+2026-02-27 14:43:44,595 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:46,200 ERROR      Optimization did not succeed
+2026-02-27 14:43:46,201 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:47,759 ERROR      Optimization did not succeed
+2026-02-27 14:43:47,759 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:49,340 ERROR      Optimization did not succeed
+2026-02-27 14:43:49,341 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:50,875 ERROR      Optimization did not succeed
+2026-02-27 14:43:50,876 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:52,477 ERROR      Optimization did not succeed
+2026-02-27 14:43:52,478 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:54,083 ERROR      Optimization did not succeed
+2026-02-27 14:43:54,084 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:55,777 ERROR      Optimization did not succeed
+2026-02-27 14:43:55,778 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:57,399 ERROR      Optimization did not succeed
+2026-02-27 14:43:57,399 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:43:59,024 ERROR      Optimization did not succeed
+2026-02-27 14:43:59,025 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:00,581 ERROR      Optimization did not succeed
+2026-02-27 14:44:00,581 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:02,054 ERROR      Optimization did not succeed
+2026-02-27 14:44:02,055 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:03,521 ERROR      Optimization did not succeed
+2026-02-27 14:44:03,521 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:05,027 ERROR      Optimization did not succeed
+2026-02-27 14:44:05,027 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:06,545 ERROR      Optimization did not succeed
+2026-02-27 14:44:06,545 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:08,072 ERROR      Optimization did not succeed
+2026-02-27 14:44:08,073 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:09,573 ERROR      Optimization did not succeed
+2026-02-27 14:44:09,574 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:11,036 ERROR      Optimization did not succeed
+2026-02-27 14:44:11,037 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:12,488 ERROR      Optimization did not succeed
+2026-02-27 14:44:12,489 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:13,965 ERROR      Optimization did not succeed
+2026-02-27 14:44:13,966 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:15,422 ERROR      Optimization did not succeed
+2026-02-27 14:44:15,423 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:16,869 ERROR      Optimization did not succeed
+2026-02-27 14:44:16,870 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:18,382 ERROR      Optimization did not succeed
+2026-02-27 14:44:18,383 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:19,913 ERROR      Optimization did not succeed
+2026-02-27 14:44:19,914 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:21,454 ERROR      Optimization did not succeed
+2026-02-27 14:44:21,455 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:22,989 ERROR      Optimization did not succeed
+2026-02-27 14:44:22,989 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:24,511 ERROR      Optimization did not succeed
+2026-02-27 14:44:24,512 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:26,020 ERROR      Optimization did not succeed
+2026-02-27 14:44:26,021 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:27,543 ERROR      Optimization did not succeed
+2026-02-27 14:44:27,544 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:29,071 ERROR      Optimization did not succeed
+2026-02-27 14:44:29,072 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:30,583 ERROR      Optimization did not succeed
+2026-02-27 14:44:30,584 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:31,979 ERROR      Optimization did not succeed
+2026-02-27 14:44:31,979 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:33,430 ERROR      Optimization did not succeed
+2026-02-27 14:44:33,432 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:34,973 ERROR      Optimization did not succeed
+2026-02-27 14:44:34,974 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:36,550 ERROR      Optimization did not succeed
+2026-02-27 14:44:36,550 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:38,135 ERROR      Optimization did not succeed
+2026-02-27 14:44:38,136 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:39,801 ERROR      Optimization did not succeed
+2026-02-27 14:44:39,802 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:41,534 ERROR      Optimization did not succeed
+2026-02-27 14:44:41,535 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:43,224 ERROR      Optimization did not succeed
+2026-02-27 14:44:43,225 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:44,905 ERROR      Optimization did not succeed
+2026-02-27 14:44:44,906 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:46,536 ERROR      Optimization did not succeed
+2026-02-27 14:44:46,537 ERROR        optimizer message reads: Iteration limit reached
+2026-02-27 14:44:46,538 COMPLETED  ... optimization finished
+2026-02-27 14:44:46,539 INFO       The best-fit point is:
+2026-02-27 14:44:46,539 INFO         - B->K::alpha^f+_0@BSZ2015 -> 0.3375571869702228
+2026-02-27 14:44:46,540 INFO         - B->K::alpha^f+_1@BSZ2015 -> -0.9165771412657914
+2026-02-27 14:44:46,540 INFO         - B->K::alpha^f+_2@BSZ2015 -> -0.239002267151333
+2026-02-27 14:44:46,541 INFO         - B->K::alpha^f0_1@BSZ2015 -> 0.38251029003003634
+2026-02-27 14:44:46,541 INFO         - B->K::alpha^f0_2@BSZ2015 -> 0.09419170518791631
+2026-02-27 14:44:46,542 INFO         - B->K::alpha^fT_0@BSZ2015 -> 0.3315884747092613
+2026-02-27 14:44:46,542 INFO         - B->K::alpha^fT_1@BSZ2015 -> -0.9428724887458809
+2026-02-27 14:44:46,543 INFO         - B->K::alpha^fT_2@BSZ2015 -> -0.23771491481800489
+2026-02-27 14:44:46,543 INFO         - B->Kccbar::Re_Hhat_at_m7_plus@GRvDV2022 -> 2.0725905874254853e-05
+2026-02-27 14:44:46,544 INFO         - B->Kccbar::Im_Hhat_at_m7_plus@GRvDV2022 -> -3.854625719317398e-06
+2026-02-27 14:44:46,544 INFO         - B->Kccbar::Re_Hhat_at_m5_plus@GRvDV2022 -> 7.172046611921636e-05
+2026-02-27 14:44:46,544 INFO         - B->Kccbar::Im_Hhat_at_m5_plus@GRvDV2022 -> -4.803622915366334e-06
+2026-02-27 14:44:46,545 INFO         - B->Kccbar::Re_Hhat_at_m3_plus@GRvDV2022 -> 0.00012807478682073982
+2026-02-27 14:44:46,545 INFO         - B->Kccbar::Im_Hhat_at_m3_plus@GRvDV2022 -> -6.0810549378802e-06
+2026-02-27 14:44:46,546 INFO         - B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022 -> 0.00018899378910985988
+2026-02-27 14:44:46,546 INFO         - B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022 -> -7.842102062776396e-06
+2026-02-27 14:44:46,547 INFO         - B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022 -> 0.001225349825910466
+2026-02-27 14:44:46,547 INFO       total chi^2 = 15.21
+2026-02-27 14:44:46,548 INFO       total dof   = 33
+2026-02-27 14:44:46,549 INFO       p value     = 99.65%
+2026-02-27 14:44:46,550 INFO       individual test statistics:
+2026-02-27 14:44:46,551 INFO         - B->K::FormFactors[f_+,f_0,f_T]@GKvD:2018A: chi^2 / dof = 2.92 / 14, local_pvalue = 99.92%
+2026-02-27 14:44:46,552 INFO         - B->K::f_0+f_++f_T@FNAL+MILC:2015D: chi^2 / dof = 1.63 / 9, local_pvalue = 99.60%
+2026-02-27 14:44:46,553 INFO         - B->K::f_0+f_++f_T@HPQCD:2013A: chi^2 / dof = 5.63 / 9, local_pvalue = 77.60%
+2026-02-27 14:44:46,554 INFO         - B->K::f_0+f_++f_T@HPQCD:2022A: chi^2 / dof = 2.05 / 8, local_pvalue = 97.95%
+2026-02-27 14:44:46,556 INFO         - B->K::vanishing-{Delta_H_0(q2)}/F_0(q2): chi^2 / dof = 0.36 / 8, local_pvalue = 100.00%
+2026-02-27 14:44:46,557 INFO         - B->KJpsi::BR@PDG:2020A: chi^2 / dof = 1.08 / 1, local_pvalue = 29.97%
+2026-02-27 14:44:46,558 INFO         - B^0->K^0Jpsi::BR@PDG:2020A: chi^2 / dof = 1.54 / 1, local_pvalue = 21.45%
+2026-02-27 14:44:46,562 SUCCESS    Final p value is 99.65%, indicating a successful fit

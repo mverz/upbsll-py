@@ -1,0 +1,83 @@
+dof: 33
+global_chi2: 15.208636045237887
+local_pvalues:
+  B->K::FormFactors[f_+,f_0,f_T]@GKvD:2018A: 0.9992129829294478
+  B->K::f_0+f_++f_T@FNAL+MILC:2015D: 0.9960455413108906
+  B->K::f_0+f_++f_T@HPQCD:2013A: 0.7759813858182573
+  B->K::f_0+f_++f_T@HPQCD:2022A: 0.9795437436856244
+  B->K::vanishing-{Delta_H_0(q2)}/F_0(q2): 0.9999602519505935
+  B->KJpsi::BR@PDG:2020A: 0.2997086196620674
+  B^0->K^0Jpsi::BR@PDG:2020A: 0.21453321040120799
+mode:
+- 0.3375611477319326
+- -0.9165539228349808
+- -0.23897035170083625
+- 0.38258443275201637
+- 0.0941293607068091
+- 0.3315938422937048
+- -0.9428430729763586
+- -0.23763317703245768
+- 2.0731421885537104e-05
+- -3.854493883081648e-06
+- 7.172687246966284e-05
+- -4.8034688874436675e-06
+- 0.00012808190430073444
+- -6.080876655775244e-06
+- 0.00018900138281523283
+- -7.841891880817286e-06
+- 0.001225293080419231
+parameters:
+- max: 0.32908992854636815
+  min: 0.32908992854636815
+  name: B->K::alpha^f+_0@BSZ2015
+- max: -0.8669465867427438
+  min: -0.8669465867427438
+  name: B->K::alpha^f+_1@BSZ2015
+- max: 0.006095669673341246
+  min: 0.006095669673341246
+  name: B->K::alpha^f+_2@BSZ2015
+- max: 0.19511719957037596
+  min: 0.19511719957037596
+  name: B->K::alpha^f0_1@BSZ2015
+- max: -0.4461264576740431
+  min: -0.4461264576740431
+  name: B->K::alpha^f0_2@BSZ2015
+- max: 0.2993831492500477
+  min: 0.2993831492500477
+  name: B->K::alpha^fT_0@BSZ2015
+- max: -0.7735456824025474
+  min: -0.7735456824025474
+  name: B->K::alpha^fT_1@BSZ2015
+- max: 0.009554375102511888
+  min: 0.009554375102511888
+  name: B->K::alpha^fT_2@BSZ2015
+- max: 0.0
+  min: 0.0
+  name: B->Kccbar::Re_Hhat_at_m7_plus@GRvDV2022
+- max: 0.0
+  min: 0.0
+  name: B->Kccbar::Im_Hhat_at_m7_plus@GRvDV2022
+- max: 0.0
+  min: 0.0
+  name: B->Kccbar::Re_Hhat_at_m5_plus@GRvDV2022
+- max: 0.0
+  min: 0.0
+  name: B->Kccbar::Im_Hhat_at_m5_plus@GRvDV2022
+- max: 0.0
+  min: 0.0
+  name: B->Kccbar::Re_Hhat_at_m3_plus@GRvDV2022
+- max: 0.0
+  min: 0.0
+  name: B->Kccbar::Im_Hhat_at_m3_plus@GRvDV2022
+- max: 0.0
+  min: 0.0
+  name: B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022
+- max: 0.0
+  min: 0.0
+  name: B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022
+- max: 0.0
+  min: 0.0
+  name: B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022
+pvalue: 0.996545075293623
+type: Mode
+version: 1.0.19
