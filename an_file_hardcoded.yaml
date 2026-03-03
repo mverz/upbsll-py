@@ -198,6 +198,19 @@ observables:
     options: {}
     expression: '(<<B->K::Im{H_plus}(q2)>> - <<B->K::Im{H_0(-1,F)}>>) / <<B->K::F_plus(q2)>>'
 
+
+
+  "B->K::Re{H_0}/F_0(q2)":
+    latex: R'\mathrm{Re}\left(\Delta\mathcal{H}_0(q^2)\right)^{B\to K} / \mathrm{Re}\left(\mathcal{H}_0(q^2)\right)^{B\to K}'
+    unit: '1'
+    options: {}
+    expression: '(<<B->K::Re{H_plus}(q2)>>) / <<B->K::F_plus(q2)>>'
+  "B->K::Im{H_0}/F_0(q2)":
+    latex: R'\mathrm{Im}\left(\Delta\mathcal{H}_0(q^2)\right)^{B\to K} / \mathrm{Im}\left(\mathcal{H}_0(q^2)\right)^{B\to K}'
+    unit: '1'
+    options: {}
+    expression: '(<<B->K::Im{H_plus}(q2)>>) / <<B->K::F_plus(q2)>>'
+
 #------------------------------------------------------------------------------------------------------
 
   "B->K::Re{H_0(q2,F)}":
@@ -221,6 +234,16 @@ observables:
     unit: '1'
     options: {}
     expression: '<<B->K::Im{H_0(q2,F)}>> / <<B->K::F_plus(q2)>>'
+
+#------------------------------------------------------------------------------------------------------
+
+# SM PREDICIONS
+
+  "B->Kll::Normalized_dBR/ds":
+    latex: R'\frac{1}{\mathcal{B}(B \to K\, J/\psi)}\frac{d\mathcal{B}(B \to K\, \ell^+\ell^-)}{ds}'
+    unit: '1/GeV^2'
+    options: {tag: 'GvDV2020'}
+    expression: '<<B->Kll::dBR/ds>> / <<B->Kpsi::BR>>'
 
 #------------------------------------------------------------------------------------------------------
 
@@ -517,3 +540,30 @@ predictions:
                       { q2: -5.0 }, { q2: -4.0 },
                       { q2: -3.0 }, { q2: -2.0 },
                       { q2: -1.0 } ]
+
+
+
+  - name: BToK-Re(H0)-over-F0
+    observables:
+      - name: B->K::Re{H_0}/F_0(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+  - name: BToK-Im(H0)-over-F0
+    observables:
+      - name: B->K::Im{H_0}/F_0(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+
+
+# SM PREDICTIONS
+
+  - name: BToKll-Normalized-BR
+    observables:
+      - name: B->Kll::Normalized_dBR/ds
+        kinematics: [ { q2: 1.0 }, { q2: 2.0 }, { q2: 3.0 }, { q2: 4.0 }, { q2: 5.0 },
+                      { q2: 6.0 }, { q2: 7.0 }, { q2: 8.0 }, { q2: 9.0 } ]
