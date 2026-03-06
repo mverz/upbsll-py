@@ -13,16 +13,16 @@ from collections import OrderedDict
 import time
 
 
-BASE_DIRECTORY='./data_base'
-#BASE_DIRECTORY='./test_base'
+#BASE_DIRECTORY='./data_base'
+BASE_DIRECTORY='./test_base'
 #ANALYSIS_FILE='./an_file.yaml'
 ANALYSIS_FILE='./an_file_hardcoded.yaml'
 
 POSTERIOR_NAME = 'BSZ-BqToK-wSR-wNFF-wCov'
 
 #OPTIONS---------------
-flag_sample = 0
-flag_predict = 1
+flag_sample = 1
+flag_predict = 0
 flag_gof = 0
 #-----------------------
 

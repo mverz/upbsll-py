@@ -20,6 +20,7 @@ priors:
     - { parameter: 'B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022', min: 7.0e-05, max: 0.00038, type: 'uniform'}
     - { parameter: 'B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022', min: -1.3e-05, max: 3.0e-06, type: 'uniform'}
     - { parameter: 'B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022', min: 0.00112, max: 0.00132, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Arg_Hhat_at_Jpsi_plus@GRvDV2022', min: -3.141592653589793, max: 3.141592653589793, type: 'uniform'}
 
 
 observables:
@@ -241,7 +242,7 @@ observables:
 
   "B->Kll::Normalized_dBR/ds":
     latex: R'\frac{1}{\mathcal{B}(B \to K\, J/\psi)}\frac{d\mathcal{B}(B \to K\, \ell^+\ell^-)}{ds}'
-    unit: '1/GeV^2'
+    unit: 'GeV^-2'
     options: {tag: 'GvDV2020'}
     expression: '<<B->Kll::dBR/ds>> / <<B->Kpsi::BR>>'
 
@@ -561,6 +562,10 @@ predictions:
 
 
 # SM PREDICTIONS
+
+  - name: BToK-strong-bound
+    observables:
+      - name: B->K::strong_bound
 
   - name: BToKll-Normalized-BR
     observables:

@@ -50,5 +50,8 @@ parameters:
 - max: 0.0
   min: 0.0
   name: B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022
+- max: 0.0
+  min: 0.0
+  name: B->Kccbar::Arg_Hhat_at_Jpsi_plus@GRvDV2022
 type: DynestyResults
 version: 1.0.19

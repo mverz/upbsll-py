@@ -195,7 +195,9 @@ def Im_Pi_T_plus(s): # [9309298]
 def Disc11_NLO(s):
     return 1j * s * alpha_s / (4 * pow(np.pi, 3)) * Im_Pi_T_plus(s)
 
-def to_integrate(s, Q2, n_subtractions_plus_1 = 3): # modify n_subtractions_plus_1 to change the number of subtractions in the dispersion relation. Must be >= 3 for convergence of the integral, but can be higher if desired (e.g. to suppress more the high-s region). 
+n_subtractions_plus_1 = 3
+
+def to_integrate(s, Q2, n_subtractions_plus_1 = n_subtractions_plus_1): # modify n_subtractions_plus_1 to change the number of subtractions in the dispersion relation. Must be >= 3 for convergence of the integral, but can be higher if desired (e.g. to suppress more the high-s region). 
     return (1/(2j * np.pi) * (C31_LO_ms(s)*(Disc11_LO(s) + Disc11_NLO(s)) + 2 * mix_C31_C31(s)*Disc11_LO(s) + 2 * mix_C31_C32(s)*Disc12_LO(s)) / ((s - Q2)**(n_subtractions_plus_1))).real
 
 flag_check_real = 0

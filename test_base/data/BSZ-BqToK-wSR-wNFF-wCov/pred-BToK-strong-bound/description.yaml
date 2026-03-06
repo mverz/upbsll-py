@@ -1,0 +1,9 @@
+observables:
+- kinematics: {}
+  name: B->K::strong_bound
+  options:
+    form-factors: BSZ2015
+    model: WET
+    nonlocal-formfactor: GRvDV2022order5
+type: Prediction
+version: 1.0.19
