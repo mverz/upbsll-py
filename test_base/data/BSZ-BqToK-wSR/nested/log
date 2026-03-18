@@ -1,30 +1,30 @@
-2026-02-17 09:52:39,299 INPROGRESS Beginning sampling...
-2026-02-17 09:52:39,302 INFO       Creating analysis with 8 priors, 4 EOS-wide constraints, 1 global options, 0 manually-entered constraints and 9 fixed parameters.
-2026-02-17 09:52:39,302 DEBUG      priors:
-2026-02-17 09:52:39,302 DEBUG       - B->K::alpha^f+_0@BSZ2015 (uniform)
-2026-02-17 09:52:39,302 DEBUG       - B->K::alpha^f+_1@BSZ2015 (uniform)
-2026-02-17 09:52:39,302 DEBUG       - B->K::alpha^f+_2@BSZ2015 (uniform)
-2026-02-17 09:52:39,303 DEBUG       - B->K::alpha^f0_1@BSZ2015 (uniform)
-2026-02-17 09:52:39,303 DEBUG       - B->K::alpha^f0_2@BSZ2015 (uniform)
-2026-02-17 09:52:39,303 DEBUG       - B->K::alpha^fT_0@BSZ2015 (uniform)
-2026-02-17 09:52:39,303 DEBUG       - B->K::alpha^fT_1@BSZ2015 (uniform)
-2026-02-17 09:52:39,303 DEBUG       - B->K::alpha^fT_2@BSZ2015 (uniform)
-2026-02-17 09:52:39,303 DEBUG      constraints:
-2026-02-17 09:52:39,304 DEBUG       - B->K::f_0+f_++f_T@HPQCD:2013A
-2026-02-17 09:52:39,304 DEBUG       - B->K::f_0+f_++f_T@FNAL+MILC:2015D
-2026-02-17 09:52:39,304 DEBUG       - B->K::f_0+f_++f_T@HPQCD:2022A
-2026-02-17 09:52:39,304 DEBUG       - B->K::FormFactors[f_+,f_0,f_T]@GKvD:2018A
-2026-02-17 09:52:39,304 DEBUG      manual_constraints:
-2026-02-17 09:52:39,304 DEBUG      fixed_parameters:
-2026-02-17 09:52:39,305 DEBUG       - mass::B_d
-2026-02-17 09:52:39,305 DEBUG       - mass::B_s
-2026-02-17 09:52:39,305 DEBUG       - mass::K_d
-2026-02-17 09:52:39,305 DEBUG       - mass::K_u
-2026-02-17 09:52:39,305 DEBUG       - mass::b(MSbar)
-2026-02-17 09:52:39,306 DEBUG       - mass::c
-2026-02-17 09:52:39,306 DEBUG       - sb::mu
-2026-02-17 09:52:39,306 DEBUG       - b->s::c1
-2026-02-17 09:52:39,306 DEBUG       - b->s::c2
-2026-02-17 09:52:55,293 INFO       iteration 7318 | batch: 5 | bound: 0 | nc: 4 | ncall: 29659 | eff(%): 24.674 | loglstar: 103.016 < 104.187 < 108.239 | logz: 96.200 +/-  0.151 | stop:  2.464
-2026-02-17 09:53:07,186 COMPLETED  ...finished!
-2026-02-17 09:53:07,186 INFO       Finished sampling with 14005 samples and evidence estimate 96.19 +/- 0.10
+2026-03-16 15:18:14,484 INPROGRESS Beginning sampling...
+2026-03-16 15:18:14,487 INFO       Creating analysis with 8 priors, 3 EOS-wide constraints, 2 global options, 0 manually-entered constraints and 9 fixed parameters.
+2026-03-16 15:18:14,487 DEBUG      priors:
+2026-03-16 15:18:14,487 DEBUG       - B->K::alpha^f+_0@BSZ2015 (uniform)
+2026-03-16 15:18:14,487 DEBUG       - B->K::alpha^f+_1@BSZ2015 (uniform)
+2026-03-16 15:18:14,488 DEBUG       - B->K::alpha^f+_2@BSZ2015 (uniform)
+2026-03-16 15:18:14,488 DEBUG       - B->K::alpha^f0_1@BSZ2015 (uniform)
+2026-03-16 15:18:14,488 DEBUG       - B->K::alpha^f0_2@BSZ2015 (uniform)
+2026-03-16 15:18:14,488 DEBUG       - B->K::alpha^fT_0@BSZ2015 (uniform)
+2026-03-16 15:18:14,488 DEBUG       - B->K::alpha^fT_1@BSZ2015 (uniform)
+2026-03-16 15:18:14,488 DEBUG       - B->K::alpha^fT_2@BSZ2015 (uniform)
+2026-03-16 15:18:14,489 DEBUG      constraints:
+2026-03-16 15:18:14,489 DEBUG       - B->K::f_0+f_++f_T@HPQCD:2013A
+2026-03-16 15:18:14,489 DEBUG       - B->K::f_0+f_++f_T@FNAL+MILC:2015D
+2026-03-16 15:18:14,489 DEBUG       - B->K::FormFactors[f_+,f_0,f_T]@GKvD:2018A
+2026-03-16 15:18:14,489 DEBUG      manual_constraints:
+2026-03-16 15:18:14,489 DEBUG      fixed_parameters:
+2026-03-16 15:18:14,489 DEBUG       - mass::B_d
+2026-03-16 15:18:14,489 DEBUG       - mass::B_s
+2026-03-16 15:18:14,489 DEBUG       - mass::K_d
+2026-03-16 15:18:14,489 DEBUG       - mass::K_u
+2026-03-16 15:18:14,490 DEBUG       - mass::b(MSbar)
+2026-03-16 15:18:14,490 DEBUG       - mass::c
+2026-03-16 15:18:14,490 DEBUG       - sb::mu
+2026-03-16 15:18:14,490 DEBUG       - b->s::c1
+2026-03-16 15:18:14,490 DEBUG       - b->s::c2
+2026-03-16 15:18:30,166 INFO       iteration 4913 | batch: 9 | bound: 33 | nc: 9 | ncall: 38719 | eff(%): 12.432 | loglstar: 79.829 < 87.071 < 87.252 | logz: 76.166 +/-  0.176 | stop:  3.045
+2026-03-16 15:18:45,168 INFO       iteration 10240 | batch: 17 | bound: 2 | nc: 10 | ncall: 75690 | eff(%): 13.234 | loglstar: 82.855 < 83.035 < 87.537 | logz: 76.216 +/-  0.121 | stop:  1.206
+2026-03-16 15:18:51,877 COMPLETED  ...finished!
+2026-03-16 15:18:51,878 INFO       Finished sampling with 12635 samples and evidence estimate 76.27 +/- 0.11
