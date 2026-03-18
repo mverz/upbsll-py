@@ -25,6 +25,8 @@ alpha_s = mm.alpha_s(mu)
 mc = 1.44423
 ms = pp['mass::s(2GeV)'].evaluate()
 
+mBs_star = pp['mass::B_s^*'].evaluate()
+
 def DC7(s): # which is purely NLO (alpha_s)
 
     test_flag = 0
@@ -152,7 +154,7 @@ def mix_C31_C32(s):
 def kallen(x,y,z):
     return  x*x + y*y + z*z -2 * (x*y + x*z + y*z)
 def lambda_k(s):
-    return max(kallen(mb*mb, ms*ms, s), 0.0)
+    return abs(kallen(mb*mb, ms*ms, s)) # The abs allows to extend the integral to s < s_plus
 
 def Disc11_LO(s):
     return -1j * np.sqrt(lambda_k(s)) * (lambda_k(s) + 3*s * (mb*mb + ms*ms - s)) / (8*np.pi * s*s) # Htheta s > (mb + ms)^2
@@ -197,20 +199,28 @@ def Disc11_NLO(s):
 
 n_subtractions_plus_1 = 3
 
-def to_integrate(s, Q2, n_subtractions_plus_1 = n_subtractions_plus_1): # modify n_subtractions_plus_1 to change the number of subtractions in the dispersion relation. Must be >= 3 for convergence of the integral, but can be higher if desired (e.g. to suppress more the high-s region). 
-    return (1/(2j * np.pi) * (C31_LO_ms(s)*(Disc11_LO(s) + Disc11_NLO(s)) + 2 * mix_C31_C31(s)*Disc11_LO(s) + 2 * mix_C31_C32(s)*Disc12_LO(s)) / ((s - Q2)**(n_subtractions_plus_1))).real
+# modify n_subtractions_plus_1 to change the number of subtractions in the dispersion relation. Must be >= 3 for convergence of the integral, but can be higher if desired (e.g. to suppress more the high-s region). 
+def to_integrate(s, Q2, n_subtractions_plus_1 = n_subtractions_plus_1, with_res_factor = True): 
+    res_factor = (s - mBs_star**2)**2 / (s + Q2)**2
+
+    if(with_res_factor):
+        output = (1/(2j * np.pi) * res_factor * (C31_LO_ms(s)*(Disc11_LO(s) + Disc11_NLO(s)) + 2 * mix_C31_C31(s)*Disc11_LO(s) + 2 * mix_C31_C32(s)*Disc12_LO(s)) / ((s + Q2)**(n_subtractions_plus_1))).real
+    else:
+        output = (1/(2j * np.pi) * (C31_LO_ms(s)*(Disc11_LO(s) + Disc11_NLO(s)) + 2 * mix_C31_C31(s)*Disc11_LO(s) + 2 * mix_C31_C32(s)*Disc12_LO(s)) / ((s + Q2)**(n_subtractions_plus_1))).real
+
+    return output
 
 flag_check_real = 0
 if (flag_check_real): # Note that the integrand is real for s > (mb + ms)^2, so we take the real part of the expression.
     s_vals = np.linspace((mb + ms)**2, 10000, 1000)
     for s in s_vals:
-        print("s = {}, to_integrate = {}".format(s, to_integrate(s, -mb**2)))
+        print("s = {}, to_integrate = {}".format(s, to_integrate(s, mb**2)))
 
 def chi_OPE(Q2, s0, epsr = 1e-10, subd_lim = 200):
     val, err = integrate.quad(to_integrate, s0, np.inf, args = (Q2,), epsrel = epsr, limit = subd_lim)
     return val, err
 
-Q2_vals = [- mb**2, 0]
+Q2_vals = [+ mb**2, 0]
 flag_compute = 0
 if (flag_compute):
     for Q2 in Q2_vals:

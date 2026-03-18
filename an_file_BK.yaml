@@ -263,7 +263,7 @@ likelihoods:
     constraints:
       #- 'B->K::f_0+f_++f_T@HPQCD:2013A'
       #- 'B->K::f_0+f_++f_T@FNAL+MILC:2015D'
-      - 'B->K::f_0+f_++f_T@HPQCD:2022A'
+      #- 'B->K::f_0+f_++f_T@HPQCD:2022A'
       - 'B->K::f_0+f_++f_T@FLAG:2021A'
   - name: TH-BToK-LCSR
     constraints:
@@ -342,21 +342,21 @@ likelihoods:
 posteriors:
   - name: BSZ-BqToK-wSR
     fixed_parameters:
-      'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
-      'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
-      'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
-      'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
-      'mass::b(MSbar)':  4.18
-      'mass::c':  1.44423
-      'sb::mu':  4.18
-      'b->s::c1': -0.287213
-      'b->s::c2':  1.009
+      # 'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
+      # 'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
+      # 'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
+      # 'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
+      # 'mass::b(MSbar)':  4.18
+      # 'mass::c':  1.44423
+      # 'sb::mu':  4.18
+      # 'b->s::c1': -0.287213
+      # 'b->s::c2':  1.009
       # t_0 is t_opt
     global_options:
       form-factors: BSZ2015
       model: WET
     prior:
-      - bsz-BqToK-wSR
+      - bsz-BqToK-wSR@2022
     likelihood:
       - TH-BToK-LQCD
       - TH-BToK-LCSR
@@ -398,7 +398,6 @@ posteriors:
       'sb::mu':  4.18
       'b->s::c1': -0.287213
       'b->s::c2':  1.009
-      'b->sccbar::t_0':  4.0
       # t_0 is t_opt
     global_options:
       form-factors: BSZ2015
