@@ -48,5 +48,19 @@ observables:
     form-factors: BSZ2015
     model: WET
     nonlocal-formfactor: GRvDV2022order5
+- kinematics:
+    q2: 0.0
+  name: B->K::F_plus(q2)
+  options:
+    form-factors: BSZ2015
+    model: WET
+    nonlocal-formfactor: GRvDV2022order5
+- kinematics:
+    q2: 6.0
+  name: B->K::F_plus(q2)
+  options:
+    form-factors: BSZ2015
+    model: WET
+    nonlocal-formfactor: GRvDV2022order5
 type: Prediction
 version: 1.0.19

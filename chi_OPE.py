@@ -216,12 +216,12 @@ if (flag_check_real): # Note that the integrand is real for s > (mb + ms)^2, so 
     for s in s_vals:
         print("s = {}, to_integrate = {}".format(s, to_integrate(s, mb**2)))
 
-def chi_OPE(Q2, s0, epsr = 1e-10, subd_lim = 200):
+def chi_OPE(Q2, s0, epsr = 1e-10, subd_lim = 100):
     val, err = integrate.quad(to_integrate, s0, np.inf, args = (Q2,), epsrel = epsr, limit = subd_lim)
     return val, err
 
 Q2_vals = [+ mb**2, 0]
-flag_compute = 0
+flag_compute = 1
 if (flag_compute):
     for Q2 in Q2_vals:
         val, err = chi_OPE(Q2, (mb + ms)**2)

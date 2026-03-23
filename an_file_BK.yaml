@@ -1,14 +1,14 @@
 priors:
   - name: bsz-BqToK-wSR@2022
     descriptions:
-    - { parameter: 'B->K::alpha^f+_0@BSZ2015', min: 3.221e-01, max: 3.792e-01, type: 'uniform'}
-    - { parameter: 'B->K::alpha^f+_1@BSZ2015', min: -1.095e+00, max: -5.310e-01, type: 'uniform'}
-    - { parameter: 'B->K::alpha^f+_2@BSZ2015', min: -7.950e-01, max: 7.347e-01, type: 'uniform'}
-    - { parameter: 'B->K::alpha^f0_1@BSZ2015', min: 2.435e-01, max: 6.829e-01, type: 'uniform'}
-    - { parameter: 'B->K::alpha^f0_2@BSZ2015', min: -1.932e-01, max: 6.436e-01, type: 'uniform'}
-    - { parameter: 'B->K::alpha^fT_0@BSZ2015', min: 3.072e-01, max: 3.994e-01, type: 'uniform'}
-    - { parameter: 'B->K::alpha^fT_1@BSZ2015', min: -1.206e+00, max: -3.541e-01, type: 'uniform'}
-    - { parameter: 'B->K::alpha^fT_2@BSZ2015', min: -9.920e-01, max: 1.014e+00, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f+_0@BSZ2015', min: 3.276e-01, max: 4.451e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f+_1@BSZ2015', min: -1.053e+00, max: -7.297e-02, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f+_2@BSZ2015', min: -7.481e-01, max: 1.459e+00, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f0_1@BSZ2015', min: 2.827e-01, max: 1.148e+00, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f0_2@BSZ2015', min: -1.134e-01, max: 1.422e+00, type: 'uniform'}
+    - { parameter: 'B->K::alpha^fT_0@BSZ2015', min: 3.026e-01, max: 4.265e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^fT_1@BSZ2015', min: -1.272e+00, max: -1.544e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^fT_2@BSZ2015', min: -1.192e+00, max: 1.313e+00, type: 'uniform'}
   - name: bsz-BqToK-wSR
     descriptions:
     - { parameter: 'B->K::alpha^f+_0@BSZ2015',        min:  +0.30, max:  +0.37, type: 'uniform' }
@@ -341,17 +341,16 @@ likelihoods:
 
 posteriors:
   - name: BSZ-BqToK-wSR
-    fixed_parameters:
-      # 'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
-      # 'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
-      # 'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
-      # 'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
-      # 'mass::b(MSbar)':  4.18
-      # 'mass::c':  1.44423
-      # 'sb::mu':  4.18
-      # 'b->s::c1': -0.287213
-      # 'b->s::c2':  1.009
-      # t_0 is t_opt
+    fixed_parameters:          # t_0 is t_opt
+      'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
+      'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
+      'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::b(MSbar)':  4.18
+      'mass::c':  1.44423
+      'sb::mu':  4.18
+      'b->s::c1': -0.287213
+      'b->s::c2':  1.009
     global_options:
       form-factors: BSZ2015
       model: WET
@@ -411,7 +410,7 @@ posteriors:
       - TH-BToK-LCSR
       - vanishing-{Delta-H0}/F0
       - charmonium-resonances
-      #- BToK-NonLocalBound
+      - BToK-NonLocalBound
 
 
 
@@ -426,14 +425,16 @@ predictions:
         kinematics: [ { q2: -7.0 }, { q2: -6.0 },
                       { q2: -5.0 }, { q2: -4.0 },
                       { q2: -3.0 }, { q2: -2.0 },
-                      { q2: -1.0 } ]
+                      { q2: -1.0 }, { q2: 0.0 },
+                      { q2: 6.0 } ]
   - name: BToK-FT0
     observables:
       - name: B->K::F_plus_T(q2)
         kinematics: [ { q2: -7.0 }, { q2: -6.0 },
                       { q2: -5.0 }, { q2: -4.0 },
                       { q2: -3.0 }, { q2: -2.0 },
-                      { q2: -1.0 } ]
+                      { q2: -1.0 }, { q2: 0.0 },
+                      { q2: 6.0 } ]
 
 
   - name: BToK-f+
