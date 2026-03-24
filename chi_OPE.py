@@ -25,6 +25,10 @@ alpha_s = mm.alpha_s(mu)
 mc = 1.44423
 ms = pp['mass::s(2GeV)'].evaluate()
 
+MB = pp['mass::B_d'].evaluate()
+MK = pp['mass::K_d'].evaluate()
+MD = pp['mass::D^0'].evaluate()
+
 mBs_star = pp['mass::B_s^*'].evaluate()
 
 def DC7(s): # which is purely NLO (alpha_s)
@@ -152,9 +156,9 @@ def mix_C31_C32(s):
     return (DC9_LO(s) * np.conj(DC7(s))).real
 
 def kallen(x,y,z):
-    return  x*x + y*y + z*z -2 * (x*y + x*z + y*z)
+    return  x*x + y*y + z*z - 2 * (x*y + x*z + y*z)
 def lambda_k(s):
-    return abs(kallen(mb*mb, ms*ms, s)) # The abs allows to extend the integral to s < s_plus
+    return abs(kallen(mb*mb, ms*ms, s))
 
 def Disc11_LO(s):
     return -1j * np.sqrt(lambda_k(s)) * (lambda_k(s) + 3*s * (mb*mb + ms*ms - s)) / (8*np.pi * s*s) # Htheta s > (mb + ms)^2
@@ -216,14 +220,72 @@ if (flag_check_real): # Note that the integrand is real for s > (mb + ms)^2, so 
     for s in s_vals:
         print("s = {}, to_integrate = {}".format(s, to_integrate(s, mb**2)))
 
-def chi_OPE(Q2, s0, epsr = 1e-10, subd_lim = 100):
-    val, err = integrate.quad(to_integrate, s0, np.inf, args = (Q2,), epsrel = epsr, limit = subd_lim)
-    return val, err
+def chi_OPE(Q2, s_plus = (mb + ms)**2, epsrel = 1e-10, subd_lim = 100):
+    val, err = integrate.quad(to_integrate, s_plus, np.inf, args = (Q2,), epsrel = epsrel, limit = subd_lim)
+    return val
 
 Q2_vals = [+ mb**2, 0]
-flag_compute = 1
+flag_compute = 0
 if (flag_compute):
     for Q2 in Q2_vals:
         val, err = chi_OPE(Q2, (mb + ms)**2)
         print("Q^2:\t", Q2)
         print(val, "\t+/-\t", err)
+
+
+
+# chi Tilde OPE implementation
+
+BASE_DIRECTORY='./test_base'
+ANALYSIS_FILE='./an_file_BK.yaml'
+POSTERIOR_NAME = 'BSZ-BqToK-wSR-wNFF-wCov'
+
+bfp, gof = eos.tasks.find_mode(
+        ANALYSIS_FILE,
+        POSTERIOR_NAME,
+        BASE_DIRECTORY,
+        importance_samples=True,
+        label='EOS',
+        optimizations=50
+    )
+display(bfp)
+display(gof)
+
+for par, val in zip(bfp.analysis.varied_parameters, bfp.point):
+    pp.set(par.name(), float(val))
+
+options = {'form-factor':'BSZ2015', 'nonlocal-formfactor':'GRvDV2022order5', 'model':'SM'}
+opt = eos.Options(options)
+
+def H_0_BToK(s):
+    kin = eos.Kinematics({"q2": float(s)})
+
+    re_obs = eos.Observable.make("B->K::Re{H_plus}(q2)", pp, kin, opt).evaluate()
+    im_obs = eos.Observable.make("B->K::Im{H_plus}(q2)", pp, kin, opt).evaluate()
+
+    return re_obs + 1j * im_obs
+
+
+
+def to_integrate_tilde(s, Q2, n_subtractions_plus_1 = n_subtractions_plus_1, with_res_factor = True):
+    res_factor = (s - mBs_star**2)**2 / (s + Q2)**2
+
+    if(with_res_factor):
+        output = res_factor * MB**4 * pow( abs(kallen(MB**2,MK**2,s)) , 1.5 )/( s**4 * (s + Q2)**(n_subtractions_plus_1) ) * abs(H_0_BToK(s))**2
+    else:
+        print("Warning: not including the resonance factor in the integrand is not supported.")
+        output = 0.0
+
+    return output
+
+def Delta_chi(Q2, s_G = 4 * MD**2, s_plus = (mb + ms)**2, epsrel = 1e-9, subd_lim = 25):
+    val, err = integrate.quad(to_integrate_tilde, s_G, s_plus, args = (Q2,), epsrel = epsrel, limit = subd_lim)
+    return val
+
+
+chi_0 = chi_OPE(0)
+Delta_chi_0 = Delta_chi(0)
+
+chi_tilde_0 = chi_0 + Delta_chi_0
+
+print(f"chi at Q^2 = 0: {chi_0}\nDelta chi at Q^2 = 0: {Delta_chi_0}\nchi tilde at Q^2 = 0: {chi_tilde_0}")

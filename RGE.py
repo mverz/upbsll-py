@@ -20,6 +20,8 @@ pp = eos.Parameters.Defaults()
 oo = eos.Options()
 mm = eos.Model.make('SM', pp, oo)
 
+print(f'c7 at 4.18 = {mm.wilson_coefficients_b_to_s(4.18, 1, False).c7()}, at 8.36 = {mm.wilson_coefficients_b_to_s(8.36, 1, False).c7()}, at 2.09 = {mm.wilson_coefficients_b_to_s(2.09, 1, False).c7()}\n\n')
+
 mu_b = 4.18
 
 MB=5.27931
@@ -149,11 +151,9 @@ def DC9(s, mu):
     return DC_Re + 1j * DC_Im
 
 F = [3.090910e-01,
-     3.924350e-01,
      5.264856e-01]
 
 FT = [-5.572973e-02,
-      0.0,
       9.951136e-02]
 
 def H(s, mu):
@@ -164,6 +164,8 @@ def H(s, mu):
 
     return -1/(16*np.pi**2) * ( s/(2*MB**2) * DC9(s, mu) * F[i] + mm.m_b_msbar(mu)/MB * DC7(s, mu) * FT[i] * tensor_current_evol(mm.alpha_s(mu_b), mm.alpha_s(mu)) )
 
+
+
 def A_0L(s, mu):
     if(s == -6.0): i=0
     elif(s == 0.0): i=1
@@ -172,7 +174,7 @@ def A_0L(s, mu):
 
     wc = wc_at(mu)
 
-    return (wc.c9()-wc.c10()) * F[i] + 2 * mm.m_b_msbar(mu)*MB / s * ( wc.c7() * FT[i] * tensor_current_evol(mm.alpha_s(mu_b), mm.alpha_s(mu)) - 16*np.pi**2 * MB/mm.m_b_msbar(mu) * H(s, mu) )
+    return (wc.c9()- wc.c10()) * F[i] + 2 * mm.m_b_msbar(mu)*MB / s * ( wc.c7() * FT[i] * tensor_current_evol(mm.alpha_s(mu_b), mm.alpha_s(mu)) - 16*np.pi**2 * MB/mm.m_b_msbar(mu) * H(s, mu) )
 
 def A_0L_local(s, mu):
     if(s == -6.0): i=0
@@ -182,7 +184,7 @@ def A_0L_local(s, mu):
 
     wc = wc_at(mu)
 
-    return (wc.c9()-wc.c10()) * F[i] + 2 * mm.m_b_msbar(mu)*MB / s * ( wc.c7() * FT[i] * tensor_current_evol(mm.alpha_s(mu_b), mm.alpha_s(mu)) )
+    return (wc.c9()- wc.c10()) * F[i] + 2 * mm.m_b_msbar(mu)*MB / s * ( wc.c7() * FT[i] * tensor_current_evol(mm.alpha_s(mu_b), mm.alpha_s(mu)) )
 
 def A_0L_nonlocal(s, mu):
     if(s == -6.0): i=0
@@ -194,17 +196,83 @@ def A_0L_nonlocal(s, mu):
 
     return 2 * mm.m_b_msbar(mu)*MB / s * ( - 16*np.pi**2 * MB/mm.m_b_msbar(mu) * H(s, mu) )
 
-for mu in [mu_b, mu_b*2, mu_b/2]:
-    print(f"mu = {mu} GeV")
-    for s in [-6.0, 6.0]:
-        print(f"s = {s} GeV^2: A_0L = {A_0L(s, mu)}")
 
-for mu in [mu_b, mu_b*2, mu_b/2]:
-    print(f"mu = {mu} GeV")
-    for s in [-6.0, 6.0]:
-        print(f"s = {s} GeV^2: A_0L = {A_0L_local(s, mu)}")
+def A_0R(s, mu):
+    if(s == -6.0): i=0
+    elif(s == 0.0): i=1
+    elif(s == 6.0): i=2
+    else: raise ValueError("s value not recognized")
 
-for mu in [mu_b, mu_b*2, mu_b/2]:
-    print(f"mu = {mu} GeV")
-    for s in [-6.0, 6.0]:
-        print(f"s = {s} GeV^2: A_0L = {A_0L_nonlocal(s, mu)}")
+    wc = wc_at(mu)
+
+    return (wc.c9()+ wc.c10()) * F[i] + 2 * mm.m_b_msbar(mu)*MB / s * ( wc.c7() * FT[i] * tensor_current_evol(mm.alpha_s(mu_b), mm.alpha_s(mu)) - 16*np.pi**2 * MB/mm.m_b_msbar(mu) * H(s, mu) )
+
+def A_0R_local(s, mu):
+    if(s == -6.0): i=0
+    elif(s == 0.0): i=1
+    elif(s == 6.0): i=2
+    else: raise ValueError("s value not recognized")
+
+    wc = wc_at(mu)
+
+    return (wc.c9()+ wc.c10()) * F[i] + 2 * mm.m_b_msbar(mu)*MB / s * ( wc.c7() * FT[i] * tensor_current_evol(mm.alpha_s(mu_b), mm.alpha_s(mu)) )
+
+def A_0R_nonlocal(s, mu):
+    if(s == -6.0): i=0
+    elif(s == 0.0): i=1
+    elif(s == 6.0): i=2
+    else: raise ValueError("s value not recognized")
+
+    wc = wc_at(mu)
+
+    return 2 * mm.m_b_msbar(mu)*MB / s * ( - 16*np.pi**2 * MB/mm.m_b_msbar(mu) * H(s, mu) )
+
+
+# for mu in [mu_b, mu_b*2, mu_b/2]:
+#     print(f"mu = {mu} GeV")
+#     for s in [-6.0, 6.0]:
+#         print(f"s = {s} GeV^2: A_0L = {A_0L(s, mu)}, mod_sq = {abs(A_0L(s, mu))**2}")
+
+# for mu in [mu_b, mu_b*2, mu_b/2]:
+#     print(f"mu = {mu} GeV")
+#     for s in [-6.0, 6.0]:
+#         print(f"s = {s} GeV^2: A_0L = {A_0L_local(s, mu)}, mod_sq = {abs(A_0L_local(s, mu))**2}")
+
+# for mu in [mu_b, mu_b*2, mu_b/2]:
+#     print(f"mu = {mu} GeV")
+#     for s in [-6.0, 6.0]:
+#         print(f"s = {s} GeV^2: A_0L = {A_0L_nonlocal(s, mu)}, mod_sq = {abs(A_0L_nonlocal(s, mu))**2}")
+
+
+
+# print("\n\n")
+
+
+
+# for mu in [mu_b, mu_b*2, mu_b/2]:
+#     print(f"mu = {mu} GeV")
+#     for s in [-6.0, 6.0]:
+#         print(f"s = {s} GeV^2: A_0R = {A_0R(s, mu)}, mod_sq = {abs(A_0R(s, mu))**2}")
+
+# for mu in [mu_b, mu_b*2, mu_b/2]:
+#     print(f"mu = {mu} GeV")
+#     for s in [-6.0, 6.0]:
+#         print(f"s = {s} GeV^2: A_0R = {A_0R_local(s, mu)}, mod_sq = {abs(A_0R_local(s, mu))**2}")
+
+# for mu in [mu_b, mu_b*2, mu_b/2]:
+#     print(f"mu = {mu} GeV")
+#     for s in [-6.0, 6.0]:
+#         print(f"s = {s} GeV^2: A_0R = {A_0R_nonlocal(s, mu)}, mod_sq = {abs(A_0R_nonlocal(s, mu))**2}")
+
+
+
+# for mu in [mu_b, mu_b*2, mu_b/2]:
+#     print(f"mu = {mu} GeV")
+#     for s in [-6.0, 6.0]:
+#         print(f"s = {s} GeV^2: |L|^2 + |R|^2 = {abs(A_0L(s, mu))**2 + abs(A_0R(s, mu))**2}")
+
+
+
+# for mu in [mu_b, mu_b*2, mu_b/2]:
+#     print(f"mu = {mu} GeV")
+#     print(f"C1 = {wc_at(mu).c1()}, C2 = {wc_at(mu).c2()}, C7 = {wc_at(mu).c7()}, C9 = {wc_at(mu).c9()}, C10 = {wc_at(mu).c10()}\n")

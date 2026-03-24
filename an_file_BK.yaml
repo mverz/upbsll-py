@@ -11,26 +11,26 @@ priors:
     - { parameter: 'B->K::alpha^fT_2@BSZ2015', min: -1.192e+00, max: 1.313e+00, type: 'uniform'}
   - name: bsz-BqToK-wSR
     descriptions:
-    - { parameter: 'B->K::alpha^f+_0@BSZ2015',        min:  +0.30, max:  +0.37, type: 'uniform' }
-    - { parameter: 'B->K::alpha^f+_1@BSZ2015',        min:  -1.2,  max:  -0.7,  type: 'uniform' }
-    - { parameter: 'B->K::alpha^f+_2@BSZ2015',        min:  -0.6,  max:  +0.1,  type: 'uniform' }
-    - { parameter: 'B->K::alpha^f0_1@BSZ2015',        min:  +0.1,  max:  +0.6,  type: 'uniform' }
-    - { parameter: 'B->K::alpha^f0_2@BSZ2015',        min:  -0.5,  max:  +0.5,  type: 'uniform' }
-    - { parameter: 'B->K::alpha^fT_0@BSZ2015',        min:  +0.27, max:  +0.37, type: 'uniform' }
-    - { parameter: 'B->K::alpha^fT_1@BSZ2015',        min:  -1.4,  max:  -0.7,  type: 'uniform' }
-    - { parameter: 'B->K::alpha^fT_2@BSZ2015',        min:  -1.2,  max:  +0.3,  type: 'uniform' }
+    - { parameter: 'B->K::alpha^f+_0@BSZ2015', min: 3.054e-01, max: 4.854e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f+_1@BSZ2015', min: -1.245e+00, max: 2.644e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f+_2@BSZ2015', min: -1.223e+00, max: 2.209e+00, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f0_1@BSZ2015', min: 1.191e-01, max: 1.443e+00, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f0_2@BSZ2015', min: -4.096e-01, max: 1.941e+00, type: 'uniform'}
+    - { parameter: 'B->K::alpha^fT_0@BSZ2015', min: 2.648e-01, max: 4.657e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^fT_1@BSZ2015', min: -1.602e+00, max: 1.912e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^fT_2@BSZ2015', min: -1.926e+00, max: 2.084e+00, type: 'uniform'}
   - name: GRvDV2022-BToKccbar
     descriptions:
-    - { parameter: 'B->Kccbar::Re_Hhat_at_m7_plus@GRvDV2022', min: -0.000025, max: 0.000075, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Im_Hhat_at_m7_plus@GRvDV2022', min: -7.5e-06,  max: -1.0e-06, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Re_Hhat_at_m5_plus@GRvDV2022', min: 1.0e-05, max: 0.00018, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Im_Hhat_at_m5_plus@GRvDV2022', min: -7.5e-06, max: -1.0e-06, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Re_Hhat_at_m3_plus@GRvDV2022', min: 7.0e-05, max: 0.00021, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Im_Hhat_at_m3_plus@GRvDV2022', min: -1.0e-05, max: -2.0e-06, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022', min: 7.0e-05, max: 0.00038, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022', min: -1.3e-05, max: 3.0e-06, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022', min: 0.00112, max: 0.00132, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Arg_Hhat_at_Jpsi_plus@GRvDV2022', min: -3.141592653589793, max: 3.141592653589793, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m7_plus@GRvDV2022', min: -5.876e-05, max: 1.529e-04, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m7_plus@GRvDV2022', min: -7.659e-06, max: -5.202e-07, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m5_plus@GRvDV2022', min: -6.465e-06, max: 2.220e-04, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m5_plus@GRvDV2022', min: -8.950e-06, max: -1.238e-06, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m3_plus@GRvDV2022', min: 5.331e-05, max: 2.919e-04, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m3_plus@GRvDV2022', min: -1.070e-05, max: -2.297e-06, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022', min: 1.026e-04, max: 3.755e-04, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022', min: -1.304e-05, max: -3.728e-06, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022', min: 1.163e-03, max: 1.287e-03, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Arg_Hhat_at_Jpsi_plus@GRvDV2022', min: -2.533e+01, max: 2.547e+01, type: 'uniform'}
 
 
 observables:
@@ -263,7 +263,7 @@ likelihoods:
     constraints:
       #- 'B->K::f_0+f_++f_T@HPQCD:2013A'
       #- 'B->K::f_0+f_++f_T@FNAL+MILC:2015D'
-      #- 'B->K::f_0+f_++f_T@HPQCD:2022A'
+      - 'B->K::f_0+f_++f_T@HPQCD:2022A'
       - 'B->K::f_0+f_++f_T@FLAG:2021A'
   - name: TH-BToK-LCSR
     constraints:

@@ -22,8 +22,8 @@ ANALYSIS_FILE='./an_file_BK.yaml'
 POSTERIOR_NAME = 'BSZ-BqToK-wSR-wNFF-wCov'
 
 #OPTIONS---------------
-flag_sample = 0
-flag_predict = 1
+flag_sample = 1
+flag_predict = 0
 flag_gof = 0
 #-----------------------
 

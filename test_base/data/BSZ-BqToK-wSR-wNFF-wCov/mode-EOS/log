@@ -1,472 +1,476 @@
-2026-03-18 16:41:18,051 INFO       Creating analysis with 18 priors, 4 EOS-wide constraints, 3 global options, 1 manually-entered constraints and 9 fixed parameters.
-2026-03-18 16:41:18,052 DEBUG      priors:
-2026-03-18 16:41:18,052 DEBUG       - B->K::alpha^f+_0@BSZ2015 (uniform)
-2026-03-18 16:41:18,053 DEBUG       - B->K::alpha^f+_1@BSZ2015 (uniform)
-2026-03-18 16:41:18,053 DEBUG       - B->K::alpha^f+_2@BSZ2015 (uniform)
-2026-03-18 16:41:18,053 DEBUG       - B->K::alpha^f0_1@BSZ2015 (uniform)
-2026-03-18 16:41:18,053 DEBUG       - B->K::alpha^f0_2@BSZ2015 (uniform)
-2026-03-18 16:41:18,053 DEBUG       - B->K::alpha^fT_0@BSZ2015 (uniform)
-2026-03-18 16:41:18,053 DEBUG       - B->K::alpha^fT_1@BSZ2015 (uniform)
-2026-03-18 16:41:18,053 DEBUG       - B->K::alpha^fT_2@BSZ2015 (uniform)
-2026-03-18 16:41:18,054 DEBUG       - B->Kccbar::Re_Hhat_at_m7_plus@GRvDV2022 (uniform)
-2026-03-18 16:41:18,054 DEBUG       - B->Kccbar::Im_Hhat_at_m7_plus@GRvDV2022 (uniform)
-2026-03-18 16:41:18,054 DEBUG       - B->Kccbar::Re_Hhat_at_m5_plus@GRvDV2022 (uniform)
-2026-03-18 16:41:18,054 DEBUG       - B->Kccbar::Im_Hhat_at_m5_plus@GRvDV2022 (uniform)
-2026-03-18 16:41:18,054 DEBUG       - B->Kccbar::Re_Hhat_at_m3_plus@GRvDV2022 (uniform)
-2026-03-18 16:41:18,054 DEBUG       - B->Kccbar::Im_Hhat_at_m3_plus@GRvDV2022 (uniform)
-2026-03-18 16:41:18,054 DEBUG       - B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022 (uniform)
-2026-03-18 16:41:18,055 DEBUG       - B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022 (uniform)
-2026-03-18 16:41:18,055 DEBUG       - B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022 (uniform)
-2026-03-18 16:41:18,055 DEBUG       - B->Kccbar::Arg_Hhat_at_Jpsi_plus@GRvDV2022 (uniform)
-2026-03-18 16:41:18,055 DEBUG      constraints:
-2026-03-18 16:41:18,055 DEBUG       - B->K::f_0+f_++f_T@FLAG:2021A
-2026-03-18 16:41:18,055 DEBUG       - B->K::FormFactors[f_+,f_T]@KR:2017A
-2026-03-18 16:41:18,055 DEBUG       - B^0->K^0Jpsi::BR@PDG:2020A
-2026-03-18 16:41:18,055 DEBUG       - B->KJpsi::BR@PDG:2020A
-2026-03-18 16:41:18,055 DEBUG      manual_constraints:
-2026-03-18 16:41:18,056 DEBUG       - B->K::vanishing-{Delta_H_0(q2)}/F_0(q2)
-2026-03-18 16:41:18,056 DEBUG      fixed_parameters:
-2026-03-18 16:41:18,056 DEBUG       - mass::B_d
-2026-03-18 16:41:18,056 DEBUG       - mass::B_s
-2026-03-18 16:41:18,056 DEBUG       - mass::K_d
-2026-03-18 16:41:18,056 DEBUG       - mass::K_u
-2026-03-18 16:41:18,056 DEBUG       - mass::b(MSbar)
-2026-03-18 16:41:18,057 DEBUG       - mass::c
-2026-03-18 16:41:18,057 DEBUG       - sb::mu
-2026-03-18 16:41:18,057 DEBUG       - b->s::c1
-2026-03-18 16:41:18,057 DEBUG       - b->s::c2
-2026-03-18 16:41:18,117 INFO       likelihood probably depends on 350 parameter(s) that do not appear in the prior; check prior?
-2026-03-18 16:41:18,117 DEBUG      used, but not included in any prior: 'sbnunu::Re{cTL}'
-2026-03-18 16:41:18,117 DEBUG      used, but not included in any prior: 'sbcu::Im{c1'}'
-2026-03-18 16:41:18,117 DEBUG      used, but not included in any prior: 'b->s::Im{c7}'
-2026-03-18 16:41:18,118 DEBUG      used, but not included in any prior: 'ubenue::Re{cVL}'
-2026-03-18 16:41:18,118 DEBUG      used, but not included in any prior: 'b->see::Im{c9}'
-2026-03-18 16:41:18,118 DEBUG      used, but not included in any prior: 'sbcu::Re{c6}'
-2026-03-18 16:41:18,118 DEBUG      used, but not included in any prior: 'dbcu::Re{c3}'
-2026-03-18 16:41:18,119 DEBUG      used, but not included in any prior: 'dcnumumu::Re{cT}'
-2026-03-18 16:41:18,119 DEBUG      used, but not included in any prior: 'dbcu::Im{c10'}'
-2026-03-18 16:41:18,119 DEBUG      used, but not included in any prior: 'b->smumu::Re{c10'}'
-2026-03-18 16:41:18,119 DEBUG      used, but not included in any prior: 'dcnuee::Re{cVL}'
-2026-03-18 16:41:18,119 DEBUG      used, but not included in any prior: 'dbcu::Re{c9'}'
-2026-03-18 16:41:18,119 DEBUG      used, but not included in any prior: 'b->see::Re{cT}'
-2026-03-18 16:41:18,120 DEBUG      used, but not included in any prior: 'b->smumu::Im{c10}'
-2026-03-18 16:41:18,120 DEBUG      used, but not included in any prior: 'usenue::Re{cVR}'
-2026-03-18 16:41:18,120 DEBUG      used, but not included in any prior: 'scnutautau::Im{cT}'
-2026-03-18 16:41:18,120 DEBUG      used, but not included in any prior: 'scnutautau::Re{cT}'
-2026-03-18 16:41:18,120 DEBUG      used, but not included in any prior: 'scnutautau::Im{cSL}'
-2026-03-18 16:41:18,120 DEBUG      used, but not included in any prior: 'b->smumu::Im{cS'}'
-2026-03-18 16:41:18,120 DEBUG      used, but not included in any prior: 'dbcu::Re{c4}'
-2026-03-18 16:41:18,120 DEBUG      used, but not included in any prior: 'b->smumu::Im{cP'}'
-2026-03-18 16:41:18,121 DEBUG      used, but not included in any prior: 'dbcu::Re{c2'}'
-2026-03-18 16:41:18,121 DEBUG      used, but not included in any prior: 'usenue::Im{cVR}'
-2026-03-18 16:41:18,121 DEBUG      used, but not included in any prior: 'b->s::Re{c7'}'
-2026-03-18 16:41:18,121 DEBUG      used, but not included in any prior: 'dcnuee::Re{cSR}'
-2026-03-18 16:41:18,121 DEBUG      used, but not included in any prior: 'sbcu::Re{c8'}'
-2026-03-18 16:41:18,121 DEBUG      used, but not included in any prior: 'CKM::abs(V_cd)'
-2026-03-18 16:41:18,122 DEBUG      used, but not included in any prior: 'sbcu::Im{c8}'
-2026-03-18 16:41:18,122 DEBUG      used, but not included in any prior: 'dbcu::Im{c7'}'
-2026-03-18 16:41:18,122 DEBUG      used, but not included in any prior: 'sbsb::Im{c2}'
-2026-03-18 16:41:18,122 DEBUG      used, but not included in any prior: 'sbnunu::Re{cSR}'
-2026-03-18 16:41:18,123 DEBUG      used, but not included in any prior: 'usmunumu::Im{cT}'
-2026-03-18 16:41:18,123 DEBUG      used, but not included in any prior: 'cbtaunutau::Re{cT}'
-2026-03-18 16:41:18,123 DEBUG      used, but not included in any prior: 'b->smumu::Im{cS}'
-2026-03-18 16:41:18,123 DEBUG      used, but not included in any prior: 'ustaunutau::Re{cVR}'
-2026-03-18 16:41:18,123 DEBUG      used, but not included in any prior: 'ubenue::Re{cSL}'
-2026-03-18 16:41:18,124 DEBUG      used, but not included in any prior: 'ubtaunutau::Re{cVL}'
-2026-03-18 16:41:18,124 DEBUG      used, but not included in any prior: 'B->Kccbar::Arg_Hhat_at_psi2S_plus@GRvDV2022'
-2026-03-18 16:41:18,124 DEBUG      used, but not included in any prior: 'dbcu::Im{c2}'
-2026-03-18 16:41:18,124 DEBUG      used, but not included in any prior: 'sbsb::Im{c5}'
-2026-03-18 16:41:18,124 DEBUG      used, but not included in any prior: 'ustaunutau::Im{cVL}'
-2026-03-18 16:41:18,125 DEBUG      used, but not included in any prior: 'sbnunu::Im{cVR}'
-2026-03-18 16:41:18,125 DEBUG      used, but not included in any prior: 'ubmunumu::Im{cSL}'
-2026-03-18 16:41:18,125 DEBUG      used, but not included in any prior: 'dcnuee::Im{cSR}'
-2026-03-18 16:41:18,125 DEBUG      used, but not included in any prior: 'cbenue::Im{cVR}'
-2026-03-18 16:41:18,125 DEBUG      used, but not included in any prior: 'b->smumu::Im{cT5}'
-2026-03-18 16:41:18,125 DEBUG      used, but not included in any prior: 'scnuee::Re{cVL}'
-2026-03-18 16:41:18,126 DEBUG      used, but not included in any prior: 'ubenue::Re{cVR}'
-2026-03-18 16:41:18,126 DEBUG      used, but not included in any prior: 'dcnumumu::Re{cVL}'
-2026-03-18 16:41:18,126 DEBUG      used, but not included in any prior: 'cbmunumu::Im{cVL}'
-2026-03-18 16:41:18,126 DEBUG      used, but not included in any prior: 'sbcu::Im{c5}'
-2026-03-18 16:41:18,126 DEBUG      used, but not included in any prior: 'dcnutautau::Re{cVR}'
-2026-03-18 16:41:18,126 DEBUG      used, but not included in any prior: 'ubmunumu::Im{cVR}'
-2026-03-18 16:41:18,127 DEBUG      used, but not included in any prior: 'sbcu::Re{c1'}'
-2026-03-18 16:41:18,127 DEBUG      used, but not included in any prior: 'cbenue::Im{cVL}'
-2026-03-18 16:41:18,127 DEBUG      used, but not included in any prior: 'life_time::B_u'
-2026-03-18 16:41:18,127 DEBUG      used, but not included in any prior: 'dcnutautau::Re{cSL}'
-2026-03-18 16:41:18,127 DEBUG      used, but not included in any prior: 'sbcu::Re{c7'}'
-2026-03-18 16:41:18,128 DEBUG      used, but not included in any prior: 'dbcu::Re{c6'}'
-2026-03-18 16:41:18,128 DEBUG      used, but not included in any prior: 'b->see::Re{cP'}'
-2026-03-18 16:41:18,128 DEBUG      used, but not included in any prior: 'scnumumu::Im{cVR}'
-2026-03-18 16:41:18,128 DEBUG      used, but not included in any prior: 'sbsb::Re{c1'}'
-2026-03-18 16:41:18,129 DEBUG      used, but not included in any prior: 'ubtaunutau::Re{cSL}'
-2026-03-18 16:41:18,129 DEBUG      used, but not included in any prior: 'CKM::abs(V_td)'
-2026-03-18 16:41:18,129 DEBUG      used, but not included in any prior: 'usenue::Re{cSR}'
-2026-03-18 16:41:18,129 DEBUG      used, but not included in any prior: 'dbcu::Re{c5'}'
-2026-03-18 16:41:18,129 DEBUG      used, but not included in any prior: 'ustaunutau::Re{cT}'
-2026-03-18 16:41:18,129 DEBUG      used, but not included in any prior: 'usenue::Im{cVL}'
-2026-03-18 16:41:18,129 DEBUG      used, but not included in any prior: 'scnumumu::Re{cSL}'
-2026-03-18 16:41:18,129 DEBUG      used, but not included in any prior: 'dbcu::Im{c8'}'
-2026-03-18 16:41:18,130 DEBUG      used, but not included in any prior: 'sbcu::Re{c4}'
-2026-03-18 16:41:18,130 DEBUG      used, but not included in any prior: 'cbmunumu::Im{cSL}'
-2026-03-18 16:41:18,130 DEBUG      used, but not included in any prior: 'usenue::Re{cVL}'
-2026-03-18 16:41:18,130 DEBUG      used, but not included in any prior: 'sbsb::Im{c2'}'
-2026-03-18 16:41:18,130 DEBUG      used, but not included in any prior: 'sbcu::Im{c1}'
-2026-03-18 16:41:18,130 DEBUG      used, but not included in any prior: 'ustaunutau::Im{cSR}'
-2026-03-18 16:41:18,130 DEBUG      used, but not included in any prior: 'dbcu::Re{c10'}'
-2026-03-18 16:41:18,130 DEBUG      used, but not included in any prior: 'dcnuee::Im{cVR}'
-2026-03-18 16:41:18,131 DEBUG      used, but not included in any prior: 'sbcu::Im{c10}'
-2026-03-18 16:41:18,131 DEBUG      used, but not included in any prior: 'sbcu::Im{c2}'
-2026-03-18 16:41:18,131 DEBUG      used, but not included in any prior: 'CKM::abs(V_cb)'
-2026-03-18 16:41:18,131 DEBUG      used, but not included in any prior: 'b->smumu::Re{c10}'
-2026-03-18 16:41:18,131 DEBUG      used, but not included in any prior: 'QCD::mu_b'
-2026-03-18 16:41:18,132 DEBUG      used, but not included in any prior: 'ustaunutau::Im{cVR}'
-2026-03-18 16:41:18,132 DEBUG      used, but not included in any prior: 'ubtaunutau::Im{cSL}'
-2026-03-18 16:41:18,132 DEBUG      used, but not included in any prior: 'ubmunumu::Re{cSR}'
-2026-03-18 16:41:18,132 DEBUG      used, but not included in any prior: 'usenue::Im{cSR}'
-2026-03-18 16:41:18,132 DEBUG      used, but not included in any prior: 'b->s::Im{c7'}'
-2026-03-18 16:41:18,133 DEBUG      used, but not included in any prior: 'cbenue::Re{cSR}'
-2026-03-18 16:41:18,133 DEBUG      used, but not included in any prior: 'b->s::c8'
-2026-03-18 16:41:18,133 DEBUG      used, but not included in any prior: 'b->see::Im{cP}'
-2026-03-18 16:41:18,133 DEBUG      used, but not included in any prior: 'dbcu::Im{c9'}'
-2026-03-18 16:41:18,133 DEBUG      used, but not included in any prior: 'ubenue::Re{cT}'
-2026-03-18 16:41:18,133 DEBUG      used, but not included in any prior: 'sbcu::Im{c7'}'
-2026-03-18 16:41:18,133 DEBUG      used, but not included in any prior: 'sbcu::Re{c3}'
-2026-03-18 16:41:18,134 DEBUG      used, but not included in any prior: 'b->see::Im{cS}'
-2026-03-18 16:41:18,134 DEBUG      used, but not included in any prior: 'dcnumumu::Im{cT}'
-2026-03-18 16:41:18,134 DEBUG      used, but not included in any prior: 'dbcu::Im{c4'}'
-2026-03-18 16:41:18,134 DEBUG      used, but not included in any prior: 'sbcu::Im{c7}'
-2026-03-18 16:41:18,134 DEBUG      used, but not included in any prior: 'CKM::arg(V_ud)'
-2026-03-18 16:41:18,134 DEBUG      used, but not included in any prior: 'dbcu::Re{c9}'
-2026-03-18 16:41:18,134 DEBUG      used, but not included in any prior: 'ustaunutau::Re{cSR}'
-2026-03-18 16:41:18,134 DEBUG      used, but not included in any prior: 'ubenue::Im{cVR}'
-2026-03-18 16:41:18,134 DEBUG      used, but not included in any prior: 'scnumumu::Re{cT}'
-2026-03-18 16:41:18,134 DEBUG      used, but not included in any prior: 'scnumumu::Im{cSL}'
-2026-03-18 16:41:18,135 DEBUG      used, but not included in any prior: 'b->smumu::Re{cS'}'
-2026-03-18 16:41:18,135 DEBUG      used, but not included in any prior: 'CKM::arg(V_ts)'
-2026-03-18 16:41:18,135 DEBUG      used, but not included in any prior: 'b->smumu::Re{c9'}'
-2026-03-18 16:41:18,136 DEBUG      used, but not included in any prior: 'QCD::mu_c'
-2026-03-18 16:41:18,136 DEBUG      used, but not included in any prior: 'sbsb::Im{c3'}'
-2026-03-18 16:41:18,136 DEBUG      used, but not included in any prior: 'usmunumu::Im{cVR}'
-2026-03-18 16:41:18,136 DEBUG      used, but not included in any prior: 'dbcu::Re{c2}'
-2026-03-18 16:41:18,136 DEBUG      used, but not included in any prior: 'cbtaunutau::Im{cVR}'
-2026-03-18 16:41:18,137 DEBUG      used, but not included in any prior: 'scnuee::Re{cVR}'
-2026-03-18 16:41:18,137 DEBUG      used, but not included in any prior: 'ubmunumu::Im{cT}'
-2026-03-18 16:41:18,137 DEBUG      used, but not included in any prior: 'sbcu::Im{c4'}'
-2026-03-18 16:41:18,137 DEBUG      used, but not included in any prior: 'cbenue::Im{cSR}'
-2026-03-18 16:41:18,137 DEBUG      used, but not included in any prior: 'sbcu::Im{c3}'
-2026-03-18 16:41:18,137 DEBUG      used, but not included in any prior: 'sbsb::Re{c3}'
-2026-03-18 16:41:18,138 DEBUG      used, but not included in any prior: 'b->smumu::Im{cP}'
-2026-03-18 16:41:18,138 DEBUG      used, but not included in any prior: 'cbtaunutau::Im{cSL}'
-2026-03-18 16:41:18,138 DEBUG      used, but not included in any prior: 'sbcu::Re{c8}'
-2026-03-18 16:41:18,139 DEBUG      used, but not included in any prior: 'b->see::Im{cS'}'
-2026-03-18 16:41:18,139 DEBUG      used, but not included in any prior: 'usmunumu::Re{cSL}'
-2026-03-18 16:41:18,139 DEBUG      used, but not included in any prior: 'sbcu::Re{c2'}'
-2026-03-18 16:41:18,139 DEBUG      used, but not included in any prior: 'sbcu::Im{c5'}'
-2026-03-18 16:41:18,139 DEBUG      used, but not included in any prior: 'b->see::Im{c10'}'
-2026-03-18 16:41:18,139 DEBUG      used, but not included in any prior: 'dcnumumu::Re{cSR}'
-2026-03-18 16:41:18,139 DEBUG      used, but not included in any prior: 'sbnunu::Re{cVR}'
-2026-03-18 16:41:18,139 DEBUG      used, but not included in any prior: 'mass::s(2GeV)'
-2026-03-18 16:41:18,139 DEBUG      used, but not included in any prior: 'dbcu::Im{c9}'
-2026-03-18 16:41:18,140 DEBUG      used, but not included in any prior: 'dcnumumu::Re{cVR}'
-2026-03-18 16:41:18,140 DEBUG      used, but not included in any prior: 'cbtaunutau::Im{cSR}'
-2026-03-18 16:41:18,140 DEBUG      used, but not included in any prior: 'sbnunu::Re{cSL}'
-2026-03-18 16:41:18,140 DEBUG      used, but not included in any prior: 'ubtaunutau::Im{cSR}'
-2026-03-18 16:41:18,140 DEBUG      used, but not included in any prior: 'b->s::c8''
-2026-03-18 16:41:18,140 DEBUG      used, but not included in any prior: 'ubmunumu::Im{cVL}'
-2026-03-18 16:41:18,140 DEBUG      used, but not included in any prior: 'CKM::arg(V_cd)'
-2026-03-18 16:41:18,140 DEBUG      used, but not included in any prior: 'sbcu::Im{c3'}'
-2026-03-18 16:41:18,140 DEBUG      used, but not included in any prior: 'ustaunutau::Im{cSL}'
-2026-03-18 16:41:18,141 DEBUG      used, but not included in any prior: 'cbenue::Re{cVL}'
-2026-03-18 16:41:18,141 DEBUG      used, but not included in any prior: 'sbcu::Im{c4}'
-2026-03-18 16:41:18,141 DEBUG      used, but not included in any prior: 'scnutautau::Re{cSR}'
-2026-03-18 16:41:18,141 DEBUG      used, but not included in any prior: 'B->Kccbar::Abs_Hhat_at_psi2S_plus@GRvDV2022'
-2026-03-18 16:41:18,141 DEBUG      used, but not included in any prior: 'scnuee::Im{cVL}'
-2026-03-18 16:41:18,141 DEBUG      used, but not included in any prior: 'dcnutautau::Im{cVR}'
-2026-03-18 16:41:18,141 DEBUG      used, but not included in any prior: 'dbcu::Im{c1}'
-2026-03-18 16:41:18,142 DEBUG      used, but not included in any prior: 'b->see::Im{cT}'
-2026-03-18 16:41:18,142 DEBUG      used, but not included in any prior: 'cbmunumu::Re{cVR}'
-2026-03-18 16:41:18,142 DEBUG      used, but not included in any prior: 'cbmunumu::Im{cSR}'
-2026-03-18 16:41:18,142 DEBUG      used, but not included in any prior: 'b->sccbar::bound_uncertainty@GvDV2020'
-2026-03-18 16:41:18,142 DEBUG      used, but not included in any prior: 'sbsb::Im{c1'}'
-2026-03-18 16:41:18,142 DEBUG      used, but not included in any prior: 'sbcu::Im{c8'}'
-2026-03-18 16:41:18,143 DEBUG      used, but not included in any prior: 'cbmunumu::Re{cT}'
-2026-03-18 16:41:18,143 DEBUG      used, but not included in any prior: 'b->sccbar::bound@GvDV2020'
-2026-03-18 16:41:18,143 DEBUG      used, but not included in any prior: 'dbcu::Im{c10}'
-2026-03-18 16:41:18,143 DEBUG      used, but not included in any prior: 'b->sccbar::chiOPE@GvDV2020'
-2026-03-18 16:41:18,143 DEBUG      used, but not included in any prior: 'b->see::Im{cT5}'
-2026-03-18 16:41:18,143 DEBUG      used, but not included in any prior: 'ubenue::Im{cT}'
-2026-03-18 16:41:18,144 DEBUG      used, but not included in any prior: 'dcnuee::Im{cT}'
-2026-03-18 16:41:18,144 DEBUG      used, but not included in any prior: 'b->see::Re{cS}'
-2026-03-18 16:41:18,144 DEBUG      used, but not included in any prior: 'CKM::arg(V_cb)'
-2026-03-18 16:41:18,144 DEBUG      used, but not included in any prior: 'dcnuee::Im{cVL}'
-2026-03-18 16:41:18,144 DEBUG      used, but not included in any prior: 'ubmunumu::Im{cSR}'
-2026-03-18 16:41:18,144 DEBUG      used, but not included in any prior: 'cbmunumu::Re{cSL}'
-2026-03-18 16:41:18,144 DEBUG      used, but not included in any prior: 'CKM::arg(V_cs)'
-2026-03-18 16:41:18,145 DEBUG      used, but not included in any prior: 'dbcu::Re{c8}'
-2026-03-18 16:41:18,145 DEBUG      used, but not included in any prior: 'sbnunu::Im{cVL}'
-2026-03-18 16:41:18,145 DEBUG      used, but not included in any prior: 'dbcu::Re{c4'}'
-2026-03-18 16:41:18,146 DEBUG      used, but not included in any prior: 'usmunumu::Re{cVL}'
-2026-03-18 16:41:18,146 DEBUG      used, but not included in any prior: 'sbnunu::Im{cSR}'
-2026-03-18 16:41:18,146 DEBUG      used, but not included in any prior: 'b->smumu::Im{cT}'
-2026-03-18 16:41:18,146 DEBUG      used, but not included in any prior: 'b->s::c5'
-2026-03-18 16:41:18,146 DEBUG      used, but not included in any prior: 'CKM::abs(V_ud)'
-2026-03-18 16:41:18,146 DEBUG      used, but not included in any prior: 'CKM::arg(V_td)'
-2026-03-18 16:41:18,146 DEBUG      used, but not included in any prior: 'CKM::arg(V_ub)'
-2026-03-18 16:41:18,147 DEBUG      used, but not included in any prior: 'sbcu::Re{c10'}'
-2026-03-18 16:41:18,147 DEBUG      used, but not included in any prior: 'b->see::Re{cT5}'
-2026-03-18 16:41:18,147 DEBUG      used, but not included in any prior: 'CKM::abs(V_ts)'
-2026-03-18 16:41:18,147 DEBUG      used, but not included in any prior: 'cbenue::Re{cT}'
-2026-03-18 16:41:18,148 DEBUG      used, but not included in any prior: 'scnutautau::Re{cSL}'
-2026-03-18 16:41:18,148 DEBUG      used, but not included in any prior: 'ubenue::Im{cSR}'
-2026-03-18 16:41:18,148 DEBUG      used, but not included in any prior: 'ubtaunutau::Re{cSR}'
-2026-03-18 16:41:18,148 DEBUG      used, but not included in any prior: 'dbcu::Re{c3'}'
-2026-03-18 16:41:18,149 DEBUG      used, but not included in any prior: 'dcnutautau::Im{cSR}'
-2026-03-18 16:41:18,149 DEBUG      used, but not included in any prior: 'sbcu::Re{c9'}'
-2026-03-18 16:41:18,149 DEBUG      used, but not included in any prior: 'usmunumu::Im{cSL}'
-2026-03-18 16:41:18,149 DEBUG      used, but not included in any prior: 'mass::u(2GeV)'
-2026-03-18 16:41:18,150 DEBUG      used, but not included in any prior: 'dcnutautau::Re{cVL}'
-2026-03-18 16:41:18,150 DEBUG      used, but not included in any prior: 'dcnumumu::Im{cVL}'
-2026-03-18 16:41:18,150 DEBUG      used, but not included in any prior: 'QCD::alpha_s(MZ)'
-2026-03-18 16:41:18,150 DEBUG      used, but not included in any prior: 'scnumumu::Re{cVL}'
-2026-03-18 16:41:18,150 DEBUG      used, but not included in any prior: 'ustaunutau::Re{cVL}'
-2026-03-18 16:41:18,151 DEBUG      used, but not included in any prior: 'ubmunumu::Re{cVR}'
-2026-03-18 16:41:18,151 DEBUG      used, but not included in any prior: 'dbcu::Im{c8}'
-2026-03-18 16:41:18,151 DEBUG      used, but not included in any prior: 'dcnumumu::Im{cVR}'
-2026-03-18 16:41:18,151 DEBUG      used, but not included in any prior: 'dcnumumu::Re{cSL}'
-2026-03-18 16:41:18,151 DEBUG      used, but not included in any prior: 'b->sccbar::t_0'
-2026-03-18 16:41:18,151 DEBUG      used, but not included in any prior: 'dcnutautau::Re{cT}'
-2026-03-18 16:41:18,151 DEBUG      used, but not included in any prior: 'cbenue::Re{cSL}'
-2026-03-18 16:41:18,152 DEBUG      used, but not included in any prior: 'dbcu::Im{c4}'
-2026-03-18 16:41:18,152 DEBUG      used, but not included in any prior: 'b->smumu::Re{cT5}'
-2026-03-18 16:41:18,152 DEBUG      used, but not included in any prior: 'WET::G_Fermi'
-2026-03-18 16:41:18,152 DEBUG      used, but not included in any prior: 'sbcu::Im{c9'}'
-2026-03-18 16:41:18,153 DEBUG      used, but not included in any prior: 'sbsb::Im{c3}'
-2026-03-18 16:41:18,153 DEBUG      used, but not included in any prior: 'scnutautau::Im{cVR}'
-2026-03-18 16:41:18,153 DEBUG      used, but not included in any prior: 'b->see::Im{c9'}'
-2026-03-18 16:41:18,153 DEBUG      used, but not included in any prior: 'dbcu::Re{c1}'
-2026-03-18 16:41:18,153 DEBUG      used, but not included in any prior: 'dcnuee::Re{cVR}'
-2026-03-18 16:41:18,153 DEBUG      used, but not included in any prior: 'b->smumu::Re{cP}'
-2026-03-18 16:41:18,154 DEBUG      used, but not included in any prior: 'sbcu::Re{c9}'
-2026-03-18 16:41:18,154 DEBUG      used, but not included in any prior: 'dbcu::Im{c3'}'
-2026-03-18 16:41:18,154 DEBUG      used, but not included in any prior: 'cbtaunutau::Im{cVL}'
-2026-03-18 16:41:18,155 DEBUG      used, but not included in any prior: 'usenue::Im{cSL}'
-2026-03-18 16:41:18,155 DEBUG      used, but not included in any prior: 'b->smumu::Re{c9}'
-2026-03-18 16:41:18,155 DEBUG      used, but not included in any prior: 'ubtaunutau::Im{cT}'
-2026-03-18 16:41:18,155 DEBUG      used, but not included in any prior: 'b->see::Re{c10'}'
-2026-03-18 16:41:18,155 DEBUG      used, but not included in any prior: 'b->see::Re{cP}'
-2026-03-18 16:41:18,155 DEBUG      used, but not included in any prior: 'scnutautau::Im{cSR}'
-2026-03-18 16:41:18,155 DEBUG      used, but not included in any prior: 'sbcu::Im{c6'}'
-2026-03-18 16:41:18,156 DEBUG      used, but not included in any prior: 'decay-constant::J/psi'
-2026-03-18 16:41:18,156 DEBUG      used, but not included in any prior: 'dbcu::Re{c10}'
-2026-03-18 16:41:18,156 DEBUG      used, but not included in any prior: 'ustaunutau::Re{cSL}'
-2026-03-18 16:41:18,156 DEBUG      used, but not included in any prior: 'usmunumu::Re{cVR}'
-2026-03-18 16:41:18,156 DEBUG      used, but not included in any prior: 'ubtaunutau::Im{cVR}'
-2026-03-18 16:41:18,156 DEBUG      used, but not included in any prior: 'scnumumu::Im{cT}'
-2026-03-18 16:41:18,156 DEBUG      used, but not included in any prior: 'dbcu::Im{c5'}'
-2026-03-18 16:41:18,157 DEBUG      used, but not included in any prior: 'usmunumu::Re{cT}'
-2026-03-18 16:41:18,157 DEBUG      used, but not included in any prior: 'dcnumumu::Im{cSR}'
-2026-03-18 16:41:18,157 DEBUG      used, but not included in any prior: 'dbcu::Re{c6}'
-2026-03-18 16:41:18,157 DEBUG      used, but not included in any prior: 'scnuee::Re{cSL}'
-2026-03-18 16:41:18,158 DEBUG      used, but not included in any prior: 'cbenue::Re{cVR}'
-2026-03-18 16:41:18,158 DEBUG      used, but not included in any prior: 'dbcu::Im{c5}'
-2026-03-18 16:41:18,158 DEBUG      used, but not included in any prior: 'sbcu::Re{c10}'
-2026-03-18 16:41:18,158 DEBUG      used, but not included in any prior: 'mass::D^0'
-2026-03-18 16:41:18,158 DEBUG      used, but not included in any prior: 'mass::B_u'
-2026-03-18 16:41:18,159 DEBUG      used, but not included in any prior: 'cbtaunutau::Im{cT}'
-2026-03-18 16:41:18,159 DEBUG      used, but not included in any prior: 'scnumumu::Re{cVR}'
-2026-03-18 16:41:18,159 DEBUG      used, but not included in any prior: 'dbcu::Im{c6}'
-2026-03-18 16:41:18,159 DEBUG      used, but not included in any prior: 'sbcu::Re{c1}'
-2026-03-18 16:41:18,159 DEBUG      used, but not included in any prior: 'b->s::c6'
-2026-03-18 16:41:18,159 DEBUG      used, but not included in any prior: 'ubmunumu::Re{cVL}'
-2026-03-18 16:41:18,159 DEBUG      used, but not included in any prior: 'ubtaunutau::Re{cT}'
-2026-03-18 16:41:18,160 DEBUG      used, but not included in any prior: 'b->s::Re{c7}'
-2026-03-18 16:41:18,160 DEBUG      used, but not included in any prior: 'sbnunu::Re{cVL}'
-2026-03-18 16:41:18,160 DEBUG      used, but not included in any prior: 'mass::J/psi'
-2026-03-18 16:41:18,160 DEBUG      used, but not included in any prior: 'b->sccbar::t_s'
-2026-03-18 16:41:18,160 DEBUG      used, but not included in any prior: 'cbenue::Im{cT}'
-2026-03-18 16:41:18,160 DEBUG      used, but not included in any prior: 'ubmunumu::Re{cT}'
-2026-03-18 16:41:18,161 DEBUG      used, but not included in any prior: 'sbsb::Re{c2'}'
-2026-03-18 16:41:18,161 DEBUG      used, but not included in any prior: 'CKM::abs(V_tb)'
-2026-03-18 16:41:18,161 DEBUG      used, but not included in any prior: 'cbtaunutau::Re{cSR}'
-2026-03-18 16:41:18,161 DEBUG      used, but not included in any prior: 'dcnutautau::Re{cSR}'
-2026-03-18 16:41:18,161 DEBUG      used, but not included in any prior: 'dcnumumu::Im{cSL}'
-2026-03-18 16:41:18,161 DEBUG      used, but not included in any prior: 'sbcu::Im{c6}'
-2026-03-18 16:41:18,161 DEBUG      used, but not included in any prior: 'dbcu::Re{c7}'
-2026-03-18 16:41:18,161 DEBUG      used, but not included in any prior: 'b->see::Re{c9}'
-2026-03-18 16:41:18,162 DEBUG      used, but not included in any prior: 'scnuee::Re{cSR}'
-2026-03-18 16:41:18,162 DEBUG      used, but not included in any prior: 'sbcu::Im{c10'}'
-2026-03-18 16:41:18,162 DEBUG      used, but not included in any prior: 'dbcu::Im{c7}'
-2026-03-18 16:41:18,162 DEBUG      used, but not included in any prior: 'usenue::Im{cT}'
-2026-03-18 16:41:18,162 DEBUG      used, but not included in any prior: 'sbcu::Im{c9}'
-2026-03-18 16:41:18,162 DEBUG      used, but not included in any prior: 'QCD::mu_t'
-2026-03-18 16:41:18,162 DEBUG      used, but not included in any prior: 'dbcu::Re{c1'}'
-2026-03-18 16:41:18,162 DEBUG      used, but not included in any prior: 'mass::Z'
-2026-03-18 16:41:18,163 DEBUG      used, but not included in any prior: 'CKM::abs(V_cs)'
-2026-03-18 16:41:18,163 DEBUG      used, but not included in any prior: 'b->see::Re{c9'}'
-2026-03-18 16:41:18,163 DEBUG      used, but not included in any prior: 'scnumumu::Im{cVL}'
-2026-03-18 16:41:18,163 DEBUG      used, but not included in any prior: 'CKM::abs(V_us)'
-2026-03-18 16:41:18,163 DEBUG      used, but not included in any prior: 'scnuee::Im{cSR}'
-2026-03-18 16:41:18,164 DEBUG      used, but not included in any prior: 'dbcu::Im{c3}'
-2026-03-18 16:41:18,164 DEBUG      used, but not included in any prior: 'sbsb::Im{c1}'
-2026-03-18 16:41:18,164 DEBUG      used, but not included in any prior: 'cbtaunutau::Re{cVR}'
-2026-03-18 16:41:18,164 DEBUG      used, but not included in any prior: 'CKM::arg(V_tb)'
-2026-03-18 16:41:18,164 DEBUG      used, but not included in any prior: 'ubenue::Im{cSL}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'dcnuee::Re{cSL}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'sbcu::Re{c2}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'sbnunu::Im{cSL}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'life_time::B_d'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'CKM::abs(V_ub)'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'sbcu::Re{c5}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'dbcu::Im{c1'}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'b->smumu::Re{cS}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'dcnutautau::Im{cSL}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'b->s::c3'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'CKM::arg(V_us)'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'scnuee::Im{cSL}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'b->see::Im{cP'}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'dcnutautau::Im{cT}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'scnuee::Im{cVR}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'QCD::Lambda'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'usenue::Re{cT}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'b->smumu::Re{cP'}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'usmunumu::Re{cSR}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'cbmunumu::Im{cVR}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'dbcu::Im{c6'}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'cbtaunutau::Re{cSL}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'scnumumu::Re{cSR}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'scnutautau::Re{cVR}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'b->see::Re{cS'}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'scnutautau::Re{cVL}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'cbmunumu::Im{cT}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'ubmunumu::Re{cSL}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'scnumumu::Im{cSR}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'sbsb::Im{c4}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'usenue::Re{cSL}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'dcnuee::Im{cSL}'
-2026-03-18 16:41:18,165 DEBUG      used, but not included in any prior: 'dbcu::Re{c5}'
-2026-03-18 16:41:18,166 DEBUG      used, but not included in any prior: 'QM::hbar'
-2026-03-18 16:41:18,166 DEBUG      used, but not included in any prior: 'cbtaunutau::Re{cVL}'
-2026-03-18 16:41:18,166 DEBUG      used, but not included in any prior: 'b->see::Re{c10}'
-2026-03-18 16:41:18,166 DEBUG      used, but not included in any prior: 'sbsb::Re{c5}'
-2026-03-18 16:41:18,167 DEBUG      used, but not included in any prior: 'mass::d(2GeV)'
-2026-03-18 16:41:18,167 DEBUG      used, but not included in any prior: 'b->smumu::Im{c9'}'
-2026-03-18 16:41:18,167 DEBUG      used, but not included in any prior: 'usmunumu::Im{cVL}'
-2026-03-18 16:41:18,167 DEBUG      used, but not included in any prior: 'dbcu::Re{c7'}'
-2026-03-18 16:41:18,167 DEBUG      used, but not included in any prior: 'b->smumu::Im{c9}'
-2026-03-18 16:41:18,167 DEBUG      used, but not included in any prior: 'usmunumu::Im{cSR}'
-2026-03-18 16:41:18,167 DEBUG      used, but not included in any prior: 'ubtaunutau::Im{cVL}'
-2026-03-18 16:41:18,168 DEBUG      used, but not included in any prior: 'ustaunutau::Im{cT}'
-2026-03-18 16:41:18,168 DEBUG      used, but not included in any prior: 'dcnuee::Re{cT}'
-2026-03-18 16:41:18,168 DEBUG      used, but not included in any prior: 'dcnutautau::Im{cVL}'
-2026-03-18 16:41:18,168 DEBUG      used, but not included in any prior: 'scnutautau::Im{cVL}'
-2026-03-18 16:41:18,169 DEBUG      used, but not included in any prior: 'sbsb::Re{c2}'
-2026-03-18 16:41:18,169 DEBUG      used, but not included in any prior: 'sbcu::Im{c2'}'
-2026-03-18 16:41:18,169 DEBUG      used, but not included in any prior: 'ubenue::Im{cVL}'
-2026-03-18 16:41:18,169 DEBUG      used, but not included in any prior: 'b->see::Im{c10}'
-2026-03-18 16:41:18,169 DEBUG      used, but not included in any prior: 'ubenue::Re{cSR}'
-2026-03-18 16:41:18,169 DEBUG      used, but not included in any prior: 'cbmunumu::Re{cSR}'
-2026-03-18 16:41:18,169 DEBUG      used, but not included in any prior: 'mass::psi(2S)'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'b->s::c4'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'sbnunu::Im{cTL}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'cbenue::Im{cSL}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'scnuee::Im{cT}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'sbcu::Re{c3'}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'sbsb::Re{c4}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'dbcu::Im{c2'}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'sbsb::Re{c3'}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'sbsb::Re{c1}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'sbcu::Re{c5'}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'cbmunumu::Re{cVL}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'b->smumu::Im{c10'}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'mass::t(pole)'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'dbcu::Re{c8'}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'b->smumu::Re{cT}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'scnuee::Re{cT}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'sbcu::Re{c4'}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'sbcu::Re{c6'}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'ubtaunutau::Re{cVR}'
-2026-03-18 16:41:18,170 DEBUG      used, but not included in any prior: 'sbcu::Re{c7}'
-2026-03-18 16:41:18,171 INPROGRESS Beginning minimization in 50 points
-2026-03-18 16:41:18,171 INFO       Using a starting point based on the existing importance samples
-2026-03-18 16:41:18,177 INFO       Using starting point [ 0.3795, -0.5676, 0.5472, 0.6787, 0.6602, 0.3549, -0.6787, 0.5141, 4.395e-05, -4.326e-06, 9.972e-05, -4.432e-06, 0.0001527, -6.137e-06, 0.0002002, -7.724e-06, 0.001226, -2.282 ]
-2026-03-18 16:41:18,462 SUCCESS    Optimization goal achieved after 505 function evaluations
-2026-03-18 16:41:18,464 INFO       First optimization finished
-2026-03-18 16:41:18,482 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,501 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,519 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,539 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,558 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,577 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,595 SUCCESS    Optimization goal achieved after 27 function evaluations
-2026-03-18 16:41:18,615 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,634 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,655 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,675 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,695 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,715 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,734 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,753 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,770 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,787 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,804 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,821 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,839 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,857 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,876 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,895 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,913 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,932 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:18,952 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,138 SUCCESS    Optimization goal achieved after 298 function evaluations
-2026-03-18 16:41:19,252 SUCCESS    Optimization goal achieved after 186 function evaluations
-2026-03-18 16:41:19,288 SUCCESS    Optimization goal achieved after 53 function evaluations
-2026-03-18 16:41:19,308 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,329 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,348 SUCCESS    Optimization goal achieved after 28 function evaluations
-2026-03-18 16:41:19,369 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,389 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,423 SUCCESS    Optimization goal achieved after 55 function evaluations
-2026-03-18 16:41:19,479 SUCCESS    Optimization goal achieved after 86 function evaluations
-2026-03-18 16:41:19,499 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,520 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,540 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,560 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,580 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,596 SUCCESS    Optimization goal achieved after 25 function evaluations
-2026-03-18 16:41:19,616 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,635 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,655 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,674 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,694 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,713 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,733 SUCCESS    Optimization goal achieved after 30 function evaluations
-2026-03-18 16:41:19,734 COMPLETED  ... optimization finished
-2026-03-18 16:41:19,735 INFO       The best-fit point is:
-2026-03-18 16:41:19,735 INFO         - B->K::alpha^f+_0@BSZ2015 -> 0.38667880478237676
-2026-03-18 16:41:19,736 INFO         - B->K::alpha^f+_1@BSZ2015 -> -0.5601761380600184
-2026-03-18 16:41:19,736 INFO         - B->K::alpha^f+_2@BSZ2015 -> 0.36214769140928693
-2026-03-18 16:41:19,737 INFO         - B->K::alpha^f0_1@BSZ2015 -> 0.7173757866477732
-2026-03-18 16:41:19,737 INFO         - B->K::alpha^f0_2@BSZ2015 -> 0.6574601716355255
-2026-03-18 16:41:19,738 INFO         - B->K::alpha^fT_0@BSZ2015 -> 0.36465602903390615
-2026-03-18 16:41:19,738 INFO         - B->K::alpha^fT_1@BSZ2015 -> -0.7124164581589821
-2026-03-18 16:41:19,739 INFO         - B->K::alpha^fT_2@BSZ2015 -> 0.06266819631055398
-2026-03-18 16:41:19,739 INFO         - B->Kccbar::Re_Hhat_at_m7_plus@GRvDV2022 -> 4.0400517686566107e-05
-2026-03-18 16:41:19,740 INFO         - B->Kccbar::Im_Hhat_at_m7_plus@GRvDV2022 -> -4.15342742047732e-06
-2026-03-18 16:41:19,741 INFO         - B->Kccbar::Re_Hhat_at_m5_plus@GRvDV2022 -> 0.00010010974515779303
-2026-03-18 16:41:19,741 INFO         - B->Kccbar::Im_Hhat_at_m5_plus@GRvDV2022 -> -5.1709899864646925e-06
-2026-03-18 16:41:19,742 INFO         - B->Kccbar::Re_Hhat_at_m3_plus@GRvDV2022 -> 0.00016358069565940582
-2026-03-18 16:41:19,742 INFO         - B->Kccbar::Im_Hhat_at_m3_plus@GRvDV2022 -> -6.537713690539637e-06
-2026-03-18 16:41:19,743 INFO         - B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022 -> 0.00022969229714078033
-2026-03-18 16:41:19,743 INFO         - B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022 -> -8.417487723814508e-06
-2026-03-18 16:41:19,744 INFO         - B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022 -> 0.0012253239538475196
-2026-03-18 16:41:19,744 INFO         - B->Kccbar::Arg_Hhat_at_Jpsi_plus@GRvDV2022 -> -2.282241787825775
-2026-03-18 16:41:19,745 INFO       total chi^2 = 4.69
-2026-03-18 16:41:19,745 INFO       total dof   = 4
-2026-03-18 16:41:19,747 INFO       p value     = 32.05%
-2026-03-18 16:41:19,747 INFO       individual test statistics:
-2026-03-18 16:41:19,749 INFO         - B->K::FormFactors[f_+,f_T]@KR:2017A: chi^2 / dof = 0.51 / 4, local_pvalue = 97.26%
-2026-03-18 16:41:19,750 INFO         - B->K::f_0+f_++f_T@FLAG:2021A: chi^2 / dof = 1.57 / 8, local_pvalue = 99.16%
-2026-03-18 16:41:19,751 INFO         - B->K::vanishing-{Delta_H_0(q2)}/F_0(q2): chi^2 / dof = 0.00 / 8, local_pvalue = 100.00%
-2026-03-18 16:41:19,752 INFO         - B->KJpsi::BR@PDG:2020A: chi^2 / dof = 1.07 / 1, local_pvalue = 30.06%
-2026-03-18 16:41:19,753 INFO         - B^0->K^0Jpsi::BR@PDG:2020A: chi^2 / dof = 1.54 / 1, local_pvalue = 21.40%
-2026-03-18 16:41:19,758 SUCCESS    Final p value is 32.05%, indicating a successful fit
+2026-03-24 14:58:51,592 INFO       Creating analysis with 18 priors, 5 EOS-wide constraints, 3 global options, 2 manually-entered constraints and 9 fixed parameters.
+2026-03-24 14:58:51,593 DEBUG      priors:
+2026-03-24 14:58:51,593 DEBUG       - B->K::alpha^f+_0@BSZ2015 (uniform)
+2026-03-24 14:58:51,593 DEBUG       - B->K::alpha^f+_1@BSZ2015 (uniform)
+2026-03-24 14:58:51,593 DEBUG       - B->K::alpha^f+_2@BSZ2015 (uniform)
+2026-03-24 14:58:51,593 DEBUG       - B->K::alpha^f0_1@BSZ2015 (uniform)
+2026-03-24 14:58:51,593 DEBUG       - B->K::alpha^f0_2@BSZ2015 (uniform)
+2026-03-24 14:58:51,594 DEBUG       - B->K::alpha^fT_0@BSZ2015 (uniform)
+2026-03-24 14:58:51,594 DEBUG       - B->K::alpha^fT_1@BSZ2015 (uniform)
+2026-03-24 14:58:51,594 DEBUG       - B->K::alpha^fT_2@BSZ2015 (uniform)
+2026-03-24 14:58:51,594 DEBUG       - B->Kccbar::Re_Hhat_at_m7_plus@GRvDV2022 (uniform)
+2026-03-24 14:58:51,594 DEBUG       - B->Kccbar::Im_Hhat_at_m7_plus@GRvDV2022 (uniform)
+2026-03-24 14:58:51,594 DEBUG       - B->Kccbar::Re_Hhat_at_m5_plus@GRvDV2022 (uniform)
+2026-03-24 14:58:51,594 DEBUG       - B->Kccbar::Im_Hhat_at_m5_plus@GRvDV2022 (uniform)
+2026-03-24 14:58:51,594 DEBUG       - B->Kccbar::Re_Hhat_at_m3_plus@GRvDV2022 (uniform)
+2026-03-24 14:58:51,595 DEBUG       - B->Kccbar::Im_Hhat_at_m3_plus@GRvDV2022 (uniform)
+2026-03-24 14:58:51,595 DEBUG       - B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022 (uniform)
+2026-03-24 14:58:51,595 DEBUG       - B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022 (uniform)
+2026-03-24 14:58:51,595 DEBUG       - B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022 (uniform)
+2026-03-24 14:58:51,595 DEBUG       - B->Kccbar::Arg_Hhat_at_Jpsi_plus@GRvDV2022 (uniform)
+2026-03-24 14:58:51,595 DEBUG      constraints:
+2026-03-24 14:58:51,595 DEBUG       - B->K::f_0+f_++f_T@HPQCD:2022A
+2026-03-24 14:58:51,595 DEBUG       - B->K::f_0+f_++f_T@FLAG:2021A
+2026-03-24 14:58:51,596 DEBUG       - B->K::FormFactors[f_+,f_T]@KR:2017A
+2026-03-24 14:58:51,596 DEBUG       - B^0->K^0Jpsi::BR@PDG:2020A
+2026-03-24 14:58:51,596 DEBUG       - B->KJpsi::BR@PDG:2020A
+2026-03-24 14:58:51,596 DEBUG      manual_constraints:
+2026-03-24 14:58:51,596 DEBUG       - B->K::vanishing-{Delta_H_0(q2)}/F_0(q2)
+2026-03-24 14:58:51,596 DEBUG       - B->K::NonLocalBound
+2026-03-24 14:58:51,597 DEBUG      fixed_parameters:
+2026-03-24 14:58:51,597 DEBUG       - mass::B_d
+2026-03-24 14:58:51,597 DEBUG       - mass::B_s
+2026-03-24 14:58:51,597 DEBUG       - mass::K_d
+2026-03-24 14:58:51,597 DEBUG       - mass::K_u
+2026-03-24 14:58:51,597 DEBUG       - mass::b(MSbar)
+2026-03-24 14:58:51,597 DEBUG       - mass::c
+2026-03-24 14:58:51,597 DEBUG       - sb::mu
+2026-03-24 14:58:51,598 DEBUG       - b->s::c1
+2026-03-24 14:58:51,598 DEBUG       - b->s::c2
+2026-03-24 14:58:52,279 INFO       likelihood probably depends on 350 parameter(s) that do not appear in the prior; check prior?
+2026-03-24 14:58:52,279 DEBUG      used, but not included in any prior: 'mass::s(2GeV)'
+2026-03-24 14:58:52,279 DEBUG      used, but not included in any prior: 'ustaunutau::Im{cVR}'
+2026-03-24 14:58:52,279 DEBUG      used, but not included in any prior: 'CKM::abs(V_us)'
+2026-03-24 14:58:52,279 DEBUG      used, but not included in any prior: 'sbcu::Im{c8'}'
+2026-03-24 14:58:52,279 DEBUG      used, but not included in any prior: 'cbmunumu::Re{cSL}'
+2026-03-24 14:58:52,279 DEBUG      used, but not included in any prior: 'cbenue::Re{cVL}'
+2026-03-24 14:58:52,279 DEBUG      used, but not included in any prior: 'sbcu::Im{c6'}'
+2026-03-24 14:58:52,280 DEBUG      used, but not included in any prior: 'scnuee::Im{cVL}'
+2026-03-24 14:58:52,280 DEBUG      used, but not included in any prior: 'usmunumu::Re{cSL}'
+2026-03-24 14:58:52,280 DEBUG      used, but not included in any prior: 'QM::hbar'
+2026-03-24 14:58:52,280 DEBUG      used, but not included in any prior: 'b->see::Im{c10'}'
+2026-03-24 14:58:52,280 DEBUG      used, but not included in any prior: 'usenue::Im{cVR}'
+2026-03-24 14:58:52,280 DEBUG      used, but not included in any prior: 'b->see::Im{cT5}'
+2026-03-24 14:58:52,280 DEBUG      used, but not included in any prior: 'cbenue::Im{cVL}'
+2026-03-24 14:58:52,281 DEBUG      used, but not included in any prior: 'dbcu::Re{c10'}'
+2026-03-24 14:58:52,281 DEBUG      used, but not included in any prior: 'usmunumu::Im{cT}'
+2026-03-24 14:58:52,281 DEBUG      used, but not included in any prior: 'dbcu::Im{c3}'
+2026-03-24 14:58:52,281 DEBUG      used, but not included in any prior: 'scnuee::Im{cSR}'
+2026-03-24 14:58:52,281 DEBUG      used, but not included in any prior: 'CKM::abs(V_tb)'
+2026-03-24 14:58:52,281 DEBUG      used, but not included in any prior: 'scnuee::Re{cVL}'
+2026-03-24 14:58:52,281 DEBUG      used, but not included in any prior: 'scnumumu::Re{cSL}'
+2026-03-24 14:58:52,282 DEBUG      used, but not included in any prior: 'scnuee::Im{cVR}'
+2026-03-24 14:58:52,282 DEBUG      used, but not included in any prior: 'cbtaunutau::Im{cSR}'
+2026-03-24 14:58:52,282 DEBUG      used, but not included in any prior: 'dbcu::Re{c7}'
+2026-03-24 14:58:52,282 DEBUG      used, but not included in any prior: 'scnuee::Re{cSR}'
+2026-03-24 14:58:52,282 DEBUG      used, but not included in any prior: 'cbtaunutau::Im{cT}'
+2026-03-24 14:58:52,282 DEBUG      used, but not included in any prior: 'ustaunutau::Im{cVL}'
+2026-03-24 14:58:52,282 DEBUG      used, but not included in any prior: 'mass::d(2GeV)'
+2026-03-24 14:58:52,282 DEBUG      used, but not included in any prior: 'sbcu::Im{c8}'
+2026-03-24 14:58:52,282 DEBUG      used, but not included in any prior: 'cbenue::Re{cSR}'
+2026-03-24 14:58:52,283 DEBUG      used, but not included in any prior: 'ubmunumu::Re{cVL}'
+2026-03-24 14:58:52,283 DEBUG      used, but not included in any prior: 'CKM::arg(V_cs)'
+2026-03-24 14:58:52,283 DEBUG      used, but not included in any prior: 'ubmunumu::Im{cVR}'
+2026-03-24 14:58:52,283 DEBUG      used, but not included in any prior: 'ustaunutau::Re{cSR}'
+2026-03-24 14:58:52,283 DEBUG      used, but not included in any prior: 'ubmunumu::Re{cT}'
+2026-03-24 14:58:52,283 DEBUG      used, but not included in any prior: 'usmunumu::Re{cVL}'
+2026-03-24 14:58:52,283 DEBUG      used, but not included in any prior: 'cbtaunutau::Re{cSL}'
+2026-03-24 14:58:52,283 DEBUG      used, but not included in any prior: 'sbnunu::Im{cVR}'
+2026-03-24 14:58:52,284 DEBUG      used, but not included in any prior: 'ubenue::Im{cVR}'
+2026-03-24 14:58:52,284 DEBUG      used, but not included in any prior: 'sbsb::Re{c2}'
+2026-03-24 14:58:52,284 DEBUG      used, but not included in any prior: 'usmunumu::Im{cSR}'
+2026-03-24 14:58:52,284 DEBUG      used, but not included in any prior: 'cbenue::Im{cT}'
+2026-03-24 14:58:52,284 DEBUG      used, but not included in any prior: 'scnuee::Re{cVR}'
+2026-03-24 14:58:52,284 DEBUG      used, but not included in any prior: 'cbmunumu::Im{cVR}'
+2026-03-24 14:58:52,285 DEBUG      used, but not included in any prior: 'sbcu::Re{c6'}'
+2026-03-24 14:58:52,285 DEBUG      used, but not included in any prior: 'usmunumu::Re{cT}'
+2026-03-24 14:58:52,285 DEBUG      used, but not included in any prior: 'dcnuee::Re{cVL}'
+2026-03-24 14:58:52,285 DEBUG      used, but not included in any prior: 'usenue::Im{cSR}'
+2026-03-24 14:58:52,285 DEBUG      used, but not included in any prior: 'sbsb::Re{c3}'
+2026-03-24 14:58:52,285 DEBUG      used, but not included in any prior: 'ubmunumu::Re{cSR}'
+2026-03-24 14:58:52,285 DEBUG      used, but not included in any prior: 'B->Kccbar::Abs_Hhat_at_psi2S_plus@GRvDV2022'
+2026-03-24 14:58:52,285 DEBUG      used, but not included in any prior: 'cbtaunutau::Re{cT}'
+2026-03-24 14:58:52,286 DEBUG      used, but not included in any prior: 'sbcu::Im{c10'}'
+2026-03-24 14:58:52,286 DEBUG      used, but not included in any prior: 'b->smumu::Re{cS'}'
+2026-03-24 14:58:52,286 DEBUG      used, but not included in any prior: 'usenue::Im{cSL}'
+2026-03-24 14:58:52,286 DEBUG      used, but not included in any prior: 'mass::u(2GeV)'
+2026-03-24 14:58:52,286 DEBUG      used, but not included in any prior: 'b->s::c3'
+2026-03-24 14:58:52,286 DEBUG      used, but not included in any prior: 'dbcu::Im{c10}'
+2026-03-24 14:58:52,286 DEBUG      used, but not included in any prior: 'dcnutautau::Im{cT}'
+2026-03-24 14:58:52,286 DEBUG      used, but not included in any prior: 'b->see::Im{cS'}'
+2026-03-24 14:58:52,287 DEBUG      used, but not included in any prior: 'sbnunu::Im{cSL}'
+2026-03-24 14:58:52,287 DEBUG      used, but not included in any prior: 'ubenue::Re{cSL}'
+2026-03-24 14:58:52,287 DEBUG      used, but not included in any prior: 'b->sccbar::bound@GvDV2020'
+2026-03-24 14:58:52,287 DEBUG      used, but not included in any prior: 'b->see::Re{cP'}'
+2026-03-24 14:58:52,287 DEBUG      used, but not included in any prior: 'ustaunutau::Im{cT}'
+2026-03-24 14:58:52,287 DEBUG      used, but not included in any prior: 'cbenue::Im{cSL}'
+2026-03-24 14:58:52,288 DEBUG      used, but not included in any prior: 'CKM::abs(V_td)'
+2026-03-24 14:58:52,288 DEBUG      used, but not included in any prior: 'dbcu::Re{c9}'
+2026-03-24 14:58:52,288 DEBUG      used, but not included in any prior: 'scnutautau::Re{cT}'
+2026-03-24 14:58:52,288 DEBUG      used, but not included in any prior: 'dcnumumu::Re{cSR}'
+2026-03-24 14:58:52,288 DEBUG      used, but not included in any prior: 'dcnutautau::Re{cSL}'
+2026-03-24 14:58:52,288 DEBUG      used, but not included in any prior: 'dbcu::Im{c5'}'
+2026-03-24 14:58:52,288 DEBUG      used, but not included in any prior: 'b->smumu::Re{cT5}'
+2026-03-24 14:58:52,288 DEBUG      used, but not included in any prior: 'dcnutautau::Im{cSL}'
+2026-03-24 14:58:52,288 DEBUG      used, but not included in any prior: 'b->s::Im{c7}'
+2026-03-24 14:58:52,289 DEBUG      used, but not included in any prior: 'b->smumu::Im{cS}'
+2026-03-24 14:58:52,289 DEBUG      used, but not included in any prior: 'WET::G_Fermi'
+2026-03-24 14:58:52,289 DEBUG      used, but not included in any prior: 'dbcu::Im{c8}'
+2026-03-24 14:58:52,289 DEBUG      used, but not included in any prior: 'b->sccbar::t_0'
+2026-03-24 14:58:52,289 DEBUG      used, but not included in any prior: 'sbsb::Re{c2'}'
+2026-03-24 14:58:52,289 DEBUG      used, but not included in any prior: 'ubmunumu::Re{cSL}'
+2026-03-24 14:58:52,289 DEBUG      used, but not included in any prior: 'sbcu::Im{c9}'
+2026-03-24 14:58:52,289 DEBUG      used, but not included in any prior: 'ubtaunutau::Re{cVL}'
+2026-03-24 14:58:52,290 DEBUG      used, but not included in any prior: 'scnutautau::Re{cVL}'
+2026-03-24 14:58:52,290 DEBUG      used, but not included in any prior: 'dcnutautau::Im{cVR}'
+2026-03-24 14:58:52,290 DEBUG      used, but not included in any prior: 'dbcu::Re{c1}'
+2026-03-24 14:58:52,290 DEBUG      used, but not included in any prior: 'sbnunu::Im{cSR}'
+2026-03-24 14:58:52,290 DEBUG      used, but not included in any prior: 'b->smumu::Im{cP}'
+2026-03-24 14:58:52,290 DEBUG      used, but not included in any prior: 'CKM::abs(V_ud)'
+2026-03-24 14:58:52,290 DEBUG      used, but not included in any prior: 'dbcu::Im{c9'}'
+2026-03-24 14:58:52,290 DEBUG      used, but not included in any prior: 'ubtaunutau::Im{cT}'
+2026-03-24 14:58:52,291 DEBUG      used, but not included in any prior: 'scnuee::Im{cT}'
+2026-03-24 14:58:52,291 DEBUG      used, but not included in any prior: 'ubtaunutau::Re{cT}'
+2026-03-24 14:58:52,291 DEBUG      used, but not included in any prior: 'ubmunumu::Re{cVR}'
+2026-03-24 14:58:52,291 DEBUG      used, but not included in any prior: 'scnutautau::Im{cVL}'
+2026-03-24 14:58:52,291 DEBUG      used, but not included in any prior: 'dcnutautau::Re{cT}'
+2026-03-24 14:58:52,291 DEBUG      used, but not included in any prior: 'mass::t(pole)'
+2026-03-24 14:58:52,292 DEBUG      used, but not included in any prior: 'b->sccbar::t_s'
+2026-03-24 14:58:52,292 DEBUG      used, but not included in any prior: 'usenue::Re{cT}'
+2026-03-24 14:58:52,292 DEBUG      used, but not included in any prior: 'sbcu::Im{c7}'
+2026-03-24 14:58:52,292 DEBUG      used, but not included in any prior: 'scnutautau::Im{cVR}'
+2026-03-24 14:58:52,292 DEBUG      used, but not included in any prior: 'ustaunutau::Re{cSL}'
+2026-03-24 14:58:52,292 DEBUG      used, but not included in any prior: 'b->smumu::Re{cP}'
+2026-03-24 14:58:52,292 DEBUG      used, but not included in any prior: 'b->s::c4'
+2026-03-24 14:58:52,292 DEBUG      used, but not included in any prior: 'sbcu::Re{c5'}'
+2026-03-24 14:58:52,293 DEBUG      used, but not included in any prior: 'ubenue::Im{cT}'
+2026-03-24 14:58:52,293 DEBUG      used, but not included in any prior: 'b->smumu::Re{cP'}'
+2026-03-24 14:58:52,293 DEBUG      used, but not included in any prior: 'scnuee::Im{cSL}'
+2026-03-24 14:58:52,293 DEBUG      used, but not included in any prior: 'b->smumu::Re{c9'}'
+2026-03-24 14:58:52,293 DEBUG      used, but not included in any prior: 'dbcu::Im{c5}'
+2026-03-24 14:58:52,293 DEBUG      used, but not included in any prior: 'sbcu::Re{c7}'
+2026-03-24 14:58:52,293 DEBUG      used, but not included in any prior: 'dbcu::Im{c1}'
+2026-03-24 14:58:52,293 DEBUG      used, but not included in any prior: 'scnumumu::Re{cVL}'
+2026-03-24 14:58:52,293 DEBUG      used, but not included in any prior: 'dbcu::Re{c5}'
+2026-03-24 14:58:52,293 DEBUG      used, but not included in any prior: 'ubenue::Im{cVL}'
+2026-03-24 14:58:52,294 DEBUG      used, but not included in any prior: 'dbcu::Re{c4'}'
+2026-03-24 14:58:52,294 DEBUG      used, but not included in any prior: 'dcnutautau::Re{cVL}'
+2026-03-24 14:58:52,294 DEBUG      used, but not included in any prior: 'scnutautau::Im{cT}'
+2026-03-24 14:58:52,294 DEBUG      used, but not included in any prior: 'ubenue::Im{cSL}'
+2026-03-24 14:58:52,294 DEBUG      used, but not included in any prior: 'b->see::Re{c9'}'
+2026-03-24 14:58:52,294 DEBUG      used, but not included in any prior: 'CKM::arg(V_us)'
+2026-03-24 14:58:52,294 DEBUG      used, but not included in any prior: 'sbnunu::Im{cTL}'
+2026-03-24 14:58:52,295 DEBUG      used, but not included in any prior: 'scnutautau::Im{cSL}'
+2026-03-24 14:58:52,295 DEBUG      used, but not included in any prior: 'dcnuee::Im{cVL}'
+2026-03-24 14:58:52,295 DEBUG      used, but not included in any prior: 'b->see::Im{c10}'
+2026-03-24 14:58:52,295 DEBUG      used, but not included in any prior: 'scnutautau::Re{cSL}'
+2026-03-24 14:58:52,295 DEBUG      used, but not included in any prior: 'QCD::alpha_s(MZ)'
+2026-03-24 14:58:52,295 DEBUG      used, but not included in any prior: 'b->see::Im{cT}'
+2026-03-24 14:58:52,295 DEBUG      used, but not included in any prior: 'dbcu::Re{c8'}'
+2026-03-24 14:58:52,296 DEBUG      used, but not included in any prior: 'mass::Z'
+2026-03-24 14:58:52,296 DEBUG      used, but not included in any prior: 'sbnunu::Re{cVR}'
+2026-03-24 14:58:52,296 DEBUG      used, but not included in any prior: 'QCD::mu_t'
+2026-03-24 14:58:52,296 DEBUG      used, but not included in any prior: 'b->smumu::Im{cP'}'
+2026-03-24 14:58:52,296 DEBUG      used, but not included in any prior: 'scnutautau::Re{cVR}'
+2026-03-24 14:58:52,296 DEBUG      used, but not included in any prior: 'cbenue::Re{cT}'
+2026-03-24 14:58:52,296 DEBUG      used, but not included in any prior: 'scnumumu::Re{cT}'
+2026-03-24 14:58:52,296 DEBUG      used, but not included in any prior: 'b->see::Re{cS}'
+2026-03-24 14:58:52,297 DEBUG      used, but not included in any prior: 'sbcu::Re{c5}'
+2026-03-24 14:58:52,297 DEBUG      used, but not included in any prior: 'cbenue::Re{cSL}'
+2026-03-24 14:58:52,297 DEBUG      used, but not included in any prior: 'ubenue::Re{cVL}'
+2026-03-24 14:58:52,297 DEBUG      used, but not included in any prior: 'dbcu::Im{c9}'
+2026-03-24 14:58:52,297 DEBUG      used, but not included in any prior: 'dcnuee::Re{cSL}'
+2026-03-24 14:58:52,297 DEBUG      used, but not included in any prior: 'dbcu::Re{c3}'
+2026-03-24 14:58:52,297 DEBUG      used, but not included in any prior: 'sbcu::Re{c4'}'
+2026-03-24 14:58:52,297 DEBUG      used, but not included in any prior: 'b->smumu::Im{cT}'
+2026-03-24 14:58:52,298 DEBUG      used, but not included in any prior: 'sbcu::Re{c3}'
+2026-03-24 14:58:52,298 DEBUG      used, but not included in any prior: 'sbnunu::Re{cSR}'
+2026-03-24 14:58:52,298 DEBUG      used, but not included in any prior: 'cbmunumu::Re{cT}'
+2026-03-24 14:58:52,298 DEBUG      used, but not included in any prior: 'life_time::B_u'
+2026-03-24 14:58:52,298 DEBUG      used, but not included in any prior: 'CKM::abs(V_ub)'
+2026-03-24 14:58:52,298 DEBUG      used, but not included in any prior: 'sbsb::Im{c4}'
+2026-03-24 14:58:52,298 DEBUG      used, but not included in any prior: 'dcnuee::Re{cVR}'
+2026-03-24 14:58:52,299 DEBUG      used, but not included in any prior: 'b->s::c8''
+2026-03-24 14:58:52,299 DEBUG      used, but not included in any prior: 'b->s::c5'
+2026-03-24 14:58:52,299 DEBUG      used, but not included in any prior: 'sbcu::Im{c3'}'
+2026-03-24 14:58:52,299 DEBUG      used, but not included in any prior: 'ubtaunutau::Im{cSL}'
+2026-03-24 14:58:52,299 DEBUG      used, but not included in any prior: 'dbcu::Re{c7'}'
+2026-03-24 14:58:52,299 DEBUG      used, but not included in any prior: 'B->Kccbar::Arg_Hhat_at_psi2S_plus@GRvDV2022'
+2026-03-24 14:58:52,299 DEBUG      used, but not included in any prior: 'ubtaunutau::Im{cVR}'
+2026-03-24 14:58:52,300 DEBUG      used, but not included in any prior: 'cbtaunutau::Re{cVR}'
+2026-03-24 14:58:52,300 DEBUG      used, but not included in any prior: 'usmunumu::Re{cVR}'
+2026-03-24 14:58:52,300 DEBUG      used, but not included in any prior: 'b->see::Re{c9}'
+2026-03-24 14:58:52,300 DEBUG      used, but not included in any prior: 'CKM::abs(V_cs)'
+2026-03-24 14:58:52,300 DEBUG      used, but not included in any prior: 'CKM::arg(V_td)'
+2026-03-24 14:58:52,300 DEBUG      used, but not included in any prior: 'dbcu::Re{c6'}'
+2026-03-24 14:58:52,300 DEBUG      used, but not included in any prior: 'ubenue::Re{cVR}'
+2026-03-24 14:58:52,300 DEBUG      used, but not included in any prior: 'sbcu::Im{c4}'
+2026-03-24 14:58:52,301 DEBUG      used, but not included in any prior: 'dbcu::Re{c3'}'
+2026-03-24 14:58:52,301 DEBUG      used, but not included in any prior: 'ubenue::Re{cT}'
+2026-03-24 14:58:52,301 DEBUG      used, but not included in any prior: 'ubtaunutau::Re{cSL}'
+2026-03-24 14:58:52,301 DEBUG      used, but not included in any prior: 'dcnuee::Im{cSR}'
+2026-03-24 14:58:52,301 DEBUG      used, but not included in any prior: 'sbcu::Re{c8'}'
+2026-03-24 14:58:52,301 DEBUG      used, but not included in any prior: 'sbcu::Im{c5'}'
+2026-03-24 14:58:52,301 DEBUG      used, but not included in any prior: 'sbnunu::Im{cVL}'
+2026-03-24 14:58:52,301 DEBUG      used, but not included in any prior: 'sbnunu::Re{cVL}'
+2026-03-24 14:58:52,302 DEBUG      used, but not included in any prior: 'sbcu::Re{c2}'
+2026-03-24 14:58:52,302 DEBUG      used, but not included in any prior: 'ubtaunutau::Im{cSR}'
+2026-03-24 14:58:52,302 DEBUG      used, but not included in any prior: 'b->see::Re{cT5}'
+2026-03-24 14:58:52,302 DEBUG      used, but not included in any prior: 'b->smumu::Im{c9}'
+2026-03-24 14:58:52,302 DEBUG      used, but not included in any prior: 'b->s::c8'
+2026-03-24 14:58:52,302 DEBUG      used, but not included in any prior: 'sbsb::Im{c5}'
+2026-03-24 14:58:52,302 DEBUG      used, but not included in any prior: 'cbtaunutau::Im{cSL}'
+2026-03-24 14:58:52,302 DEBUG      used, but not included in any prior: 'sbcu::Re{c4}'
+2026-03-24 14:58:52,303 DEBUG      used, but not included in any prior: 'ubtaunutau::Re{cSR}'
+2026-03-24 14:58:52,303 DEBUG      used, but not included in any prior: 'dcnuee::Im{cSL}'
+2026-03-24 14:58:52,303 DEBUG      used, but not included in any prior: 'sbcu::Im{c4'}'
+2026-03-24 14:58:52,303 DEBUG      used, but not included in any prior: 'ustaunutau::Re{cT}'
+2026-03-24 14:58:52,303 DEBUG      used, but not included in any prior: 'ubtaunutau::Re{cVR}'
+2026-03-24 14:58:52,303 DEBUG      used, but not included in any prior: 'dcnutautau::Im{cSR}'
+2026-03-24 14:58:52,303 DEBUG      used, but not included in any prior: 'sbsb::Re{c5}'
+2026-03-24 14:58:52,303 DEBUG      used, but not included in any prior: 'usenue::Re{cSL}'
+2026-03-24 14:58:52,304 DEBUG      used, but not included in any prior: 'cbmunumu::Re{cSR}'
+2026-03-24 14:58:52,304 DEBUG      used, but not included in any prior: 'b->see::Re{cT}'
+2026-03-24 14:58:52,304 DEBUG      used, but not included in any prior: 'ustaunutau::Re{cVR}'
+2026-03-24 14:58:52,304 DEBUG      used, but not included in any prior: 'ubmunumu::Im{cSR}'
+2026-03-24 14:58:52,304 DEBUG      used, but not included in any prior: 'dcnutautau::Re{cSR}'
+2026-03-24 14:58:52,304 DEBUG      used, but not included in any prior: 'ubmunumu::Im{cVL}'
+2026-03-24 14:58:52,305 DEBUG      used, but not included in any prior: 'dbcu::Im{c7}'
+2026-03-24 14:58:52,305 DEBUG      used, but not included in any prior: 'cbmunumu::Im{cVL}'
+2026-03-24 14:58:52,305 DEBUG      used, but not included in any prior: 'CKM::abs(V_cd)'
+2026-03-24 14:58:52,305 DEBUG      used, but not included in any prior: 'dbcu::Im{c1'}'
+2026-03-24 14:58:52,305 DEBUG      used, but not included in any prior: 'cbtaunutau::Im{cVL}'
+2026-03-24 14:58:52,305 DEBUG      used, but not included in any prior: 'scnumumu::Im{cVR}'
+2026-03-24 14:58:52,305 DEBUG      used, but not included in any prior: 'b->smumu::Im{c9'}'
+2026-03-24 14:58:52,305 DEBUG      used, but not included in any prior: 'sbcu::Im{c7'}'
+2026-03-24 14:58:52,306 DEBUG      used, but not included in any prior: 'dbcu::Re{c2}'
+2026-03-24 14:58:52,306 DEBUG      used, but not included in any prior: 'b->s::Re{c7}'
+2026-03-24 14:58:52,306 DEBUG      used, but not included in any prior: 'CKM::arg(V_ts)'
+2026-03-24 14:58:52,306 DEBUG      used, but not included in any prior: 'ubenue::Im{cSR}'
+2026-03-24 14:58:52,306 DEBUG      used, but not included in any prior: 'sbcu::Im{c2}'
+2026-03-24 14:58:52,306 DEBUG      used, but not included in any prior: 'CKM::arg(V_ub)'
+2026-03-24 14:58:52,306 DEBUG      used, but not included in any prior: 'sbcu::Re{c6}'
+2026-03-24 14:58:52,306 DEBUG      used, but not included in any prior: 'sbnunu::Re{cSL}'
+2026-03-24 14:58:52,306 DEBUG      used, but not included in any prior: 'dcnumumu::Re{cVL}'
+2026-03-24 14:58:52,307 DEBUG      used, but not included in any prior: 'dbcu::Im{c4'}'
+2026-03-24 14:58:52,307 DEBUG      used, but not included in any prior: 'dbcu::Im{c6}'
+2026-03-24 14:58:52,307 DEBUG      used, but not included in any prior: 'sbsb::Im{c3'}'
+2026-03-24 14:58:52,307 DEBUG      used, but not included in any prior: 'sbcu::Re{c10'}'
+2026-03-24 14:58:52,307 DEBUG      used, but not included in any prior: 'dbcu::Re{c10}'
+2026-03-24 14:58:52,307 DEBUG      used, but not included in any prior: 'dcnumumu::Im{cSR}'
+2026-03-24 14:58:52,307 DEBUG      used, but not included in any prior: 'b->see::Re{c10'}'
+2026-03-24 14:58:52,307 DEBUG      used, but not included in any prior: 'scnuee::Re{cSL}'
+2026-03-24 14:58:52,308 DEBUG      used, but not included in any prior: 'scnumumu::Re{cVR}'
+2026-03-24 14:58:52,308 DEBUG      used, but not included in any prior: 'QCD::mu_c'
+2026-03-24 14:58:52,308 DEBUG      used, but not included in any prior: 'scnumumu::Im{cVL}'
+2026-03-24 14:58:52,308 DEBUG      used, but not included in any prior: 'b->sccbar::bound_uncertainty@GvDV2020'
+2026-03-24 14:58:52,308 DEBUG      used, but not included in any prior: 'cbenue::Im{cSR}'
+2026-03-24 14:58:52,308 DEBUG      used, but not included in any prior: 'scnutautau::Re{cSR}'
+2026-03-24 14:58:52,308 DEBUG      used, but not included in any prior: 'cbmunumu::Im{cSL}'
+2026-03-24 14:58:52,308 DEBUG      used, but not included in any prior: 'sbcu::Re{c2'}'
+2026-03-24 14:58:52,309 DEBUG      used, but not included in any prior: 'dbcu::Im{c8'}'
+2026-03-24 14:58:52,309 DEBUG      used, but not included in any prior: 'sbcu::Re{c9}'
+2026-03-24 14:58:52,309 DEBUG      used, but not included in any prior: 'dbcu::Re{c6}'
+2026-03-24 14:58:52,309 DEBUG      used, but not included in any prior: 'ustaunutau::Im{cSL}'
+2026-03-24 14:58:52,309 DEBUG      used, but not included in any prior: 'dbcu::Re{c5'}'
+2026-03-24 14:58:52,309 DEBUG      used, but not included in any prior: 'sbsb::Im{c3}'
+2026-03-24 14:58:52,310 DEBUG      used, but not included in any prior: 'cbtaunutau::Re{cVL}'
+2026-03-24 14:58:52,310 DEBUG      used, but not included in any prior: 'QCD::Lambda'
+2026-03-24 14:58:52,310 DEBUG      used, but not included in any prior: 'usenue::Re{cSR}'
+2026-03-24 14:58:52,310 DEBUG      used, but not included in any prior: 'ustaunutau::Re{cVL}'
+2026-03-24 14:58:52,310 DEBUG      used, but not included in any prior: 'mass::psi(2S)'
+2026-03-24 14:58:52,310 DEBUG      used, but not included in any prior: 'sbsb::Im{c2'}'
+2026-03-24 14:58:52,310 DEBUG      used, but not included in any prior: 'b->smumu::Im{cT5}'
+2026-03-24 14:58:52,310 DEBUG      used, but not included in any prior: 'ubtaunutau::Im{cVL}'
+2026-03-24 14:58:52,310 DEBUG      used, but not included in any prior: 'sbcu::Im{c10}'
+2026-03-24 14:58:52,311 DEBUG      used, but not included in any prior: 'sbsb::Im{c1'}'
+2026-03-24 14:58:52,311 DEBUG      used, but not included in any prior: 'dbcu::Im{c3'}'
+2026-03-24 14:58:52,311 DEBUG      used, but not included in any prior: 'scnumumu::Im{cT}'
+2026-03-24 14:58:52,311 DEBUG      used, but not included in any prior: 'b->smumu::Re{c9}'
+2026-03-24 14:58:52,311 DEBUG      used, but not included in any prior: 'scnumumu::Re{cSR}'
+2026-03-24 14:58:52,311 DEBUG      used, but not included in any prior: 'scnumumu::Im{cSL}'
+2026-03-24 14:58:52,311 DEBUG      used, but not included in any prior: 'b->s::Im{c7'}'
+2026-03-24 14:58:52,311 DEBUG      used, but not included in any prior: 'mass::J/psi'
+2026-03-24 14:58:52,311 DEBUG      used, but not included in any prior: 'b->see::Im{c9}'
+2026-03-24 14:58:52,312 DEBUG      used, but not included in any prior: 'sbsb::Re{c4}'
+2026-03-24 14:58:52,312 DEBUG      used, but not included in any prior: 'dbcu::Re{c1'}'
+2026-03-24 14:58:52,312 DEBUG      used, but not included in any prior: 'sbsb::Im{c2}'
+2026-03-24 14:58:52,312 DEBUG      used, but not included in any prior: 'b->smumu::Im{cS'}'
+2026-03-24 14:58:52,312 DEBUG      used, but not included in any prior: 'sbcu::Im{c1'}'
+2026-03-24 14:58:52,312 DEBUG      used, but not included in any prior: 'sbcu::Re{c1'}'
+2026-03-24 14:58:52,312 DEBUG      used, but not included in any prior: 'dcnuee::Im{cT}'
+2026-03-24 14:58:52,312 DEBUG      used, but not included in any prior: 'sbcu::Re{c1}'
+2026-03-24 14:58:52,312 DEBUG      used, but not included in any prior: 'b->see::Im{cP'}'
+2026-03-24 14:58:52,312 DEBUG      used, but not included in any prior: 'cbmunumu::Im{cSR}'
+2026-03-24 14:58:52,313 DEBUG      used, but not included in any prior: 'decay-constant::J/psi'
+2026-03-24 14:58:52,313 DEBUG      used, but not included in any prior: 'CKM::arg(V_ud)'
+2026-03-24 14:58:52,313 DEBUG      used, but not included in any prior: 'CKM::abs(V_ts)'
+2026-03-24 14:58:52,313 DEBUG      used, but not included in any prior: 'b->s::c6'
+2026-03-24 14:58:52,313 DEBUG      used, but not included in any prior: 'scnuee::Re{cT}'
+2026-03-24 14:58:52,313 DEBUG      used, but not included in any prior: 'usmunumu::Im{cVL}'
+2026-03-24 14:58:52,313 DEBUG      used, but not included in any prior: 'scnumumu::Im{cSR}'
+2026-03-24 14:58:52,313 DEBUG      used, but not included in any prior: 'sbcu::Re{c3'}'
+2026-03-24 14:58:52,313 DEBUG      used, but not included in any prior: 'b->see::Re{c10}'
+2026-03-24 14:58:52,314 DEBUG      used, but not included in any prior: 'sbcu::Im{c5}'
+2026-03-24 14:58:52,314 DEBUG      used, but not included in any prior: 'cbmunumu::Re{cVL}'
+2026-03-24 14:58:52,314 DEBUG      used, but not included in any prior: 'ubmunumu::Im{cT}'
+2026-03-24 14:58:52,314 DEBUG      used, but not included in any prior: 'dcnuee::Re{cT}'
+2026-03-24 14:58:52,314 DEBUG      used, but not included in any prior: 'scnutautau::Im{cSR}'
+2026-03-24 14:58:52,314 DEBUG      used, but not included in any prior: 'QCD::mu_b'
+2026-03-24 14:58:52,314 DEBUG      used, but not included in any prior: 'sbcu::Im{c2'}'
+2026-03-24 14:58:52,314 DEBUG      used, but not included in any prior: 'usenue::Im{cVL}'
+2026-03-24 14:58:52,315 DEBUG      used, but not included in any prior: 'b->smumu::Im{c10}'
+2026-03-24 14:58:52,315 DEBUG      used, but not included in any prior: 'b->smumu::Re{cT}'
+2026-03-24 14:58:52,315 DEBUG      used, but not included in any prior: 'b->see::Re{cS'}'
+2026-03-24 14:58:52,315 DEBUG      used, but not included in any prior: 'life_time::B_d'
+2026-03-24 14:58:52,315 DEBUG      used, but not included in any prior: 'sbcu::Re{c10}'
+2026-03-24 14:58:52,315 DEBUG      used, but not included in any prior: 'sbcu::Re{c7'}'
+2026-03-24 14:58:52,316 DEBUG      used, but not included in any prior: 'b->see::Im{cP}'
+2026-03-24 14:58:52,316 DEBUG      used, but not included in any prior: 'cbenue::Im{cVR}'
+2026-03-24 14:58:52,316 DEBUG      used, but not included in any prior: 'dbcu::Im{c2}'
+2026-03-24 14:58:52,316 DEBUG      used, but not included in any prior: 'dbcu::Im{c10'}'
+2026-03-24 14:58:52,316 DEBUG      used, but not included in any prior: 'dcnumumu::Re{cT}'
+2026-03-24 14:58:52,316 DEBUG      used, but not included in any prior: 'dcnumumu::Re{cVR}'
+2026-03-24 14:58:52,316 DEBUG      used, but not included in any prior: 'sbsb::Re{c3'}'
+2026-03-24 14:58:52,317 DEBUG      used, but not included in any prior: 'b->sccbar::chiOPE@GvDV2020'
+2026-03-24 14:58:52,317 DEBUG      used, but not included in any prior: 'CKM::arg(V_cb)'
+2026-03-24 14:58:52,317 DEBUG      used, but not included in any prior: 'b->smumu::Re{c10}'
+2026-03-24 14:58:52,317 DEBUG      used, but not included in any prior: 'sbsb::Re{c1}'
+2026-03-24 14:58:52,317 DEBUG      used, but not included in any prior: 'ustaunutau::Im{cSR}'
+2026-03-24 14:58:52,317 DEBUG      used, but not included in any prior: 'dcnuee::Im{cVR}'
+2026-03-24 14:58:52,317 DEBUG      used, but not included in any prior: 'dcnutautau::Im{cVL}'
+2026-03-24 14:58:52,317 DEBUG      used, but not included in any prior: 'dbcu::Im{c2'}'
+2026-03-24 14:58:52,317 DEBUG      used, but not included in any prior: 'sbsb::Im{c1}'
+2026-03-24 14:58:52,317 DEBUG      used, but not included in any prior: 'dbcu::Re{c8}'
+2026-03-24 14:58:52,318 DEBUG      used, but not included in any prior: 'sbcu::Im{c6}'
+2026-03-24 14:58:52,318 DEBUG      used, but not included in any prior: 'dcnumumu::Re{cSL}'
+2026-03-24 14:58:52,318 DEBUG      used, but not included in any prior: 'dbcu::Im{c6'}'
+2026-03-24 14:58:52,318 DEBUG      used, but not included in any prior: 'dcnumumu::Im{cSL}'
+2026-03-24 14:58:52,318 DEBUG      used, but not included in any prior: 'b->smumu::Re{cS}'
+2026-03-24 14:58:52,318 DEBUG      used, but not included in any prior: 'cbenue::Re{cVR}'
+2026-03-24 14:58:52,318 DEBUG      used, but not included in any prior: 'usmunumu::Re{cSR}'
+2026-03-24 14:58:52,318 DEBUG      used, but not included in any prior: 'cbtaunutau::Im{cVR}'
+2026-03-24 14:58:52,318 DEBUG      used, but not included in any prior: 'usenue::Re{cVR}'
+2026-03-24 14:58:52,319 DEBUG      used, but not included in any prior: 'cbtaunutau::Re{cSR}'
+2026-03-24 14:58:52,319 DEBUG      used, but not included in any prior: 'dcnumumu::Im{cVL}'
+2026-03-24 14:58:52,319 DEBUG      used, but not included in any prior: 'b->smumu::Im{c10'}'
+2026-03-24 14:58:52,319 DEBUG      used, but not included in any prior: 'dbcu::Re{c4}'
+2026-03-24 14:58:52,319 DEBUG      used, but not included in any prior: 'CKM::arg(V_tb)'
+2026-03-24 14:58:52,319 DEBUG      used, but not included in any prior: 'dcnuee::Re{cSR}'
+2026-03-24 14:58:52,319 DEBUG      used, but not included in any prior: 'sbcu::Im{c9'}'
+2026-03-24 14:58:52,319 DEBUG      used, but not included in any prior: 'cbmunumu::Im{cT}'
+2026-03-24 14:58:52,320 DEBUG      used, but not included in any prior: 'sbnunu::Re{cTL}'
+2026-03-24 14:58:52,320 DEBUG      used, but not included in any prior: 'dcnumumu::Im{cT}'
+2026-03-24 14:58:52,320 DEBUG      used, but not included in any prior: 'usenue::Re{cVL}'
+2026-03-24 14:58:52,320 DEBUG      used, but not included in any prior: 'b->s::Re{c7'}'
+2026-03-24 14:58:52,320 DEBUG      used, but not included in any prior: 'ubenue::Re{cSR}'
+2026-03-24 14:58:52,320 DEBUG      used, but not included in any prior: 'sbcu::Re{c9'}'
+2026-03-24 14:58:52,320 DEBUG      used, but not included in any prior: 'usmunumu::Im{cSL}'
+2026-03-24 14:58:52,320 DEBUG      used, but not included in any prior: 'dcnutautau::Re{cVR}'
+2026-03-24 14:58:52,321 DEBUG      used, but not included in any prior: 'usmunumu::Im{cVR}'
+2026-03-24 14:58:52,321 DEBUG      used, but not included in any prior: 'sbcu::Im{c3}'
+2026-03-24 14:58:52,321 DEBUG      used, but not included in any prior: 'dbcu::Im{c7'}'
+2026-03-24 14:58:52,321 DEBUG      used, but not included in any prior: 'CKM::arg(V_cd)'
+2026-03-24 14:58:52,321 DEBUG      used, but not included in any prior: 'b->see::Re{cP}'
+2026-03-24 14:58:52,321 DEBUG      used, but not included in any prior: 'b->smumu::Re{c10'}'
+2026-03-24 14:58:52,322 DEBUG      used, but not included in any prior: 'sbcu::Im{c1}'
+2026-03-24 14:58:52,322 DEBUG      used, but not included in any prior: 'mass::B_u'
+2026-03-24 14:58:52,322 DEBUG      used, but not included in any prior: 'mass::D^0'
+2026-03-24 14:58:52,322 DEBUG      used, but not included in any prior: 'b->see::Im{cS}'
+2026-03-24 14:58:52,322 DEBUG      used, but not included in any prior: 'CKM::abs(V_cb)'
+2026-03-24 14:58:52,322 DEBUG      used, but not included in any prior: 'ubmunumu::Im{cSL}'
+2026-03-24 14:58:52,322 DEBUG      used, but not included in any prior: 'cbmunumu::Re{cVR}'
+2026-03-24 14:58:52,322 DEBUG      used, but not included in any prior: 'sbcu::Re{c8}'
+2026-03-24 14:58:52,322 DEBUG      used, but not included in any prior: 'dbcu::Im{c4}'
+2026-03-24 14:58:52,322 DEBUG      used, but not included in any prior: 'dbcu::Re{c2'}'
+2026-03-24 14:58:52,323 DEBUG      used, but not included in any prior: 'sbsb::Re{c1'}'
+2026-03-24 14:58:52,323 DEBUG      used, but not included in any prior: 'dcnumumu::Im{cVR}'
+2026-03-24 14:58:52,323 DEBUG      used, but not included in any prior: 'usenue::Im{cT}'
+2026-03-24 14:58:52,323 DEBUG      used, but not included in any prior: 'b->see::Im{c9'}'
+2026-03-24 14:58:52,323 DEBUG      used, but not included in any prior: 'dbcu::Re{c9'}'
+2026-03-24 14:58:52,323 INPROGRESS Beginning minimization in 50 points
+2026-03-24 14:58:52,323 INFO       Using a starting point based on the existing importance samples
+2026-03-24 14:58:52,331 INFO       Using starting point [ 0.3426, -0.8868, -0.1657, 0.3969, 0.08393, 0.3558, -0.6951, 0.1883, 8.449e-06, -4.266e-06, 5.929e-05, -4.753e-06, 0.0001225, -7.036e-06, 0.0001808, -6.983e-06, 0.00122, 9.601 ]
+2026-03-24 14:58:52,730 SUCCESS    Optimization goal achieved after 545 function evaluations
+2026-03-24 14:58:52,731 INFO       First optimization finished
+2026-03-24 14:58:52,753 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:52,771 SUCCESS    Optimization goal achieved after 24 function evaluations
+2026-03-24 14:58:52,794 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:52,834 SUCCESS    Optimization goal achieved after 54 function evaluations
+2026-03-24 14:58:52,854 SUCCESS    Optimization goal achieved after 26 function evaluations
+2026-03-24 14:58:52,875 SUCCESS    Optimization goal achieved after 28 function evaluations
+2026-03-24 14:58:52,898 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:52,938 SUCCESS    Optimization goal achieved after 54 function evaluations
+2026-03-24 14:58:52,960 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:53,001 SUCCESS    Optimization goal achieved after 57 function evaluations
+2026-03-24 14:58:53,043 SUCCESS    Optimization goal achieved after 57 function evaluations
+2026-03-24 14:58:53,065 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:53,101 SUCCESS    Optimization goal achieved after 49 function evaluations
+2026-03-24 14:58:53,124 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:53,144 SUCCESS    Optimization goal achieved after 26 function evaluations
+2026-03-24 14:58:53,162 SUCCESS    Optimization goal achieved after 24 function evaluations
+2026-03-24 14:58:53,219 SUCCESS    Optimization goal achieved after 76 function evaluations
+2026-03-24 14:58:53,241 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:53,263 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:53,324 SUCCESS    Optimization goal achieved after 84 function evaluations
+2026-03-24 14:58:53,342 SUCCESS    Optimization goal achieved after 25 function evaluations
+2026-03-24 14:58:53,365 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:53,385 SUCCESS    Optimization goal achieved after 26 function evaluations
+2026-03-24 14:58:53,408 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:53,467 SUCCESS    Optimization goal achieved after 81 function evaluations
+2026-03-24 14:58:53,508 SUCCESS    Optimization goal achieved after 55 function evaluations
+2026-03-24 14:58:53,531 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:53,550 SUCCESS    Optimization goal achieved after 25 function evaluations
+2026-03-24 14:58:53,571 SUCCESS    Optimization goal achieved after 28 function evaluations
+2026-03-24 14:58:53,594 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:53,616 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:53,635 SUCCESS    Optimization goal achieved after 25 function evaluations
+2026-03-24 14:58:53,676 SUCCESS    Optimization goal achieved after 54 function evaluations
+2026-03-24 14:58:53,695 SUCCESS    Optimization goal achieved after 25 function evaluations
+2026-03-24 14:58:53,716 SUCCESS    Optimization goal achieved after 27 function evaluations
+2026-03-24 14:58:53,739 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:53,757 SUCCESS    Optimization goal achieved after 25 function evaluations
+2026-03-24 14:58:53,799 SUCCESS    Optimization goal achieved after 56 function evaluations
+2026-03-24 14:58:53,821 SUCCESS    Optimization goal achieved after 29 function evaluations
+2026-03-24 14:58:53,843 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:53,861 SUCCESS    Optimization goal achieved after 24 function evaluations
+2026-03-24 14:58:53,884 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:54,043 SUCCESS    Optimization goal achieved after 220 function evaluations
+2026-03-24 14:58:54,099 SUCCESS    Optimization goal achieved after 75 function evaluations
+2026-03-24 14:58:54,120 SUCCESS    Optimization goal achieved after 29 function evaluations
+2026-03-24 14:58:54,163 SUCCESS    Optimization goal achieved after 57 function evaluations
+2026-03-24 14:58:54,186 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:54,208 SUCCESS    Optimization goal achieved after 30 function evaluations
+2026-03-24 14:58:54,228 SUCCESS    Optimization goal achieved after 26 function evaluations
+2026-03-24 14:58:54,229 COMPLETED  ... optimization finished
+2026-03-24 14:58:54,229 INFO       The best-fit point is:
+2026-03-24 14:58:54,229 INFO         - B->K::alpha^f+_0@BSZ2015 -> 0.3481441369544269
+2026-03-24 14:58:54,230 INFO         - B->K::alpha^f+_1@BSZ2015 -> -0.8328913902559875
+2026-03-24 14:58:54,230 INFO         - B->K::alpha^f+_2@BSZ2015 -> -0.0669394888560978
+2026-03-24 14:58:54,230 INFO         - B->K::alpha^f0_1@BSZ2015 -> 0.44490288295351527
+2026-03-24 14:58:54,230 INFO         - B->K::alpha^f0_2@BSZ2015 -> 0.19406015499403212
+2026-03-24 14:58:54,230 INFO         - B->K::alpha^fT_0@BSZ2015 -> 0.352759536213158
+2026-03-24 14:58:54,230 INFO         - B->K::alpha^fT_1@BSZ2015 -> -0.7846323514938067
+2026-03-24 14:58:54,231 INFO         - B->K::alpha^fT_2@BSZ2015 -> 0.003728672250330023
+2026-03-24 14:58:54,231 INFO         - B->Kccbar::Re_Hhat_at_m7_plus@GRvDV2022 -> 1.778395860955094e-05
+2026-03-24 14:58:54,231 INFO         - B->Kccbar::Im_Hhat_at_m7_plus@GRvDV2022 -> -4.202415541604008e-06
+2026-03-24 14:58:54,231 INFO         - B->Kccbar::Re_Hhat_at_m5_plus@GRvDV2022 -> 7.117394377285233e-05
+2026-03-24 14:58:54,231 INFO         - B->Kccbar::Im_Hhat_at_m5_plus@GRvDV2022 -> -5.180830464614626e-06
+2026-03-24 14:58:54,231 INFO         - B->Kccbar::Re_Hhat_at_m3_plus@GRvDV2022 -> 0.0001296369837683897
+2026-03-24 14:58:54,232 INFO         - B->Kccbar::Im_Hhat_at_m3_plus@GRvDV2022 -> -6.4905556284727195e-06
+2026-03-24 14:58:54,232 INFO         - B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022 -> 0.00019232173958538134
+2026-03-24 14:58:54,232 INFO         - B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022 -> -8.286582611764522e-06
+2026-03-24 14:58:54,232 INFO         - B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022 -> 0.0012253239578483882
+2026-03-24 14:58:54,232 INFO         - B->Kccbar::Arg_Hhat_at_Jpsi_plus@GRvDV2022 -> 9.601132971223706
+2026-03-24 14:58:54,232 INFO       total chi^2 = 12.92
+2026-03-24 14:58:54,232 INFO       total dof   = 13
+2026-03-24 14:58:54,233 INFO       p value     = 45.40%
+2026-03-24 14:58:54,233 INFO       individual test statistics:
+2026-03-24 14:58:54,234 INFO         - B->K::FormFactors[f_+,f_T]@KR:2017A: chi^2 / dof = 3.76 / 4, local_pvalue = 43.98%
+2026-03-24 14:58:54,234 INFO         - B->K::NonLocalBound: chi^2 / dof = 0.00 / 1, local_pvalue = 100.00%
+2026-03-24 14:58:54,235 INFO         - B->K::f_0+f_++f_T@FLAG:2021A: chi^2 / dof = 2.57 / 8, local_pvalue = 95.85%
+2026-03-24 14:58:54,235 INFO         - B->K::f_0+f_++f_T@HPQCD:2022A: chi^2 / dof = 3.98 / 8, local_pvalue = 85.91%
+2026-03-24 14:58:54,236 INFO         - B->K::vanishing-{Delta_H_0(q2)}/F_0(q2): chi^2 / dof = 0.00 / 8, local_pvalue = 100.00%
+2026-03-24 14:58:54,236 INFO         - B->KJpsi::BR@PDG:2020A: chi^2 / dof = 1.07 / 1, local_pvalue = 30.06%
+2026-03-24 14:58:54,237 INFO         - B^0->K^0Jpsi::BR@PDG:2020A: chi^2 / dof = 1.54 / 1, local_pvalue = 21.40%
+2026-03-24 14:58:54,241 SUCCESS    Final p value is 45.40%, indicating a successful fit
