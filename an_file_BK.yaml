@@ -256,6 +256,12 @@ observables:
     options: {tag: 'GvDV2020'}
     expression: '<<B->Kll::dBR/ds>> / <<B->Kpsi::BR>>'
 
+  "B->Kll::Normalized_BR":
+    latex: R'\frac{\mathcal{B}(B \to K\, \ell^+\ell^-)}{\mathcal{B}(B \to K\, J/\psi)}'
+    unit: '1'
+    options: {tag: 'GvDV2020'}
+    expression: '<<B->Kll::BR>> / <<B->Kpsi::BR>>'
+
 #------------------------------------------------------------------------------------------------------
 
 likelihoods:
@@ -607,3 +613,16 @@ predictions:
                       { q2: 6.25 }, { q2: 6.5 }, { q2: 6.75 }, { q2: 7.0 }, { q2: 7.25 },
                       { q2: 7.5 }, { q2: 7.75 }, { q2: 8.0 }, { q2: 8.25 }, { q2: 8.5 },
                       { q2: 8.75 }, { q2: 9.0 }, { q2: 9.25 }, { q2: 9.5 }, { q2: 9.75 } ]
+
+  - name: BToKll-Normalized-BR-binned
+    observables:
+      - name: B->Kll::Normalized_BR
+        kinematics:
+          - { q2_min: 0.10, q2_max: 0.98 }
+          - { q2_min: 1.10, q2_max: 2.00 }
+          - { q2_min: 2.00, q2_max: 3.00 }
+          - { q2_min: 3.00, q2_max: 4.00 }
+          - { q2_min: 4.00, q2_max: 5.00 }
+          - { q2_min: 5.00, q2_max: 6.00 }
+          - { q2_min: 6.00, q2_max: 7.00 }
+          - { q2_min: 7.00, q2_max: 8.00 }
