@@ -1,36 +1,82 @@
 priors:
   - name: bsz-BqToK-wSR@2022
     descriptions:
-    - { parameter: 'B->K::alpha^f+_0@BSZ2015', min: 3.276e-01, max: 4.451e-01, type: 'uniform'}
-    - { parameter: 'B->K::alpha^f+_1@BSZ2015', min: -1.053e+00, max: -7.297e-02, type: 'uniform'}
-    - { parameter: 'B->K::alpha^f+_2@BSZ2015', min: -7.481e-01, max: 1.459e+00, type: 'uniform'}
-    - { parameter: 'B->K::alpha^f0_1@BSZ2015', min: 2.827e-01, max: 1.148e+00, type: 'uniform'}
-    - { parameter: 'B->K::alpha^f0_2@BSZ2015', min: -1.134e-01, max: 1.422e+00, type: 'uniform'}
-    - { parameter: 'B->K::alpha^fT_0@BSZ2015', min: 3.026e-01, max: 4.265e-01, type: 'uniform'}
-    - { parameter: 'B->K::alpha^fT_1@BSZ2015', min: -1.272e+00, max: -1.544e-01, type: 'uniform'}
-    - { parameter: 'B->K::alpha^fT_2@BSZ2015', min: -1.192e+00, max: 1.313e+00, type: 'uniform'}
-  - name: bsz-BqToK-wSR
-    descriptions:
-    - { parameter: 'B->K::alpha^f+_0@BSZ2015', min: 3.054e-01, max: 4.854e-01, type: 'uniform'}
-    - { parameter: 'B->K::alpha^f+_1@BSZ2015', min: -1.245e+00, max: 2.644e-01, type: 'uniform'}
-    - { parameter: 'B->K::alpha^f+_2@BSZ2015', min: -1.223e+00, max: 2.209e+00, type: 'uniform'}
-    - { parameter: 'B->K::alpha^f0_1@BSZ2015', min: 1.191e-01, max: 1.443e+00, type: 'uniform'}
-    - { parameter: 'B->K::alpha^f0_2@BSZ2015', min: -4.096e-01, max: 1.941e+00, type: 'uniform'}
-    - { parameter: 'B->K::alpha^fT_0@BSZ2015', min: 2.648e-01, max: 4.657e-01, type: 'uniform'}
-    - { parameter: 'B->K::alpha^fT_1@BSZ2015', min: -1.602e+00, max: 1.912e-01, type: 'uniform'}
-    - { parameter: 'B->K::alpha^fT_2@BSZ2015', min: -1.926e+00, max: 2.084e+00, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f+_0@BSZ2015', min: +3.092e-01, max: +3.758e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f+_1@BSZ2015', min: -1.162e+00, max: -5.301e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f+_2@BSZ2015', min: -1.011e+00, max: +9.299e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f0_1@BSZ2015', min: +1.575e-01, max: +6.572e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f0_2@BSZ2015', min: -3.557e-01, max: +6.243e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^fT_0@BSZ2015', min: +2.847e-01, max: +3.669e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^fT_1@BSZ2015', min: -1.306e+00, max: -6.160e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^fT_2@BSZ2015', min: -1.282e+00, max: +7.416e-01, type: 'uniform'}
   - name: GRvDV2022-BToKccbar
     descriptions:
-    - { parameter: 'B->Kccbar::Re_Hhat_at_m7_plus@GRvDV2022', min: -5.876e-05, max: 1.529e-04, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Im_Hhat_at_m7_plus@GRvDV2022', min: -7.659e-06, max: -5.202e-07, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Re_Hhat_at_m5_plus@GRvDV2022', min: -6.465e-06, max: 2.220e-04, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Im_Hhat_at_m5_plus@GRvDV2022', min: -8.950e-06, max: -1.238e-06, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Re_Hhat_at_m3_plus@GRvDV2022', min: 5.331e-05, max: 2.919e-04, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Im_Hhat_at_m3_plus@GRvDV2022', min: -1.070e-05, max: -2.297e-06, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022', min: 1.026e-04, max: 3.755e-04, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022', min: -1.304e-05, max: -3.728e-06, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m7_plus@GRvDV2022', min: -5.617e-06, max: +7.057e-05, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m7_plus@GRvDV2022', min: -5.300e-06, max: -1.749e-06, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m5_plus@GRvDV2022', min: +3.917e-05, max: +1.292e-04, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m5_plus@GRvDV2022', min: -6.476e-06, max: -2.466e-06, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m3_plus@GRvDV2022', min: +8.293e-05, max: +1.968e-04, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m3_plus@GRvDV2022', min: -8.156e-06, max: -3.315e-06, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022', min: +1.263e-04, max: +2.748e-04, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022', min: -1.035e-05, max: -4.636e-06, type: 'uniform'}
+
     - { parameter: 'B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022', min: 1.163e-03, max: 1.287e-03, type: 'uniform'}
-    - { parameter: 'B->Kccbar::Arg_Hhat_at_Jpsi_plus@GRvDV2022', min: -2.533e+01, max: 2.547e+01, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Arg_Hhat_at_Jpsi_plus@GRvDV2022', min: -3.14159, max: +3.14159, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Abs_Hhat_at_psi2S_plus@GRvDV2022', min: 0.0, max: 0.0001, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Arg_Hhat_at_psi2S_plus@GRvDV2022', min: -3.14159, max: +3.14159, type: 'uniform'}
+
+
+  - name: bsz-BqToK-wSR@2026
+    descriptions:
+    - { parameter: 'B->K::alpha^f+_0@BSZ2015', min: +3.104e-01, max: +3.707e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f+_1@BSZ2015', min: -1.116e+00, max: -5.949e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f+_2@BSZ2015', min: -8.113e-01, max: +7.138e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f0_1@BSZ2015', min: +1.706e-01, max: +6.187e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f0_2@BSZ2015', min: -3.135e-01, max: +5.416e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^fT_0@BSZ2015', min: +2.888e-01, max: +3.597e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^fT_1@BSZ2015', min: -1.245e+00, max: -6.874e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^fT_2@BSZ2015', min: -1.065e+00, max: +5.261e-01, type: 'uniform'}
+  - name: GRvDV2022-BToKccbar@2026
+    descriptions:
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m7_plus@GRvDV2022', min: -1.363e-04, max: -5.182e-06, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m5_plus@GRvDV2022', min: -2.551e-04, max: -1.051e-04, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m3_plus@GRvDV2022', min: -3.782e-04, max: -2.189e-04, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022', min: -5.384e-04, max: -3.064e-04, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m7_plus@GRvDV2022', min: +4.681e-06, max: +1.074e-05, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m5_plus@GRvDV2022', min: +6.220e-06, max: +1.312e-05, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m3_plus@GRvDV2022', min: +8.274e-06, max: +1.615e-05, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022', min: +1.103e-05, max: +2.059e-05, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022', min: +2.473e-03, max: +2.663e-03, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Arg_Hhat_at_Jpsi_plus@GRvDV2022', min: -3.14159, max: +3.14159, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Abs_Hhat_at_psi2S_plus@GRvDV2022', min: 0.0, max: 0.5, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Arg_Hhat_at_psi2S_plus@GRvDV2022', min: -3.14159, max: +3.14159, type: 'uniform'}
+
+
+  - name: bsz-BqToK-wSR@2026-dbg
+    descriptions:
+    - { parameter: 'B->K::alpha^f+_0@BSZ2015', min: +3.092e-01, max: +3.758e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f+_1@BSZ2015', min: -1.162e+00, max: -5.301e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f+_2@BSZ2015', min: -1.011e+00, max: +9.299e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f0_1@BSZ2015', min: +1.575e-01, max: +6.572e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^f0_2@BSZ2015', min: -3.557e-01, max: +6.243e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^fT_0@BSZ2015', min: +2.847e-01, max: +3.669e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^fT_1@BSZ2015', min: -1.306e+00, max: -6.160e-01, type: 'uniform'}
+    - { parameter: 'B->K::alpha^fT_2@BSZ2015', min: -1.282e+00, max: +7.416e-01, type: 'uniform'}
+  - name: GRvDV2022-BToKccbar@2026-dbg
+    descriptions:
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m7_plus@GRvDV2022', min: -2.434e-04, max: +1.064e-04, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m7_plus@GRvDV2022', min: -1.606e-04, max: +1.737e-04, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m5_plus@GRvDV2022', min: -3.862e-04, max: +2.487e-05, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m5_plus@GRvDV2022', min: -1.909e-04, max: +2.123e-04, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m3_plus@GRvDV2022', min: -5.922e-04, max: -6.480e-06, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m3_plus@GRvDV2022', min: -2.711e-04, max: +3.026e-04, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022', min: -1.203e-03, max: +3.652e-04, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022', min: -7.759e-04, max: +8.190e-04, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022', min: +2.464e-03, max: +2.673e-03, type: 'uniform'}
+
+    - { parameter: 'B->Kccbar::Arg_Hhat_at_Jpsi_plus@GRvDV2022', min: -3.14159, max: +3.14159, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Abs_Hhat_at_psi2S_plus@GRvDV2022', min: 0.0, max: 0.01, type: 'uniform'}
+    - { parameter: 'B->Kccbar::Arg_Hhat_at_psi2S_plus@GRvDV2022', min: -3.14159, max: +3.14159, type: 'uniform'}
 
 
 observables:
@@ -164,7 +210,7 @@ observables:
     latex: R'\mathrm{Im}\left(\mathcal{H}_0(q^2)\right)^{B\to K}'
     unit: '1'
     options: {}
-    expression: '-1/(16 * 3.141592653589793^2) * ( {q2}/(2*[[mass::B_d]]^2) * <<b->s::Im{Delta_C9_Qc}(-1)>> * <<B->K::F_plus(q2)>> + [[mass::b(MSbar)]]/[[mass::B_d]] * <<b->s::Im{Delta_C7_Qc}(-1)>> * <<B->K::F_plus_T(q2)>> )'# BUILD Delta_H_0(q2) 
+    expression: '-1/(16 * 3.141592653589793^2) * ( {q2}/(2*[[mass::B_d]]^2) * <<b->s::Im{Delta_C9_Qc}(-1)>> * <<B->K::F_plus(q2)>> + [[mass::b(MSbar)]]/[[mass::B_d]] * <<b->s::Im{Delta_C7_Qc}(-1)>> * <<B->K::F_plus_T(q2)>> )'
   
 #------------------------------------------------------------------------------------------------------
   
@@ -209,7 +255,7 @@ observables:
     options: {}
     expression: '(<<B->K::Im{H_plus}(q2)>> - <<B->K::Im{H_0(-1,F)}>>) / <<B->K::F_plus(q2)>>'
 
-
+#------------------------------------------------------------------------------------------------------
 
   "B->K::Re{H_0}/F_0(q2)":
     latex: R'\mathrm{Re}\left(\Delta\mathcal{H}_0(q^2)\right)^{B\to K} / \mathrm{Re}\left(\mathcal{H}_0(q^2)\right)^{B\to K}'
@@ -222,7 +268,15 @@ observables:
     options: {}
     expression: '(<<B->K::Im{H_plus}(q2)>>) / <<B->K::F_plus(q2)>>'
 
-#------------------------------------------------------------------------------------------------------
+
+
+  "B->K::Abs{H_plus}/F_plus(q2)":
+    latex: R'|\mathcal{H}_0^{B\to K}|/\mathcal{F}_0^{B\to K}'
+    unit: '1'
+    options: {}
+    expression: '(<<B->K::Abs{H_plus}(q2)>>) / <<B->K::F_plus(q2)>>'
+  
+
 
   "B->K::Re{H_0(q2,F)}":
     latex: R'\mathrm{Re}\left(\mathcal{H}_0(q^2)\right)^{B\to K}'
@@ -235,6 +289,8 @@ observables:
     options: {}
     expression: '-1/(16 * 3.141592653589793^2) * ( {q2}/(2*[[mass::B_d]]^2) * <<b->s::Im{Delta_C9_Qc}(q2)>> * <<B->K::F_plus(q2)>> + [[mass::b(MSbar)]]/[[mass::B_d]] * <<b->s::Im{Delta_C7_Qc}(q2)>> * <<B->K::F_plus_T(q2)>> )'
 
+
+
   "B->K::Re{H_0(q2,F)}/F_0(q2)":
     latex: R'\mathrm{Re}(\mathcal{H}_0(q^2))^{B\to K} / F_0(q^2)'
     unit: '1'
@@ -246,9 +302,55 @@ observables:
     options: {}
     expression: '<<B->K::Im{H_0(q2,F)}>> / <<B->K::F_plus(q2)>>'
 
+
+  
+  "B->K::Re{H_0(-7,F)}/F_0(q2)":
+    latex: R'\mathrm{Re}(\mathcal{H}_0(q^2))^{B\to K} / F_0(q^2)'
+    unit: '1'
+    options: {}
+    expression: '<<B->K::Re{H_0(-7,F)}>> / <<B->K::F_plus(q2)>>'
+  "B->K::Im{H_0(-7,F)}/F_0(q2)":
+    latex: R'\mathrm{Im}(\mathcal{H}_0(q^2))^{B\to K} / F_0(q^2)'
+    unit: '1'
+    options: {}
+    expression: '<<B->K::Im{H_0(-7,F)}>> / <<B->K::F_plus(q2)>>'
+
+  "B->K::Re{H_0(-5,F)}/F_0(q2)":
+    latex: R'\mathrm{Re}(\mathcal{H}_0(q^2))^{B\to K} / F_0(q^2)'
+    unit: '1'
+    options: {}
+    expression: '<<B->K::Re{H_0(-5,F)}>> / <<B->K::F_plus(q2)>>'
+  "B->K::Im{H_0(-5,F)}/F_0(q2)":
+    latex: R'\mathrm{Im}(\mathcal{H}_0(q^2))^{B\to K} / F_0(q^2)'
+    unit: '1'
+    options: {}
+    expression: '<<B->K::Im{H_0(-5,F)}>> / <<B->K::F_plus(q2)>>'
+
+  "B->K::Re{H_0(-3,F)}/F_0(q2)":
+    latex: R'\mathrm{Re}(\mathcal{H}_0(q^2))^{B\to K} / F_0(q^2)'
+    unit: '1'
+    options: {}
+    expression: '<<B->K::Re{H_0(-3,F)}>> / <<B->K::F_plus(q2)>>'
+  "B->K::Im{H_0(-3,F)}/F_0(q2)":
+    latex: R'\mathrm{Im}(\mathcal{H}_0(q^2))^{B\to K} / F_0(q^2)'
+    unit: '1'
+    options: {}
+    expression: '<<B->K::Im{H_0(-3,F)}>> / <<B->K::F_plus(q2)>>'
+
+  "B->K::Re{H_0(-1,F)}/F_0(q2)":
+    latex: R'\mathrm{Re}(\mathcal{H}_0(q^2))^{B\to K} / F_0(q^2)'
+    unit: '1'
+    options: {}
+    expression: '<<B->K::Re{H_0(-1,F)}>> / <<B->K::F_plus(q2)>>'
+  "B->K::Im{H_0(-1,F)}/F_0(q2)":
+    latex: R'\mathrm{Im}(\mathcal{H}_0(q^2))^{B\to K} / F_0(q^2)'
+    unit: '1'
+    options: {}
+    expression: '<<B->K::Im{H_0(-1,F)}>> / <<B->K::F_plus(q2)>>'
+
 #------------------------------------------------------------------------------------------------------
 
-# SM PREDICIONS
+# FOR SM PREDICIONS
 
   "B->Kll::Normalized_dBR/ds":
     latex: R'\frac{1}{\mathcal{B}(B \to K\, J/\psi)}\frac{d\mathcal{B}(B \to K\, \ell^+\ell^-)}{ds}'
@@ -273,8 +375,8 @@ likelihoods:
       - 'B->K::f_0+f_++f_T@FLAG:2021A'
   - name: TH-BToK-LCSR
     constraints:
-      #- 'B->K::FormFactors[f_+,f_0,f_T]@GKvD:2018A'
-      - 'B->K::FormFactors[f_+,f_T]@KR:2017A'
+      - 'B->K::FormFactors[f_+,f_0,f_T]@GKvD:2018A'
+      #- 'B->K::FormFactors[f_+,f_T]@KR:2017A'
   - name: vanishing-Re{Delta-H0}/Re{H0(F)}
     manual_constraints:
       "B->K::vanishing-Re{Delta_H_0(q2)}/Re{H_0(q2,F)}":
@@ -291,6 +393,8 @@ likelihoods:
                      [0., 0.01, 0., 0.],
                      [0., 0., 0.01, 0.],
                      [0., 0., 0., 0.01]]
+
+
   - name: vanishing-Im{Delta-H0}/Im{H0(F)}
     manual_constraints:
       "B->K::vanishing-Im{Delta_H_0(q2)}/Im{H_0(q2,F)}":
@@ -307,7 +411,9 @@ likelihoods:
                      [0., 0.01, 0., 0.],
                      [0., 0., 0.01, 0.],
                      [0., 0., 0., 0.01]]
-  - name: vanishing-{Delta-H0}/F0
+
+
+  - name: vanishing-{Delta-H0}/F0@GRvDV2022
     manual_constraints:
       "B->K::vanishing-{Delta_H_0(q2)}/F_0(q2)":
         type: MultivariateGaussian(Covariance)
@@ -323,13 +429,65 @@ likelihoods:
         kinematics: [{q2: -7.0}, {q2: -5.0}, {q2: -3.0}, {q2: -1.0}, {q2: -7.0}, {q2: -5.0}, {q2: -3.0}, {q2: -1.0}]
         options: [{}, {}, {}, {}, {}, {}, {}, {}]
         means: [0., 0., 0., 0., 0., 0., 0., 0.]
-        covariance:  [[4.715465966221643e-12, 2.7462612046355015e-12, 1.524032578859719e-12, 4.654398305820585e-13, 1.590440714495068e-13, 1.1977354759787748e-13, 7.623965192981106e-14, 2.7147694969910095e-14], [2.746261204635501e-12, 4.0591866737382764e-12, 1.0238610208724041e-12, 3.1448380330282607e-13, 1.0588313506538595e-13, 8.007428539609475e-14, 5.121859528371547e-14, 1.834288731663919e-14], [1.5240325788597188e-12, 1.0238610208724041e-12, 2.9428966534455037e-12, 1.775138924148242e-13, 5.875965007227705e-14, 4.465397046358109e-14, 2.8722841268349164e-14, 1.0353847452575212e-14], [4.654398305820585e-13, 3.1448380330282607e-13, 1.775138924148242e-13, 6.393216876313385e-13, 1.7945207966068707e-14, 1.371568032934141e-14, 8.880123402964234e-15, 3.2252110313778974e-15], [1.590440714495068e-13, 1.0588313506538595e-13, 5.875965007227705e-14, 1.7945207966068707e-14, 1.4608646183877076e-14, 4.6179142377863184e-15, 2.9394484941914416e-15, 1.0466896041647307e-15], [1.1977354759787748e-13, 8.007428539609475e-14, 4.465397046358109e-14, 1.371568032934141e-14, 4.6179142377863184e-15, 1.0427403772121286e-14, 2.2338125921000067e-15, 7.999940731761468e-16], [7.623965192981106e-14, 5.121859528371547e-14, 2.8722841268349164e-14, 8.880123402964234e-15, 2.9394484941914416e-15, 2.233812592100007e-15, 5.6623248360062394e-15, 5.179506900759986e-16], [2.7147694969910095e-14, 1.834288731663919e-14, 1.0353847452575212e-14, 3.2252110313778974e-15, 1.0466896041647307e-15, 7.999940731761468e-16, 5.179506900759986e-16, 1.0409600393024125e-15]] 
+        covariance: [[4.715465966221643e-12, 2.7462612046355015e-12, 1.524032578859719e-12, 4.654398305820585e-13, 1.590440714495068e-13, 1.1977354759787748e-13, 7.623965192981106e-14, 2.7147694969910095e-14], [2.746261204635501e-12, 4.0591866737382764e-12, 1.0238610208724041e-12, 3.1448380330282607e-13, 1.0588313506538595e-13, 8.007428539609475e-14, 5.121859528371547e-14, 1.834288731663919e-14], [1.5240325788597188e-12, 1.0238610208724041e-12, 2.9428966534455037e-12, 1.775138924148242e-13, 5.875965007227705e-14, 4.465397046358109e-14, 2.8722841268349164e-14, 1.0353847452575212e-14], [4.654398305820585e-13, 3.1448380330282607e-13, 1.775138924148242e-13, 6.393216876313385e-13, 1.7945207966068707e-14, 1.371568032934141e-14, 8.880123402964234e-15, 3.2252110313778974e-15], [1.590440714495068e-13, 1.0588313506538595e-13, 5.875965007227705e-14, 1.7945207966068707e-14, 1.4608646183877076e-14, 4.6179142377863184e-15, 2.9394484941914416e-15, 1.0466896041647307e-15], [1.1977354759787748e-13, 8.007428539609475e-14, 4.465397046358109e-14, 1.371568032934141e-14, 4.6179142377863184e-15, 1.0427403772121286e-14, 2.2338125921000067e-15, 7.999940731761468e-16], [7.623965192981106e-14, 5.121859528371547e-14, 2.8722841268349164e-14, 8.880123402964234e-15, 2.9394484941914416e-15, 2.233812592100007e-15, 5.6623248360062394e-15, 5.179506900759986e-16], [2.7147694969910095e-14, 1.834288731663919e-14, 1.0353847452575212e-14, 3.2252110313778974e-15, 1.0466896041647307e-15, 7.999940731761468e-16, 5.179506900759986e-16, 1.0409600393024125e-15]] 
+
+  
+  - name: vanishing-{Delta-H0}/F0@GRV2026
+    manual_constraints:
+      "B->K::vanishing-{Delta_H_0(q2)}/F_0(q2)":
+        type: MultivariateGaussian(Covariance)
+        observables:
+          - B->K::Re{Delta_H_0(-7)}/F_0(q2)
+          - B->K::Re{Delta_H_0(-5)}/F_0(q2)
+          - B->K::Re{Delta_H_0(-3)}/F_0(q2) 
+          - B->K::Re{Delta_H_0(-1)}/F_0(q2) 
+          - B->K::Im{Delta_H_0(-7)}/F_0(q2)
+          - B->K::Im{Delta_H_0(-5)}/F_0(q2)
+          - B->K::Im{Delta_H_0(-3)}/F_0(q2) 
+          - B->K::Im{Delta_H_0(-1)}/F_0(q2)    
+        kinematics: [{q2: -7.0}, {q2: -5.0}, {q2: -3.0}, {q2: -1.0}, {q2: -7.0}, {q2: -5.0}, {q2: -3.0}, {q2: -1.0}]
+        options: [{}, {}, {}, {}, {}, {}, {}, {}]
+        means: [0., 0., 0., 0., 0., 0., 0., 0.]
+        covariance: [
+                      [4.5737e-12, 2.5963e-12, 1.4395e-12, 4.3856e-13, 1.5031e-13, 1.1323e-13, 7.2012e-14, 2.5580e-14],
+                      [2.5963e-12, 4.0671e-12, 9.6721e-13, 2.9635e-13, 1.0010e-13, 7.5719e-14, 4.8385e-14, 1.7285e-14],
+                      [1.4395e-12, 9.6721e-13, 2.9723e-12, 1.6711e-13, 5.5501e-14, 4.2183e-14, 2.7105e-14, 9.7469e-15],
+                      [4.3856e-13, 2.9635e-13, 1.6711e-13, 6.4537e-13, 1.6909e-14, 1.2925e-14, 8.3595e-15, 3.0291e-15],
+                      [1.5031e-13, 1.0010e-13, 5.5501e-14, 1.6909e-14, 1.3898e-14, 4.3658e-15, 2.7764e-15, 9.8624e-16],
+                      [1.1323e-13, 7.5719e-14, 4.2183e-14, 1.2925e-14, 4.3658e-15, 9.9804e-15, 2.1102e-15, 7.5386e-16],
+                      [7.2012e-14, 4.8385e-14, 2.7105e-14, 8.3595e-15, 2.7764e-15, 2.1102e-15, 5.4527e-15, 4.8759e-16],
+                      [2.5580e-14, 1.7285e-14, 9.7469e-15, 3.0291e-15, 9.8624e-16, 7.5386e-16, 4.8759e-16, 1.0088e-15],
+                    ]
+# one iteration less:
+                    # [
+                    #   [4.7927e-12, 2.7530e-12, 1.5314e-12, 4.6834e-13, 1.5894e-13, 1.2007e-13, 7.6607e-14, 2.7317e-14],
+                    #   [2.7530e-12, 4.1705e-12, 1.0312e-12, 3.1702e-13, 1.0614e-13, 8.0492e-14, 5.1584e-14, 1.8491e-14],
+                    #   [1.5314e-12, 1.0312e-12, 3.0061e-12, 1.7911e-13, 5.9042e-14, 4.4973e-14, 2.8969e-14, 1.0447e-14],
+                    #   [4.6834e-13, 3.1702e-13, 1.7911e-13, 6.4868e-13, 1.8057e-14, 1.3826e-14, 8.9599e-15, 3.2538e-15],
+                    #   [1.5894e-13, 1.0614e-13, 5.9042e-14, 1.8057e-14, 1.4250e-14, 4.6293e-15, 2.9536e-15, 1.0532e-15],
+                    #   [1.2007e-13, 8.0492e-14, 4.4973e-14, 1.3826e-14, 4.6293e-15, 1.0203e-14, 2.2497e-15, 8.0645e-16],
+                    #   [7.6607e-14, 5.1584e-14, 2.8969e-14, 8.9599e-15, 2.9536e-15, 2.2497e-15, 5.5531e-15, 5.2260e-16],
+                    #   [2.7317e-14, 1.8491e-14, 1.0447e-14, 3.2538e-15, 1.0532e-15, 8.0645e-16, 5.2260e-16, 1.0231e-15],
+                    # ]
+
+
   - name: charmonium-resonances
     constraints:
       - 'B^0->K^0Jpsi::BR@PDG:2020A'
       - 'B->KJpsi::BR@PDG:2020A'
 
-#[[4.111550896928401e-12, 2.737036055237345e-12, 1.5188516163999307e-12, 4.638665673573583e-13, 1.585223895034218e-13, 1.1937120827608517e-13, 7.598047454733597e-14, 2.705593129322148e-14], [2.7370360552373453e-12, 1.8295316041766263e-12, 1.020104701890518e-12, 3.1329788605179974e-13, 1.0552745595588445e-13, 7.979192886948989e-14, 5.1030685618470213e-14, 1.8273716356882346e-14], [1.5188516163999303e-12, 1.020104701890518e-12, 5.719149680241568e-13, 1.7677427547488334e-13, 5.855989611334098e-14, 4.449014495069457e-14, 2.8610012066978925e-14, 1.0310707837611482e-14], [4.638665673573582e-13, 3.132978860517998e-13, 1.7677427547488337e-13, 5.5043332339616324e-14, 1.788455020990439e-14, 1.3663958549900615e-14, 8.843124103313649e-15, 3.210504953658765e-15], [1.585223895034218e-13, 1.0552745595588446e-13, 5.855989611334098e-14, 1.788455020990439e-14, 6.111990431378796e-15, 4.6024018937021026e-15, 2.929455812596484e-15, 1.0431516210491713e-15], [1.1937120827608517e-13, 7.979192886948986e-14, 4.4490144950694566e-14, 1.3663958549900615e-14, 4.6024018937021026e-15, 3.480090313465013e-15, 2.225617229183922e-15, 7.969772985056086e-16], [7.598047454733597e-14, 5.103068561847021e-14, 2.8610012066978925e-14, 8.843124103313649e-15, 2.929455812596484e-15, 2.225617229183922e-15, 1.431314392625487e-15, 5.157926330404454e-16], [2.705593129322148e-14, 1.8273716356882346e-14, 1.031070783761148e-14, 3.210504953658765e-15, 1.0431516210491711e-15, 7.969772985056086e-16, 5.157926330404454e-16, 1.873590256667931e-16]]
+
+
+  - name: BToK-NonLocalBound@2022
+    manual_constraints:
+      "B->K::NonLocalBound":
+        type: UniformBound
+        observables:
+          - 'B->K::strong_bound'
+        kinematics: [ {} ]
+        options: [ {} ]
+        bound: 0.5
+        uncertainty: 0.05
 
   - name: BToK-NonLocalBound
     manual_constraints:
@@ -346,52 +504,6 @@ likelihoods:
 
 
 posteriors:
-  - name: BSZ-BqToK-wSR
-    fixed_parameters:          # t_0 is t_opt
-      'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
-      'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
-      'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
-      'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
-      'mass::b(MSbar)':  4.18
-      'mass::c':  1.44423
-      'sb::mu':  4.18
-      'b->s::c1': -0.287213
-      'b->s::c2':  1.009
-    global_options:
-      form-factors: BSZ2015
-      model: WET
-    prior:
-      - bsz-BqToK-wSR@2022
-    likelihood:
-      - TH-BToK-LQCD
-      - TH-BToK-LCSR
-  - name: BSZ-BqToK-wSR-wNFF
-    fixed_parameters:
-      'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
-      'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
-      'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
-      'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
-      'mass::b(MSbar)':  4.18
-      'mass::c':  1.44423
-      'sb::mu':  4.18
-      'b->s::c1': -0.287213
-      'b->s::c2':  1.009
-      # t_0 is t_opt
-    global_options:
-      form-factors: BSZ2015
-      nonlocal-formfactor: GRvDV2022order5
-      model: WET
-    prior:
-      - bsz-BqToK-wSR
-      - GRvDV2022-BToKccbar
-    likelihood:
-      - TH-BToK-LQCD
-      - TH-BToK-LCSR
-      - vanishing-Re{Delta-H0}/Re{H0(F)}
-      - vanishing-Im{Delta-H0}/Im{H0(F)}
-      - charmonium-resonances
-
-
   - name: BSZ-BqToK-wSR-wNFF-wCov
     fixed_parameters:
       'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
@@ -414,16 +526,131 @@ posteriors:
     likelihood:
       - TH-BToK-LQCD
       - TH-BToK-LCSR
-      - vanishing-{Delta-H0}/F0
+      - vanishing-{Delta-H0}/F0@GRvDV2022
+      - charmonium-resonances
+      - BToK-NonLocalBound@2022
+
+
+  
+  - name: GRV2026-BqToK
+    fixed_parameters:
+      'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
+      'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
+      'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::b(MSbar)':  4.18
+      'mass::c':  1.44423
+      'sb::mu':  4.18
+      'b->s::c1': -0.287213
+      'b->s::c2':  1.009
+      # t_0 is t_opt
+    global_options:
+      form-factors: BSZ2015
+      nonlocal-formfactor: GRV2026
+      model: WET
+    prior:
+      - bsz-BqToK-wSR@2026
+      - GRvDV2022-BToKccbar@2026
+    likelihood:
+      - TH-BToK-LQCD
+      - TH-BToK-LCSR
+      - vanishing-{Delta-H0}/F0@GRV2026
+      - charmonium-resonances
+      - BToK-NonLocalBound
+
+  
+
+  - name: GRV2026-BqToK-nff-dbg
+    fixed_parameters:
+      'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
+      'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
+      'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::b(MSbar)':  4.18
+      'mass::c':  1.44423
+      'sb::mu':  4.18
+      'b->s::c1': -0.287213
+      'b->s::c2':  1.009
+      # t_0 is t_opt
+      'B->K::alpha^f+_0@BSZ2015': +3.406e-01
+      'B->K::alpha^f+_1@BSZ2015': -8.534e-01
+      'B->K::alpha^f+_2@BSZ2015': -3.912e-02
+      'B->K::alpha^f0_1@BSZ2015': +3.948e-01
+      'B->K::alpha^f0_2@BSZ2015': +1.153e-01
+      'B->K::alpha^fT_0@BSZ2015': +3.246e-01
+      'B->K::alpha^fT_1@BSZ2015': -9.652e-01
+      'B->K::alpha^fT_2@BSZ2015': -2.669e-01
+    global_options:
+      form-factors: BSZ2015
+      nonlocal-formfactor: GRV2026
+      model: WET
+    prior:
+      - GRvDV2022-BToKccbar@2026-dbg
+    likelihood:
+      - vanishing-{Delta-H0}/F0@GRV2026
+      - charmonium-resonances
+      #- BToK-NonLocalBound
+  
+
+
+  - name: GRV2026-BqToK-dbg
+    fixed_parameters:
+      'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
+      'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
+      'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::b(MSbar)':  4.18
+      'mass::c':  1.44423
+      'sb::mu':  4.18
+      'b->s::c1': -0.287213
+      'b->s::c2':  1.009
+      # t_0 is t_opt
+    global_options:
+      form-factors: BSZ2015
+      nonlocal-formfactor: GRV2026
+      model: WET
+    prior:
+      - bsz-BqToK-wSR@2026-dbg
+      - GRvDV2022-BToKccbar@2026-dbg
+    likelihood:
+      - TH-BToK-LQCD
+      - TH-BToK-LCSR
+      - vanishing-{Delta-H0}/F0@GRV2026
+      - charmonium-resonances
+
+  
+
+  - name: GRV2026-BqToK-dbg-bound
+    fixed_parameters:
+      'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
+      'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
+      'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::b(MSbar)':  4.18
+      'mass::c':  1.44423
+      'sb::mu':  4.18
+      'b->s::c1': -0.287213
+      'b->s::c2':  1.009
+      # t_0 is t_opt
+    global_options:
+      form-factors: BSZ2015
+      nonlocal-formfactor: GRV2026
+      model: WET
+    prior:
+      - bsz-BqToK-wSR@2026-dbg
+      - GRvDV2022-BToKccbar@2026-dbg
+    likelihood:
+      - TH-BToK-LQCD
+      - TH-BToK-LCSR
+      - vanishing-{Delta-H0}/F0@GRV2026
       - charmonium-resonances
       - BToK-NonLocalBound
 
 
 
 
+
 predictions:
-# list of names:
-# 'BToK-F0', 'BToK-FT0', 'BToK-Re(H0(F))', 'BToK-Im(H0(F))', 'BToK-Re(Delta-H0)/Re(H0(F))', 'BToK-Im(Delta-H0)/Im(H0(F))', 'BToK-Re(H0)', 'BToK-Im(H0)'
 # LOCAL ONLY
   - name: BToK-F0
     observables:
@@ -596,11 +823,77 @@ predictions:
 
 
 
+
+  - name: BToK-Re(H0(-7,F))-over-F0
+    observables:
+      - name: B->K::Re{H_0(-7,F)}/F_0(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+  - name: BToK-Im(H0(-7,F))-over-F0
+    observables:
+      - name: B->K::Im{H_0(-7,F)}/F_0(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  - name: BToK-Re(H0(-5,F))-over-F0
+    observables:
+      - name: B->K::Re{H_0(-5,F)}/F_0(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+  - name: BToK-Im(H0(-5,F))-over-F0
+    observables:
+      - name: B->K::Im{H_0(-5,F)}/F_0(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  - name: BToK-Re(H0(-3,F))-over-F0
+    observables:
+      - name: B->K::Re{H_0(-3,F)}/F_0(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+  - name: BToK-Im(H0(-3,F))-over-F0
+    observables:
+      - name: B->K::Im{H_0(-3,F)}/F_0(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+
+  - name: BToK-Re(H0(-1,F))-over-F0
+    observables:
+      - name: B->K::Re{H_0(-1,F)}/F_0(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]
+  - name: BToK-Im(H0(-1,F))-over-F0
+    observables:
+      - name: B->K::Im{H_0(-1,F)}/F_0(q2)
+        kinematics: [ { q2: -7.0 }, { q2: -6.0 },
+                      { q2: -5.0 }, { q2: -4.0 },
+                      { q2: -3.0 }, { q2: -2.0 },
+                      { q2: -1.0 } ]    
+
+
+
+
 # SM PREDICTIONS
 
   - name: BToK-strong-bound
     observables:
       - name: B->K::strong_bound
+
+
 
   - name: BToKll-Normalized-BR
     observables:
@@ -626,3 +919,121 @@ predictions:
           - { q2_min: 5.00, q2_max: 6.00 }
           - { q2_min: 6.00, q2_max: 7.00 }
           - { q2_min: 7.00, q2_max: 8.00 }
+
+
+
+  - name: BToK-alpha-coeffs
+    observables:
+      - name: B->K::Re{alpha}
+        kinematics: [ { k: 0 }, { k: 1 }, { k: 2 }, { k: 3 }, { k: 4 }, { k: 5 } ]
+        options: { nonlocal-formfactor: GRV2026 }
+      - name: B->K::Im{alpha}
+        kinematics: [ { k: 0 }, { k: 1 }, { k: 2 }, { k: 3 }, { k: 4 }, { k: 5 } ]
+        options: { nonlocal-formfactor: GRV2026 }
+
+
+
+  - name: BToK-AbsH0-over-F0
+    observables:
+      - name: B->K::Abs{H_plus}/F_plus(q2)
+        kinematics: [ {q2: -8.0}, 
+                      {q2: -7.8}, 
+                      {q2: -7.6}, 
+                      {q2: -7.4}, 
+                      {q2: -7.2}, 
+                      {q2: -7.0}, 
+                      {q2: -6.8}, 
+                      {q2: -6.6}, 
+                      {q2: -6.4}, 
+                      {q2: -6.2}, 
+                      {q2: -6.0}, 
+                      {q2: -5.8}, 
+                      {q2: -5.6}, 
+                      {q2: -5.4}, 
+                      {q2: -5.2}, 
+                      {q2: -5.0}, 
+                      {q2: -4.8}, 
+                      {q2: -4.6}, 
+                      {q2: -4.4}, 
+                      {q2: -4.2}, 
+                      {q2: -4.0}, 
+                      {q2: -3.8}, 
+                      {q2: -3.6}, 
+                      {q2: -3.4}, 
+                      {q2: -3.2}, 
+                      {q2: -3.0}, 
+                      {q2: -2.8}, 
+                      {q2: -2.6}, 
+                      {q2: -2.4}, 
+                      {q2: -2.2}, 
+                      {q2: -2.0}, 
+                      {q2: -1.8}, 
+                      {q2: -1.6}, 
+                      {q2: -1.4}, 
+                      {q2: -1.2}, 
+                      {q2: -1.0}, 
+                      {q2: -0.8}, 
+                      {q2: -0.6}, 
+                      {q2: -0.4}, 
+                      {q2: -0.2}, 
+                      {q2: 0.0}, 
+                      {q2: 0.2}, 
+                      {q2: 0.4}, 
+                      {q2: 0.6}, 
+                      {q2: 0.8}, 
+                      {q2: 1.0}, 
+                      {q2: 1.2}, 
+                      {q2: 1.4}, 
+                      {q2: 1.6}, 
+                      {q2: 1.8}, 
+                      {q2: 2.0}, 
+                      {q2: 2.2}, 
+                      {q2: 2.4}, 
+                      {q2: 2.6}, 
+                      {q2: 2.8}, 
+                      {q2: 3.0}, 
+                      {q2: 3.2}, 
+                      {q2: 3.4}, 
+                      {q2: 3.6}, 
+                      {q2: 3.8}, 
+                      {q2: 4.0}, 
+                      {q2: 4.2}, 
+                      {q2: 4.4}, 
+                      {q2: 4.6}, 
+                      {q2: 4.8}, 
+                      {q2: 5.0}, 
+                      {q2: 5.2}, 
+                      {q2: 5.4}, 
+                      {q2: 5.6}, 
+                      {q2: 5.8}, 
+                      {q2: 6.0}, 
+                      {q2: 6.2}, 
+                      {q2: 6.4}, 
+                      {q2: 6.6}, 
+                      {q2: 6.8}, 
+                      {q2: 7.0}, 
+                      {q2: 7.2}, 
+                      {q2: 7.4}, 
+                      {q2: 7.6}, 
+                      {q2: 7.8}, 
+                      {q2: 8.0}, 
+                      {q2: 8.2}, 
+                      {q2: 8.4}, 
+                      {q2: 8.6}, 
+                      {q2: 8.8}, 
+                      {q2: 9.0}, 
+                      {q2: 9.2}, 
+                      {q2: 9.4}, 
+                      {q2: 9.6}, 
+                      {q2: 9.8}, 
+                      {q2: 10.0}, 
+                      {q2: 10.2}]
+                      # , 
+                      # {q2: 10.4}, 
+                      # {q2: 10.6}, 
+                      # {q2: 10.8}, 
+                      # {q2: 11.0}, 
+                      # {q2: 11.2}, 
+                      # {q2: 11.4}, 
+                      # {q2: 11.6}, 
+                      # {q2: 11.8}
