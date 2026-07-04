@@ -505,6 +505,32 @@ likelihoods:
                       [+1.1553e-13, +7.6963e-14, +4.2711e-14, +1.3034e-14, +4.4542e-15, +3.3566e-15, +2.1366e-15, +1.6186e-15],
                     ]
 
+  - name: vanishing-DeltaH0/F0@GRV-HPQCD
+    manual_constraints:
+      "B->K::vanishing-{Delta_H_0(q2)}/F_0(q2)":
+        type: MultivariateGaussian(Covariance)
+        observables:
+          - B->K::Re{Delta_H_0(-7)}/F_0(q2)
+          - B->K::Re{Delta_H_0(-5)}/F_0(q2)
+          - B->K::Re{Delta_H_0(-3)}/F_0(q2)
+          - B->K::Re{Delta_H_0(-1)}/F_0(q2)
+          - B->K::Im{Delta_H_0(-7)}/F_0(q2)
+          - B->K::Im{Delta_H_0(-5)}/F_0(q2)
+          - B->K::Im{Delta_H_0(-3)}/F_0(q2)
+          - B->K::Im{Delta_H_0(-1)}/F_0(q2)
+        kinematics: [{q2: -7.0}, {q2: -5.0}, {q2: -3.0}, {q2: -1.0}, {q2: -7.0}, {q2: -5.0}, {q2: -3.0}, {q2: -1.0}]
+        options: [{}, {}, {}, {}, {}, {}, {}, {}]
+        means: [0., 0., 0., 0., 0., 0., 0., 0.]
+        covariance: [
+                      [+2.0437e-11, -9.5026e-41, -1.8380e-40, -4.8225e-40, -3.2155e-42, +2.0510e-41, -2.7453e-42, +5.4077e-42],
+                      [-9.5026e-41, +1.8647e-11, +1.1362e-41, +3.0290e-41, +1.9889e-43, -1.2961e-42, +1.7354e-43, -3.4123e-43],
+                      [-1.8380e-40, +1.1362e-41, +1.1088e-11, +5.8871e-41, +3.9390e-43, -2.5085e-42, +3.3440e-43, -6.6069e-43],
+                      [-4.8225e-40, +3.0290e-41, +5.8871e-41, +1.9455e-12, +1.0309e-42, -6.5781e-42, +8.7972e-43, -1.7341e-42],
+                      [-3.2155e-42, +1.9889e-43, +3.9390e-43, +1.0309e-42, +2.7672e-15, -4.3876e-44, +5.8776e-45, -1.1562e-44],
+                      [+2.0510e-41, -1.2961e-42, -2.5085e-42, -6.5781e-42, -4.3876e-44, +1.6023e-15, -3.7433e-44, +7.3761e-44],
+                      [-2.7453e-42, +1.7354e-43, +3.3440e-43, +8.7972e-43, +5.8776e-45, -3.7433e-44, +6.0420e-16, -9.8680e-45],
+                      [+5.4077e-42, -3.4123e-43, -6.6069e-43, -1.7341e-42, -1.1562e-44, +7.3761e-44, -9.8680e-45, +5.7447e-17],
+                    ]
 
   - name: vanishing-DeltaH0/F0@GRV-HPQCD-o6
     manual_constraints:
@@ -682,14 +708,14 @@ posteriors:
       model: WET
     prior:
       - g3-BK-HPQCD
-      #- grv-BKccbar-HPQCD
+      - grv-BKccbar-HPQCD
     likelihood:
       - TH-BK-FLAG21
       - TH-BK-HPQCD22
-      #- vanishing-DeltaH0/F0@GRV-HPQCD
-      #- Jpsi-resonances
+      - vanishing-DeltaH0/F0@GRV-HPQCD
+      - Jpsi-resonances
       - BK-local-bound
-      #- BK-nonlocal-bound
+      - BK-nonlocal-bound
 
 
   - name: GRV-BK-HPQCD-o6
