@@ -199,7 +199,14 @@ observables:
     latex: R'\frac{d\Gamma}{dq^2}'
     unit: 'InverseGeV2'
     options: {}
-    expression: '<<B->K::A@LHCb2026>> * <<B->Kll::ECAf0>> + <<B->K::B@LHCb2026>> * <<B->Kll::ECVfplus>> + <<B->K::C@LHCb2026>> * <<B->Kll::ECVf0>>'
+    expression: '(<<B->K::A@LHCb2026>> * <<B->Kll::ECAf0>> + <<B->K::B@LHCb2026>> * <<B->Kll::ECVfplus>> + <<B->K::C@LHCb2026>> * <<B->Kll::ECVf0>>)'
+
+  "B->Kll::RTNorm(q2_min,q2_max)":
+    latex: ''
+    unit: '1'
+    options: {}
+    expression: '1000000 + 0.0 * ({q2_min} + {q2_max})'
+
 #----------------Time efficiency----------------
   "b->s::Re{Delta_C7_Qc}(-7)":
     latex: R'\mathrm{Re}\Delta C_7 (q^2 = -7\,\mathrm{GeV}^2)'
@@ -724,6 +731,7 @@ posteriors:
       form-factors: G2026
       nonlocal-formfactor: GRV2026
       model: WET
+      tag: GvDV2020
     prior:
       - g3-BK-HPQCD
       - grv-BKccbar-HPQCD
