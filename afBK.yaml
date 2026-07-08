@@ -161,23 +161,23 @@ observables:
     latex: R'\eta^{B\to K \ell\ell}'
     unit: 'InverseGeV2'
     options: {}
-    expression: '4 * [[mass::mu]]^2 * ([[mass::B_d]]^2 - [[mass::K_d]]^2) / ( {q2} * <<B->K::beta@LHCb2026>>^2 * <<B->K::lambda@LHCb2026>> ) * (<<B->K::f_0(q2)>> / <<B->K::f_+(q2)>>)^2'
+    expression: '4 * [[mass::mu]]^2 * ([[mass::B_d]]^2 - [[mass::K_d]]^2)^2 / ( {q2} * <<B->K::beta@LHCb2026>>^2 * <<B->K::lambda@LHCb2026>> ) * (<<B->K::f_0(q2)>> / <<B->K::f_+(q2)>>)^2'
 
   "B->K::A@LHCb2026":
     latex: R'A^{B\to K \ell\ell}'
     unit: '1'
     options: {}
-    expression: '(<<B->K::lambda@LHCb2026>>^0.5 / (2 * [[mass::B_d]]) * <<B->K::beta@LHCb2026>>) * (-1) * ( <<B->Kll::c_l(q2)>> + <<B->K::beta@LHCb2026>>^2 * <<B->Kll::a_l(q2)>> ) / ( 1 - <<B->K::beta@LHCb2026>>^2 * (1 + <<B->K::eta@LHCb2026>>) )'
+    expression: '(-1) * ( <<B->Kll::c_l(q2)>> + <<B->K::beta@LHCb2026>>^2 * <<B->Kll::a_l(q2)>> ) / ( 1 - <<B->K::beta@LHCb2026>>^2 * (1 + <<B->K::eta@LHCb2026>>) )'
   "B->K::B@LHCb2026":
     latex: R'B^{B\to K \ell\ell}'
     unit: '1'
     options: {}
-    expression: '(-1) * (<<B->K::lambda@LHCb2026>>^0.5 / (2 * [[mass::B_d]]) * <<B->K::beta@LHCb2026>>) * <<B->K::eta@LHCb2026>> * ( <<B->Kll::c_l(q2)>> + <<B->K::beta@LHCb2026>>^2 * <<B->Kll::a_l(q2)>> ) / ( 1 - <<B->K::beta@LHCb2026>>^2 * (1 + <<B->K::eta@LHCb2026>>) )'
+    expression: '(-1) * <<B->K::eta@LHCb2026>> * ( <<B->Kll::c_l(q2)>> + <<B->K::beta@LHCb2026>>^2 * <<B->Kll::a_l(q2)>> ) / ( 1 - <<B->K::beta@LHCb2026>>^2 * (1 + <<B->K::eta@LHCb2026>>) )'
   "B->K::C@LHCb2026":
     latex: R'C^{B\to K \ell\ell}'
     unit: '1'
     options: {}
-    expression: '(<<B->K::lambda@LHCb2026>>^0.5 / (2 * [[mass::B_d]]) * <<B->K::beta@LHCb2026>>) * ( <<B->Kll::a_l(q2)>> + (1 + <<B->K::eta@LHCb2026>>) * <<B->Kll::c_l(q2)>> ) / ( 1 - <<B->K::beta@LHCb2026>>^2 * (1 + <<B->K::eta@LHCb2026>>) )'
+    expression: '( <<B->Kll::a_l(q2)>> + <<B->Kll::c_l(q2)>> * (1 + <<B->K::eta@LHCb2026>>) ) / ( 1 - <<B->K::beta@LHCb2026>>^2 * (1 + <<B->K::eta@LHCb2026>>) )'
 
   "B->Kll::ECAf0":
     latex: R'\mathcal{E}_{C_A}^{f_0}'
@@ -1236,6 +1236,63 @@ predictions:
   - name: BToKll-EffDiffDecayRate
     observables:
       - name: B->Kll::eff-differential-decay-rate
+        kinematics: [ {q2: 3.4},
+                      {q2: 3.6},
+                      {q2: 3.8},
+                      {q2: 4.0},
+                      {q2: 4.2},
+                      {q2: 4.4},
+                      {q2: 4.6},
+                      {q2: 4.8},
+                      {q2: 5.0},
+                      {q2: 5.2},
+                      {q2: 5.4},
+                      {q2: 5.6},
+                      {q2: 5.8},
+                      {q2: 6.0},
+                      {q2: 6.2} ]
+
+  - name: BToKll-ECAf0
+    observables:
+      - name: B->Kll::ECAf0
+        kinematics: [ {q2: 3.4},
+                      {q2: 3.6},
+                      {q2: 3.8},
+                      {q2: 4.0},
+                      {q2: 4.2},
+                      {q2: 4.4},
+                      {q2: 4.6},
+                      {q2: 4.8},
+                      {q2: 5.0},
+                      {q2: 5.2},
+                      {q2: 5.4},
+                      {q2: 5.6},
+                      {q2: 5.8},
+                      {q2: 6.0},
+                      {q2: 6.2} ]
+
+  - name: BToKll-ECVfplus
+    observables:
+      - name: B->Kll::ECVfplus
+        kinematics: [ {q2: 3.4},
+                      {q2: 3.6},
+                      {q2: 3.8},
+                      {q2: 4.0},
+                      {q2: 4.2},
+                      {q2: 4.4},
+                      {q2: 4.6},
+                      {q2: 4.8},
+                      {q2: 5.0},
+                      {q2: 5.2},
+                      {q2: 5.4},
+                      {q2: 5.6},
+                      {q2: 5.8},
+                      {q2: 6.0},
+                      {q2: 6.2} ]
+
+  - name: BToKll-ECVf0
+    observables:
+      - name: B->Kll::ECVf0
         kinematics: [ {q2: 3.4},
                       {q2: 3.6},
                       {q2: 3.8},
