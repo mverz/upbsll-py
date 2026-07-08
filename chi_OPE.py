@@ -362,9 +362,9 @@ if (flag_compute_A_onshell):
 
 if(True):
 
-    BASE_DIRECTORY='./data_base'
+    BASE_DIRECTORY='./test_base'
     ANALYSIS_FILE='./afBK.yaml'
-    POSTERIOR_NAME = 'GRV-BK-HPQCD-o6'
+    POSTERIOR_NAME = 'GRV-BK-HPQCD'
 
     bfp, gof = eos.tasks.find_mode(
             ANALYSIS_FILE,
@@ -380,7 +380,7 @@ if(True):
     for par, val in zip(bfp.analysis.varied_parameters, bfp.point):
         pp.set(par.name(), float(val))
 
-    options = {'form-factors':'G2026', 'nonlocal-formfactor':'GRV2026order6', 'model':'WET'}
+    options = {'form-factors':'G2026', 'nonlocal-formfactor':'GRV2026', 'model':'WET'}
     opt = eos.Options(options)
 
     def F_0_BToK(s):
