@@ -102,9 +102,41 @@ priors:
     - { parameter: 'B->K::a^fT_1@G2026', min: -2.241e-01, max: -6.670e-02, type: 'uniform'}
     - { parameter: 'B->K::a^fT_2@G2026', min: -3.705e-01, max: +2.952e-01, type: 'uniform'}
     - { parameter: 'B->K::a^fT_3@G2026', min: -1.572e+00, max: +2.162e+00, type: 'uniform'}
+    # - { parameter: 'B->K::a^f+_0@G2026', min: +3.874e-01, max: +4.567e-01, type: 'uniform'}
+    # - { parameter: 'B->K::a^f+_1@G2026', min: -1.285, max: -8.010e-01, type: 'uniform'}
+    # - { parameter: 'B->K::a^f+_2@G2026', min: -9.074e-01, max: +1.159, type: 'uniform'}
+    # - { parameter: 'B->K::a^f+_3@G2026', min: -5.934e-01, max: +4.662e-01, type: 'uniform'}
+    # - { parameter: 'B->K::a^f0_1@G2026', min: -6.791e-01, max: +3.950e-02, type: 'uniform'}
+    # - { parameter: 'B->K::a^f0_2@G2026', min: -1.386, max: +1.902e-01, type: 'uniform'}
+    # - { parameter: 'B->K::a^f0_3@G2026', min: -7.925e-01, max: +8.529e-01, type: 'uniform'}
+    # - { parameter: 'B->K::a^fT_0@G2026', min: +6.846e-02, max: +8.553e-02, type: 'uniform'}
+    # - { parameter: 'B->K::a^fT_1@G2026', min: -2.241e-01, max: -6.670e-02, type: 'uniform'}
+    # - { parameter: 'B->K::a^fT_2@G2026', min: -3.705e-01, max: +2.952e-01, type: 'uniform'}
+    # - { parameter: 'B->K::a^fT_3@G2026', min: -1.572e+00, max: +2.162e+00, type: 'uniform'}
   - name: wet-c9np-unbinned
     descriptions:
-    - { parameter: 'b->smumu::Re{c9}', min: +1.176e+00, max: +3.683e+00, type: 'uniform'} # HPQCD
+    - { parameter: 'b->smumu::Re{c9}', min: -1.0, max: +3.5, type: 'uniform'} # HPQCD
+
+  - name: g3-BK-HPQCD-unbinned-2
+    descriptions:
+    - { parameter: 'B->K::a^f+_0@G2026', min: +3.874e-02, max: +4.567e-02, type: 'uniform'}
+    - { parameter: 'B->K::a^f+_1@G2026', min: -1.285e-01, max: -8.010e-02, type: 'uniform'}
+    - { parameter: 'B->K::a^f+_2@G2026', min: -9.074e-02, max: +1.159e-01, type: 'uniform'}
+    - { parameter: 'B->K::a^f+_3@G2026', min: -5.934e-01, max: +4.662e-01, type: 'uniform'}
+    - { parameter: 'B->K::a^f0_1@G2026', min: -6.791e-02, max: +3.950e-03, type: 'uniform'}
+    - { parameter: 'B->K::a^f0_2@G2026', min: -1.386e-01, max: +1.902e-02, type: 'uniform'}
+    - { parameter: 'B->K::a^f0_3@G2026', min: -7.925e-01, max: +8.529e-01, type: 'uniform'}
+    - { parameter: 'B->K::a^fT_0@G2026', min: +6.846e-02, max: +8.553e-02, type: 'uniform'}
+    - { parameter: 'B->K::a^fT_1@G2026', min: -2.241e-01, max: -6.670e-02, type: 'uniform'}
+    - { parameter: 'B->K::a^fT_2@G2026', min: -3.705e-01, max: +2.952e-01, type: 'uniform'}
+    - { parameter: 'B->K::a^fT_3@G2026', min: -1.572e+00, max: +2.162e+00, type: 'uniform'}
+
+# ----------------Unbinned debugging----------------
+  - name: unbinned-debug
+    descriptions:
+    - { parameter: 'B->K::a^f+_0@G2026', min: 0.0405, max: 0.0415, type: 'uniform' }
+    - { parameter: 'b->smumu::Re{c9}', min: +2.48, max: +2.52, type: 'uniform' }
+    - { parameter: 'B->K::a^f+_1@G2026', min: -1.285e-01, max: -8.010e-02, type: 'uniform'}
 
 # ----------------Carvunis null test----------------
   - name: bsz-BK-C
@@ -143,6 +175,12 @@ parameters:
     max: +1.0
     unit: '1'
     latex: '$f_\mathrm{unbinned}^{B\to K}$'
+  'B->Kll::Ngridpoints':
+    central: +100.0
+    min: +0.0
+    max: +10000.0
+    unit: '1'
+    latex: ''
 
 
 observables:
@@ -195,17 +233,29 @@ observables:
     options: {}
     expression: '0.96206 + 0.198174 *({q2}^0.5) - 0.31474 *({q2}^0.5)^2 + 0.148852 *({q2}^0.5)^3 - 0.019437 *({q2}^0.5)^4'
 
+  "B->Kll::test-differential-decay-rate":
+    latex: R'\frac{d\Gamma}{dq^2}'
+    unit: 'InverseGeV2'
+    options: {}
+    expression: '1000000000000000000000.0 * (<<B->K::A@LHCb2026>> + <<B->K::B@LHCb2026>> + <<B->K::C@LHCb2026>> )'
+
   "B->Kll::eff-differential-decay-rate":
     latex: R'\frac{d\Gamma}{dq^2}'
     unit: 'InverseGeV2'
     options: {}
-    expression: '(<<B->K::A@LHCb2026>> * <<B->Kll::ECAf0>> + <<B->K::B@LHCb2026>> * <<B->Kll::ECVfplus>> + <<B->K::C@LHCb2026>> * <<B->Kll::ECVf0>>)'
+    expression: '1000000000000000000000.0 * (<<B->K::A@LHCb2026>> * <<B->Kll::ECAf0>> + <<B->K::B@LHCb2026>> * <<B->Kll::ECVfplus>> + <<B->K::C@LHCb2026>> * <<B->Kll::ECVf0>>)'
 
   "B->Kll::RTNorm(q2_min,q2_max)":
     latex: ''
     unit: '1'
     options: {}
-    expression: '1000000 + 0.0 * ({q2_min} + {q2_max})'
+    expression: '1.0 + 0.0 * ({q2_min} + {q2_max})'
+
+  "B->Kll::unbinned-debug":
+    latex: ''
+    unit: '1'
+    options: {}
+    expression: '2.718281828459045 ^ ( -1 * ( {q2} - [[b->smumu::Re{c9}]] )^2 / ( 2 * [[B->K::a^f+_0@G2026]]^2 ) )'
 
 #----------------Time efficiency----------------
   "b->s::Re{Delta_C7_Qc}(-7)":
@@ -611,6 +661,17 @@ likelihoods:
                       [+9.6313e-13, +6.4729e-13, +3.6227e-13, +1.1145e-13, +3.7134e-14, +2.8230e-14, +1.8122e-14, +7.0041e-15],
                     ]
 
+  - name: useless
+    manual_constraints:
+      "B->K^*::useless":
+        type: UniformBound
+        observables:
+            - 'B->K^*::A_0(q2)'
+        kinematics: [ {q2 : 1.0} ]
+        options: [ {} ]
+        bound: 1.0
+        uncertainty: 0.05
+
   - name: charmonium-resonances
     constraints:
       - 'B^0->K^0Jpsi::BR@PDG:2024A'
@@ -711,6 +772,7 @@ posteriors:
   - name: GRV-BK-HPQCD
     fixed_parameters:
       'B->K::UnbinnedFlag': 0.0
+      'B->Kll::Ngridpoints': 100
       'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
       'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
       'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
@@ -746,7 +808,8 @@ posteriors:
 
   - name: GRV-BK-HPQCD-o6
     fixed_parameters:
-      'B->K::UnbinnedFlag': 0.0
+      'B->K::UnbinnedFlag': 0
+      'B->Kll::Ngridpoints': 100
       'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
       'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
       'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
@@ -782,6 +845,7 @@ posteriors:
   - name: GRV-BK-HPQCD-unbinned
     fixed_parameters:
       'B->K::UnbinnedFlag': 1
+      'B->Kll::Ngridpoints': 100
       'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
       'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
       'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
@@ -817,6 +881,63 @@ posteriors:
     prior:
       - g3-BK-HPQCD-unbinned
       - wet-c9np-unbinned
+    likelihood:
+      - TH-BK-FLAG21
+      - TH-BK-HPQCD22
+      - BK-local-bound
+
+  - name: unbinned-DEBUG
+    fixed_parameters:
+      'B->K::UnbinnedFlag': 1
+      'B->Kll::Ngridpoints': 100
+    global_options:
+      tag: GvDV2020
+      form-factors: G2026
+      model: WET
+    prior:
+      - unbinned-debug
+    likelihood:
+      - useless
+
+  - name: GRV-BK-HPQCD-unbinned-2
+    fixed_parameters:
+      'B->K::UnbinnedFlag': 1
+      'B->Kll::Ngridpoints': 100
+      'mass::B_d':   5.27931  # values from FLAG2024 appendix B.3.3
+      'mass::B_s':   5.36688  # values from FLAG2024 appendix B.3.3
+      'mass::K_d':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::K_u':   0.493677 # values from FLAG2024 appendix B.3.3
+      'mass::b(MSbar)':  4.18
+      'mass::c':  1.44423
+      'sb::mu':  4.18
+      'b->s::c1': -0.287213
+      'b->s::c2':  1.009
+      # b->sccbar::t_V@GRV2026 default is (mJpsi + mpi)^2 = 10.445027650378242
+      #'b->sccbar::t_V@GRV2026': 11.335703163832962 # (mJpsi + 2 * mpi)^2
+      'b->sccbar::t_V@GRV2026': 13.910363715599999 # (2 * mD)^2
+      "B->K::a^f+_4@G2026":     0.0
+      "B->K::a^f0_4@G2026":     0.0
+      "B->K::a^fT_4@G2026":     0.0
+      'B->Kccbar::Re_Hhat_at_m7_plus@GRvDV2022': -2.556288e-04
+      'B->Kccbar::Im_Hhat_at_m7_plus@GRvDV2022': -2.974589e-06
+      'B->Kccbar::Re_Hhat_at_m5_plus@GRvDV2022': -3.425583e-04
+      'B->Kccbar::Im_Hhat_at_m5_plus@GRvDV2022': -3.175348e-06
+      'B->Kccbar::Re_Hhat_at_m3_plus@GRvDV2022': -4.346039e-04
+      'B->Kccbar::Im_Hhat_at_m3_plus@GRvDV2022': -3.208204e-06
+      'B->Kccbar::Re_Hhat_at_m1_plus@GRvDV2022': -5.285017e-04
+      'B->Kccbar::Im_Hhat_at_m1_plus@GRvDV2022': -2.871849e-06
+      'B->Kccbar::Re_Hhat_at_t0_plus@GRvDV2022': -7.648283e-04
+      'B->Kccbar::Im_Hhat_at_t0_plus@GRvDV2022': +7.515123e-05
+      'B->Kccbar::Abs_Hhat_at_Jpsi_plus@GRvDV2022': +1.823099e-03
+      'B->Kccbar::Arg_Hhat_at_Jpsi_plus@GRvDV2022': +1.785521e+00
+      'b->smumu::Re{c9}': 2.4
+    global_options:
+      tag: GvDV2020
+      form-factors: G2026
+      nonlocal-formfactor: GRV2026
+      model: WET
+    prior:
+      - g3-BK-HPQCD-unbinned-2
     likelihood:
       - TH-BK-FLAG21
       - TH-BK-HPQCD22
